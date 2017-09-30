@@ -1,0 +1,30 @@
+/* This is some default styling for the exercise */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+.container {
+  display: -ms-flex;
+  display: flex;
+
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  clear:both;
+}
+.container .block {
+  flex-grow: 1;
+
+  -ms-flex-basis: 30em;
+  flex-basis: 30em;
+  padding-left:0.75em;
+
+}
+
+@media (min-width: 25em) {
+  /* spec asked for specifically for the 5th child, although :last-child
+  would be more lifted */
+  .container .block:nth-child(5){
+    order: 1;
+  }
+}

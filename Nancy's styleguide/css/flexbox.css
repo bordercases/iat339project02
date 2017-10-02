@@ -1,0 +1,67 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-grid {
+  flex: 1;
+  padding: 20px;
+  position: relative;
+  /*background-color: #515751;*/
+  margin: 2rem;
+  overflow: hidden;
+  border: solid 1px #efefef;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.product-grid:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.nav-grid {
+  flex: 1;
+  position: relative;
+  margin: 0 0 2rem 0;
+  overflow: hidden;
+}
+
+.grid {
+  flex: 1;
+  padding: 20px;
+  position: relative;
+  background-color: #515751;
+  margin: 0 0 2rem 0;
+  overflow: hidden;
+  color: white;
+  border: solid 1px #36453b;
+}
+
+.grid-padded {
+  flex: 1;
+  padding: 20px;
+  position: relative;
+  background-color: #515751;
+  margin: 0 1rem 2rem 0;
+  overflow: hidden;
+  color: white;
+}
+
+.navgrid-padded {
+  flex: 1;
+  /*padding: 1rem;*/
+  position: relative;
+  /*background-color: #515751;*/
+  /*margin: 0 0 2rem 0;*/
+  overflow: hidden;
+  /*color:white;*/
+  /*align-items: center;
+    justify-content: center;*/
+  align-self: center;
+}

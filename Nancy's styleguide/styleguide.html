@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title> Donghe Styleguide</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/flexbox.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <meta name="viewport" content="width= device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+  <h1>DONGHE ORGANIC OIL STYLEGUIDE</h1>
+
+  <nav>
+    <a href="styleguide.html" class="nav-header"> Styleguide </a>
+    <a href="wireframe.html" class="nav-header"> Wireframes </a>
+    <a href="citations.html" class="nav-header"> Citations </a>
+  </nav>
+
+  <section>
+    <h2>INTERACTIVE ELEMENTS</h2>
+
+    <div class="sub-section">
+      <h3>In text Link:</h3> ex: This is an <a class="intext-link" href=""> in text </a> link
+      <code>
+              <h4>Code: </h4>
+              This is an &lta class="intext-link" href=""&gt in text &lt/a&gt link
+            </code>
+    </div>
+
+    <div class="sub-section">
+      <h3>Nav Button Style:</h3> ex: <a href="" class="poppins-font nav-header"> About Us </a>
+      <a href="" class="poppins-font nav-header"> Our Products </a>
+
+      <code>
+              <h4>Code: </h4>
+              &lta href="" class="poppins-font nav-header"&gt About Us &lt/a&gt
+            <br>
+              &lta href="" class="poppins-font nav-header"&gt Our Products &lt/a&gt
+            </code>
+    </div>
+
+    <div class="sub-section">
+      <h3>Submit & Reset Buttons for Forms:</h3>
+      <div class="buttons-block">
+        <button type="button" class="submit-btn"> Submit </button>
+        <code>
+              <h4>Code: </h4>
+              &ltbutton type="button" class="submit-btn"> Submit &lt/button>
+            </code>
+      </div>
+
+      <div class="buttons-block">
+        <button type="button" class="reset-btn"> Reset </button>
+
+        <code>
+              <h4>Code: </h4>
+            &ltbutton type="button" class="reset-btn"> Reset &lt/button>
+          </code>
+      </div>
+
+    </div>
+
+    <div class="sub-section">
+      <h3>Text Input Field:</h3>
+        <label>Text:  </label>
+        <input type="text" name="Text" placeholder="Hello world!" class="txt-input">
+      <code>
+            <h4>Code: </h4>
+                  &ltlabel>Text:  &lt/label> <br>
+              &ltinput type="text" name="Text" placeholder="Hello world!" class="txt-input">
+          </code>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>TEXT STYLING</h2>
+
+    <div class="sub-section">
+      <h3>3 Levels of Headings:</h3>
+      <h1 class="poppins-font"> The fox jumped over the moon</h1>
+      <h2 class="poppins-font">The fox jumped over the moon</h2>
+      <h3 class="poppins-font"> The fox jumped over the moon</h3>
+
+      <code>
+               <h4>Code: </h4>
+               &lth1 class="poppins-font"> The fox jumped over the moon&lt/h1>
+             <br>
+               &lth2 class="poppins-font">The fox jumped over the moon&lt/h2>
+             <br>
+               &lth3 class="poppins-title"> The fox jumped over the moon&lt/h3>
+             </code>
+    </div>
+
+    <div class="sub-section">
+      <h3>A Paragraph: </h3>
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus felis condimentum faucibus egestas. Curabitur finibus magna nec auctor suscipit. Donec pharetra magna ex, a tempus justo venenatis elementum. Etiam dictum nisi vitae velit vestibulum,
+        eu vestibulum dui vehicula.</p>
+
+      <code>
+             <h4>Code: </h4>
+           &ltp&gt Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus felis condimentum faucibus egestas. Curabitur finibus magna nec auctor suscipit. Donec pharetra magna ex, a tempus justo venenatis elementum. Etiam dictum nisi vitae velit vestibulum, eu vestibulum dui vehicula.&lt/p>
+           </code>
+
+    </div>
+
+    <div class="sub-section">
+      <h3>Bulletted List:</h3>
+      <ul>
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+      </ul>
+
+      <code>
+                 <h4>Code: </h4>
+              &ltul>
+                &ltli>First&lt/li>
+                &ltli>Second&lt/li>
+                &ltli>Third&lt/li>
+              &lt/ul>
+            </code>
+    </div>
+
+    <div class="sub-section">
+      <h3>Numbered Lists</h3>
+      <ol>
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+      </ol>
+
+      <code>
+                <h4>Code: </h4>
+             &ltol>
+               &ltli>First&lt/li>
+               &ltli>Second&lt/li>
+               &ltli>Third&lt/li>
+             &lt/ol>
+           </code>
+    </div>
+
+  </section>
+
+
+  <section>
+    <h2>COMBINED ELEMENTS</h2>
+
+    <div class="sub-section">
+      <h3>Main Navigation</h3>
+
+      <nav class="container ">
+        <a href="" class="navgrid-padded poppins-font">
+          <div class="nav-header">About Us </div>
+        </a>
+        <a href="" class="navgrid-padded poppins-font">
+          <div class="nav-header">products </div>
+        </a>
+
+        <a><img src="images/donghe.png" alt="img"  class="navgrid-padded logo"> </a>
+
+        <a href="" class="navgrid-padded poppins-font">
+          <div class="nav-header">contact </div>
+        </a>
+        <a href="" class="navgrid-padded poppins-font">
+          <div class="nav-header">news </div>
+        </a>
+      </nav>
+
+
+      <code>
+           <h4>Code: </h4>
+           &ltnav class="container ">
+             &lta href="" class="navgrid-padded poppins-font">
+               &ltdiv class="nav-header">About Us &lt/div>
+             &lt/a>
+             &lta href="" class="navgrid-padded poppins-font">
+               &ltdiv class="nav-header">products &lt/div>
+             &lt/a>
+
+              &lta>&ltimg src="images/donghe.png" alt="img"  class="navgrid-padded logo">
+              &lt/a>
+
+              &lta href="" class="navgrid-padded poppins-font">
+                &ltdiv class="nav-header">contact  &lt/div>
+              &lt/a>
+              &lta href="" class="navgrid-padded poppins-font">
+                &ltdiv class="nav-header">news  &lt/div>
+              &lt/a>
+           &lt/nav>
+         </code>
+    </div>
+
+
+    <div class="sub-section">
+      <h3>Product/Service Listing: </h3>
+
+      <div class="container">
+        <div class="product-grid">
+          <img src="images/flaxseedoil.jpg" alt="img" class="image">
+          <h1 class="poppins-font header">flax seed Oil</h1>
+          <div class="price"> CAD $15</div>
+          <div>
+            <button type="grid button" class="reset-btn"> 250mL </button>
+            <button type="grid button" class="reset-btn"> 500mL </button>
+          </div>
+          <button type="button" class="submit-btn"> See details</button>
+        </div>
+
+        <div class="product-grid">
+          <img src="images/camelliaoil.jpg" alt="img" class="image">
+          <h1 class="poppins-font header">Camellia Oil</h1>
+          <div class="price"> CAD $15</div>
+          <div>
+            <button type="grid button" class="reset-btn"> 250mL </button>
+            <button type="grid button" class="reset-btn"> 500mL </button>
+          </div>
+          <button type="button" class="submit-btn"> See details</button>
+        </div>
+
+        <div class="product-grid">
+          <img src="images/blacksesameoil.jpg" alt="img" class="image">
+          <h1 class="poppins-font header">Sesame Oil</h1>
+          <div class="price"> CAD $15</div>
+          <div>
+            <button type="grid button" class="reset-btn"> 250mL </button>
+            <button type="grid button" class="reset-btn"> 500mL </button>
+          </div>
+          <button type="button" class="submit-btn"> See details</button>
+        </div>
+      </div>
+
+      <code>
+           <h4>Code: </h4>
+           &ltdiv class="container">
+             &ltdiv class="product-grid">
+               &ltimg src="images/flaxseedoil.jpg" alt="img"  class="image">
+               &lth1 class="poppins-font header">flax seed Oil&lt/h1>
+               &ltdiv class="price"> CAD $15&lt/div>
+               &ltdiv>
+                 &ltbutton type="grid button" class="reset-btn"> 250mL &lt/button>
+                 &ltbutton type="grid button" class="reset-btn"> 500mL &lt/button>
+               &lt/div>
+                &ltbutton type="button" class="submit-btn"> See details&lt/button>
+             &lt/div>
+
+             &ltdiv class="product-grid">
+               &ltimg src="images/camelliaoil.jpg" alt="img"  class="image">
+               &lth1 class="poppins-font header">Camellia Oil&lt/h1>
+               &ltdiv class="price"> CAD $15&lt/div>
+               &ltdiv>
+                 &ltbutton type="grid button" class="reset-btn"> 250mL &lt/button>
+                 &ltbutton type="grid button" class="reset-btn"> 500mL &lt/button>
+               &lt/div>
+                &ltbutton type="button" class="submit-btn"> See details&lt/button>
+             &lt/div>
+
+             &ltdiv class="product-grid">
+               &ltimg src="images/blacksesameoil.jpg" alt="img"  class="image">
+               &lth1 class="poppins-font header">Sesame Oil&lt/h1>
+               &ltdiv class="price"> CAD $15&lt/div>
+               &ltdiv>
+                 &ltbutton type="grid button" class="reset-btn"> 250mL &lt/button>
+                 &ltbutton type="grid button" class="reset-btn"> 500mL &lt/button>
+               &lt/div>
+                &ltbutton type="button" class="submit-btn"> See details&lt/button>
+             &lt/div>
+           &lt/div>
+
+         </code>
+    </div>
+
+    </div>
+
+    <div class="sub-section">
+      <h3>Website Grid Structure:</h3>
+      <div class="container ">
+        <div class="grid">Grid-1-2</div>
+        <div class="grid">Grid-1-2</div>
+      </div>
+      <div class="container ">
+        <div class="grid">Grid-1-3</div>
+        <div class="grid">Grid-1-3</div>
+        <div class="grid">Grid-1-3</div>
+      </div>
+      <div class="container ">
+        <div class="grid">Grid-1-4</div>
+        <div class="grid">Grid-1-4</div>
+        <div class="grid">Grid-1-4</div>
+        <div class="grid">Grid-1-4</div>
+      </div>
+      <div class="container ">
+        <div class="grid-padded">Grid-1-3 Padded</div>
+        <div class="grid-padded">Grid-1-3 Padded</div>
+        <div class="grid-padded">Grid-1-3 Padded</div>
+      </div>
+
+
+      <code>
+              <h4>Code: </h4>
+              &ltdiv class="container ">
+                &ltdiv class="grid">Grid-1-2&lt/div>
+                &ltdiv class="grid">Grid-1-2&lt/div>
+              &lt/div>
+              &ltdiv class="container ">
+                &ltdiv class="grid">Grid-1-3&lt/div>
+                &ltdiv class="grid">Grid-1-3&lt/div>
+                &ltdiv class="grid">Grid-1-3&lt/div>
+              &lt/div>
+              &ltdiv class="container ">
+                &ltdiv class="grid">Grid-1-4&lt/div>
+                &ltdiv class="grid">Grid-1-4&lt/div>
+                &ltdiv class="grid">Grid-1-4&lt/div>
+                &ltdiv class="grid">Grid-1-4&lt/div>
+              &ltdiv>
+              &ltdiv class="container ">
+                &ltdiv class="grid-padded">Grid-1-3 Padded&ltdiv>
+                &ltdiv class="grid-padded">Grid-1-3 Padded&ltdiv>
+                &ltdiv class="grid-padded">Grid-1-3 Padded&ltdiv>
+              &lt/div>
+            </code>
+
+    </div>
+
+    <div class="sub-section">
+      <h3>Website Colour Swatches</h3>
+
+      <div class="container">
+        <div class="grid-padded" style="background-color: #36453b;">Dark Grey</div>
+        <div class="grid-padded" style="background-color: #515751;">Grey</div>
+        <div class="grid-padded" style="background-color: #8a6552;">Brown</div>
+        <div class="grid-padded" style="background-color:#90a959;">Tea Green</div>
+        <div class="grid-padded" style="background-color: #f5f9e9; color:black;">Cream</div>
+      </div>
+
+      <code>
+             <h4>Code: </h4>
+             &ltdiv class="container"><br>
+               &ltdiv class="grid-padded" style="background-color: #36453b;">Dark Grey&ltdiv> <br>
+               &ltdiv class="grid-padded" style="background-color: #515751;">Grey&ltdiv> <br>
+               &ltdiv class="grid-padded" style="background-color: #8a6552;">Brown&ltdiv> <br>
+               &ltdiv class="grid-padded" style="background-color:#90a959;">Tea Green&ltdiv><br>
+               &ltdiv class="grid-padded" style="background-color: #f5f9e9; color:black;">Cream&ltdiv><br>
+             &lt/div>
+           </code>
+
+    </div>
+  </section>
+</body>
+
+</html>

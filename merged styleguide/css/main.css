@@ -20,18 +20,19 @@ body {
 .container .block:nth-of-type(odd) {
     padding: 1rem;
     margin: 1rem;
-    border: 1px solid lightgrey;
-    /*border-top: 2px solid lightgrey;*/
+    border: 2px solid #f7f7f7;
 
 }
 .container .block:nth-of-type(odd):hover {
-    background-color: #eee;
+    background-color: #f7f7f7;
+    transition: all 0.5s ease-in-out;
+
 }
 
 @media (max-width: 63em) {
     .container .block:nth-of-type(odd) {
 	border-top: 0;
-	border-bottom: 2px solid lightgrey;
+	border: 2px solid #f7f7f7;
     }
 }
 
@@ -50,14 +51,19 @@ code {
 [class*="head-"] {
     font-family: 'Playfair Display', serif;
     margin:2.15% 0 2.15% 0;
+    /*text-transform: uppercase;*/
 }
 
 .head-2 {
     font-size: 1.5em;
+    /*text-transform: uppercase;*/
+
 }
 
 .head-3 {
     font-size: 1.3em;
+    /*text-transform: uppercase;*/
+
 }
 
 /* get around section styling h1 */
@@ -98,7 +104,7 @@ figcaption {
     border-bottom: solid 2px #515751;
     padding: 1rem 1rem 0.25rem 1rem;
     width: 50%;
-    transition: all 0.5s;
+    transition: all 0.5s ease-in-out;
     letter-spacing: 2px;
 }
 
@@ -193,31 +199,34 @@ figcaption {
 }
 
 .button-submit-style {
-    background-color: #90a959;
-    color: #f5f9e9;
+    background-color: #4a4a4a;
+    color: white;
+    /*border: solid 1px white;*/
 }
 .button-submit-style:hover {
-    transition: background-color 0.5s;
-    background-color: #6d843c;
+    transition: background-color 0.5s ease-in-out;
+    background-color: black;
 }
 /* as an element meant to be button-like we'll leave the visited behavior as per the normal look */
 .button-submit-style:visited {
-      background-color: #90a959;
-      color: #f5f9e9;
+  background-color: #4a4a4a;
+  color: white;
+  /*border: solid 1px white;*/
 }
 
 .button-reset-style {
-  border: 2px solid #f5f9e9;
+  border: 2px solid #e3e3e3;
   background-color: transparent;
   color: #c7c7c7;
 }
 .button-reset-style:hover {
+  transition: all 0.5s ease-in-out;
   color: #515751;
-  background-color: #f5f9e9;
+  background-color: #e3e3e3;
 }
 /* as an element meant to be button-like we'll leave the visited behavior as per the normal look */
 .button-reset-style:visited {
-  border: 2px solid #f5f9e9;
+  border: 2px solid #e3e3e3;
   background-color: transparent;
   color: #c7c7c7;
 }
@@ -227,13 +236,26 @@ figcaption {
 /* product listing element */
 
 .product-listing {
-    height:100%;
-    width:100%;
+    /*height:100%;
+    width:100%;*/
+    flex: 1;
+    padding: 20px;
+    position: relative;
+    /*background-color: #515751;*/
+    margin: 2rem;
+    overflow: hidden;
+    border: solid 1px #efefef;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.product-listing:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
 }
 
 .product-listing-image {
     width:50%;
-    border: 1px solid LightGrey;
+    /*border: 1px solid LightGrey;*/
 }
 
 .product-listing-content {
@@ -246,6 +268,9 @@ figcaption {
 /* color palette */
 /* c/o http://codeitdown.com/css-square-rectangle/ for this code */
 .square {
+  display: flex;
+align-items: center;
+justify-content: center;
     position: relative;
     width: 16%;
     overflow: hidden;
@@ -258,12 +283,12 @@ figcaption {
     padding-top: 100%;
 }
 .square-content {
-    position:  absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     color: white;
+    text-align: center;
 }
 .square-content div {
    display: table;
@@ -278,23 +303,23 @@ figcaption {
 }
 
 .our-green {
-    background: rgb(163,220,123);
+    background:#36453b;
 }
 
 .our-red {
-    background: rgb(90,56,25);
+    background:#515751;
 }
 
 .our-yellow {
-    background: rgb(245,238,149);
+    background: #8a6552;
 }
 
 .our-orange {
-    background: rgb(238,181,129);
+    background: #90a959;
 }
 
 .our-grey {
-    background: rgb(77,83,77);
+    background: #f5f9e9;
 }
 
 .citation-title {

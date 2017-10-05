@@ -133,7 +133,7 @@ figcaption {
     text-decoration: underline;
 }
 
-.main-nav {
+.nav-default {
     background-color:#222;
     text-align:center;
     padding: 2%;
@@ -171,7 +171,7 @@ figcaption {
 }
 
 
-.nav-link:hover{
+.nav-link:hover {
   border-bottom: solid 2px white;
   transition: border-bottom .2s ease;
 }
@@ -180,7 +180,10 @@ figcaption {
 @media (max-width: 63em) {
     .nav-link, .nav-title {
 	float:none;
-	display:block;
+	display:inline-block;
+    }
+    .nav-default {
+	text-align: center;
     }
 }
 

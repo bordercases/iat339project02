@@ -1,0 +1,365 @@
+/* ------------- fonts ------------- */
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Raleway');
+img {
+  size: (max-width: 600px) 200px, 50vw;
+}
+
+/* ------------- body layout ------------- */
+
+body {
+  /*padding: 1em;*/
+  margin: 0;
+}
+
+/* some separators to enforce the gestalt */
+
+/*.container .block:nth-of-type(even) {
+    border-left: 1px solid lightgrey;
+}*/
+
+.container .block:nth-of-type(odd) {
+  padding: 1rem;
+  margin: 1rem;
+  border: 2px solid #f7f7f7;
+}
+
+.container .block:nth-of-type(odd):hover {
+  background-color: #f7f7f7;
+  transition: all 0.5s ease-in-out;
+}
+
+@media (max-width: 63em) {
+  .container .block:nth-of-type(odd) {
+    border-top: 0;
+    border: 2px solid #f7f7f7;
+  }
+}
+
+hr {
+  margin-top: 2em;
+}
+
+code {
+  font-size: 1.2em;
+}
+
+/* ------------- styling of id section ------------- */
+
+#text, #atoms, #molecules {
+  margin: 5%;
+}
+
+/* ------------- styling of atoms ------------- */
+
+/* headers */
+
+[class*="head-"] {
+  font-family: 'Playfair Display', serif;
+  margin: 2.15% 0 2.15% 0;
+  /*text-transform: uppercase;*/
+}
+
+.head-2 {
+  font-size: 1.5em;
+  /*text-transform: uppercase;*/
+}
+
+.head-3 {
+  font-size: 1.3em;
+  /*text-transform: uppercase;*/
+}
+
+/* get around section styling h1 */
+
+/* https://stackoverflow.com/questions/26290849/why-is-size-of-h1-different-inside-a-section-element */
+
+section h1 {
+  font-size: 2em;
+}
+
+/* fonting some elements */
+
+.p-style {
+  font-family: 'Raleway', sans-serif;
+}
+
+figcaption {
+  font-family: 'Raleway', sans-serif;
+}
+
+.bullet-list {
+  font-family: 'Raleway', sans-serif;
+}
+
+.numbered-list {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* entry fields */
+
+.field-label {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* I adjust the font family to Arial for greater legibility of e.g. numbers */
+
+.field-input {
+  font-family: 'Arial', sans-serif;
+  font-size: 1em;
+  border: none;
+  border-bottom: solid 2px #515751;
+  padding: 1rem 1rem 0.25rem 1rem;
+  width: 50%;
+  transition: all 0.5s ease-in-out;
+  letter-spacing: 2px;
+}
+
+.field-input:focus {
+  outline: none;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* anchor and button styles */
+
+.inline-link {
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  color: grey;
+  font-weight: bold;
+}
+
+.inline-link:link {
+  color: #5a3819;
+}
+
+.inline-link:visited {
+  color: #3a5918;
+}
+
+.inline-link:hover {
+  color: #59181a;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.nav-default {
+  background-color: #222;
+  text-align: center;
+  padding: 2.5%;
+}
+
+.nav-title {
+  font-family: 'Playfair Display', serif;
+  position: relative;
+  color: white;
+  font-size: 1.2em;
+  text-align: center;
+  display: inline;
+  background-color: #222;
+  float: left;
+}
+
+.nav-link {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+  display: inline;
+  padding: 1%;
+  margin: 0 3% 3% 3%;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: border-bottom .2s ease;
+}
+
+.nav-link:link {
+  color: #ddd;
+  background-color: #222;
+  transition: border-bottom .2s ease;
+}
+
+/* as an element meant to be button-like we'll leave the visited behavior as per the normal look */
+
+.nav-link:visited {
+  color: #ddd;
+  background-color: #222;
+}
+
+.nav-link:hover {
+  border-bottom: solid 2px white;
+  transition: border-bottom .2s ease;
+}
+
+/* nav should stack in mobile */
+
+@media (max-width: 63em) {
+  .nav-link, .nav-title {
+    float: none;
+    display: inline-block;
+  }
+  .nav-default {
+    text-align: center;
+  }
+}
+
+/* buttons now */
+
+[class*="button-"] {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2em;
+  padding: 0.5rem 1rem;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 0.3rem;
+  letter-spacing: 2px;
+  margin: 1rem;
+}
+
+.button-submit-style {
+  background-color: #4a4a4a;
+  color: white;
+  /*border: solid 1px white;*/
+}
+
+.button-submit-style:hover {
+  transition: background-color 0.5s ease-in-out;
+  background-color: black;
+}
+
+/* as an element meant to be button-like we'll leave the visited behavior as per the normal look */
+
+.button-submit-style:visited {
+  background-color: #4a4a4a;
+  color: white;
+  /*border: solid 1px white;*/
+}
+
+.button-reset-style {
+  border: 2px solid #e3e3e3;
+  background-color: transparent;
+  color: #c7c7c7;
+}
+
+.button-reset-style:hover {
+  transition: all 0.5s ease-in-out;
+  color: #515751;
+  background-color: #e3e3e3;
+}
+
+/* as an element meant to be button-like we'll leave the visited behavior as per the normal look */
+
+.button-reset-style:visited {
+  border: 2px solid #e3e3e3;
+  background-color: transparent;
+  color: #c7c7c7;
+}
+
+/* ------------- styling of molecules ------------- */
+
+/* product listing element */
+
+.product-listing {
+  /*height:100%;
+    width:100%;*/
+  flex: 1;
+  padding: 20px;
+  position: relative;
+  /*background-color: #515751;*/
+  margin: 2rem;
+  overflow: hidden;
+  border: solid 1px #efefef;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.product-listing:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.product-listing-image {
+  width: 50%;
+  /*border: 1px solid LightGrey;*/
+}
+
+.product-listing-content {}
+
+.product-listing-content>* {
+  margin: 0.4em;
+}
+
+/* color palette */
+
+/* c/o http://codeitdown.com/css-square-rectangle/ for this code */
+
+.square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 16%;
+  overflow: hidden;
+  margin: 0.5%;
+  float: left;
+  transition: width 0.5s ease-in-out;
+}
+
+.square:hover {
+  width: 20%;
+  height: auto;
+  transition: width 0.5s ease-in-out;
+}
+
+.square:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.square-content {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: white;
+  text-align: center;
+}
+
+.square-content div {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.square-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+}
+
+.our-green {
+  background: #36453b;
+}
+
+.our-red {
+  background: #515751;
+}
+
+.our-yellow {
+  background: #8a6552;
+}
+
+.our-orange {
+  background: #90a959;
+}
+
+.our-grey {
+  background: #f5f9e9;
+}
+
+.citation-title {
+  text-align: center;
+  text-decoration: underline;
+}
+
+/*media queries*/

@@ -276,14 +276,50 @@ figcaption {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
 }
 
-.product-listing-image {
+.product-image {
   width: 50%;
   /*border: 1px solid LightGrey;*/
 }
 
-.product-listing-content {}
+.product-content {}
 
-.product-listing-content>* {
+.product-content>* {
+  margin: 0.4em;
+}
+
+/* product choice element */
+/* very similar to product listing but with some changes */
+
+.product-choice {
+  /*height:100%;
+    width:100%;*/
+  flex: 1;
+  padding: 20px;
+  position: relative;
+  /*background-color: #515751;*/
+  margin: 2rem;
+  overflow: hidden;
+  border: solid 1px #efefef;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.product-choice:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* c/o https://codepen.io/SaraSoueidan/pen/40433575e3d0d026c7d9c00eb45522a1 */
+.product-choice input[type="checbox"]:checked ~ label {}
+.product-choice input[type="radio"]:checked ~ label {}
+
+.product-image {
+  width: 50%;
+  /*border: 1px solid LightGrey;*/
+}
+
+.product-content {}
+
+.product-content>* {
   margin: 0.4em;
 }
 

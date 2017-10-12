@@ -290,16 +290,17 @@
 
 	<div class="block">
 	  <code>
-	    &lt;div class="product-listing"&gt;
-	    &nbsp;&nbsp;&lt;img class="product-image" src="img/coffee-example.jpg" alt="A cold coffee in a stylish bottle"&gt;&lt;/img&gt;<br>
+	    &lt;div class="product-listing"&gt;<br>
+	    &nbsp;&nbsp;&lt;img class="product-image" src="img/coffee-example.jpg"<br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alt="A cold coffee in a stylish bottle"&gt;&lt;/img&gt;<br>
 	    &nbsp;&nbsp;&lt;span class="product-content"&gt;<br>
 	    &nbsp;&nbsp;&nbsp;&nbsp;&lt;h3 class="head-3"> Bitter Black &lt;/h3&gt;<br>
 	    &nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="p-style"&gt;<br>
 	    &nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;Medium Size&lt;br&gt;<br>
 	    &nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;Vegan&lt;br&gt;<br>
 	    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;<br>
-	    &nbsp;&nbsp;&nbsp;&nbsp;&lt;button class="product-listing-button"&gt;Order Now&lt;/button&gt;<br>
 	    &nbsp;&nbsp;&lt;/span&gt;<br>
+	    &nbsp;&nbsp;&lt;button class="product-listing-button"&gt;Order Now&lt;/button&gt;<br>
 	    &lt;/div&gt;<br>
 	  </code>
         </div>
@@ -332,42 +333,95 @@
 
 	<div class="block">
 	  <code>
-	    &lt;div class="product-listing"&gt;
-	    &nbsp;&nbsp;&lt;img class="product-image" src="img/coffee-example.jpg" alt="A cold coffee in a stylish bottle"&gt;&lt;/img&gt;<br>
-	    &nbsp;&nbsp;&lt;span class="product-content"&gt;<br>
-	    &nbsp;&nbsp;&nbsp;&nbsp;&lt;h3 class="head-3"> Bitter Black &lt;/h3&gt;<br>
-	    &nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="p-style"&gt;<br>
-	    &nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;Medium Size&lt;br&gt;<br>
-	    &nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;Vegan&lt;br&gt;<br>
-	    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;<br>
-	    &nbsp;&nbsp;&nbsp;&nbsp;&lt;button class="product-listing-button"&gt;Order Now&lt;/button&gt;<br>
-	    &nbsp;&nbsp;&lt;/span&gt;<br>
-	    &lt;/div&gt;<br>
+	    &lt;label for="production-choice-1"&gt;<br>
+	    &nbsp;&nbsp;&lt;input type="checkbox" id="product-choice-1" class="optional"/&gt;<br>
+	    &nbsp;&nbsp;&lt;div class="product-choice"&gt;<br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;&lt;img class="product-image" src="img/coffee-example.jpg"<br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; alt="Cold coffee in a stylish bottle"&gt;&lt;/img&gt;<br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="product-content"&gt;<br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2 class="head-2">Cold Bitter Black Vanilla&lt;/h2&gt;<br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="p-style"&gt;<br>
+	    &nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Medium Size&lt;br&gt;<br>
+	    &nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vegan&lt;br&gt;<br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;<br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/span&gt;<br>
+	    &nbsp;&nbsp;&lt;/div&gt;<br>
+	    &lt;label/&gt;<br>
 	  </code>
         </div>
 
 	<div class="block">
-	  <form action="#">
+	  <h4 class="head-4">Click Me</h4>
+	  <label for="product-choice-1">
+	    <input type="checkbox" id="product-choice-1" class="optional"/>
 	    <div class="product-choice">
-	      <input type="checkbox" id="product-choice-optional-1"/>
-	      <label for="product-choice-optional-1">
-		<img class="product-image" src="img/coffee-example.jpg" alt="A cold coffee in a stylish bottle"></img>
-		<span class="product-content">
-		  <h3 class="head-2"> Cold Bitter Black Vanilla </h3>
-		  <p class="p-style">
-		    Medium Size<br>
-		    Vegan<br>
-		  </p>
-		</span>
-	      </label>
+	      <img class="product-image" src="img/coffee-example.jpg"
+		   alt="Cold coffee in a stylish bottle"></img>
+	      <span class="product-content">
+		<h2 class="head-2"> Cold Bitter Black Vanilla </h2>
+		<p class="p-style">
+		  Medium Size<br>
+		  Vegan<br>
+		</p>
+	      </span>
 	    </div>
-	  </form>
+	  </label>
+
         </div>
 
       </section>
 
     </article>
 
+<article>
+
+      <header>
+        <h2 class="head-2">Mandatory Selectable Product</h2>
+      </header>
+
+      <section class="container">
+
+	<div class="block">
+	  <code>
+	    &lt;label for="production-choice-2"&gt;<br>
+	    &nbsp;&nbsp;&lt;input type="radio" id="product-choice-2" class="mandatory"/&gt;<br>
+	    &nbsp;&nbsp;&lt;div class="product-choice"&gt;<br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;&lt;img class="product-image" src="img/coffee-example.jpg"<br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; alt="Cold coffee in a stylish bottle"&gt;&lt;/img&gt;<br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="product-content"&gt;<br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2 class="head-2">Cold Bitter Black Vanilla &lt;/h2&gt;<br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="p-style"&gt;<br>
+	    &nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Medium Size&lt;br&gt;<br>
+	    &nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vegan&lt;br&gt;<br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;<br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/span&gt;<br>
+	    &nbsp;&nbsp;&lt;label/&gt;<br>
+	    &lt;/div&gt;<br>
+	  </code>
+        </div>
+
+	<div class="block">
+	  <h4 class="head-4">Click Me</h4>
+	  <label for="product-choice-2">
+	    <input type="radio" id="product-choice-2" class="mandatory"/>
+	    <div class="product-choice">
+	      <img class="product-image" src="img/coffee-example.jpg"
+		   alt="Cold coffee in a stylish bottle"></img>
+	      <span class="product-content">
+		<h2 class="head-2"> Cold Bitter Black Vanilla </h2>
+		<p class="p-style">
+		  Medium Size<br>
+		  Vegan<br>
+		</p>
+	      </span>
+	    </div>
+	  </label>
+        </div>
+
+      </section>
+
+    </article>
+    
     <article>
 
       <header>

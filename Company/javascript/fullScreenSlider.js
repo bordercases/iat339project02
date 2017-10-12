@@ -1,65 +1,75 @@
-// ------------- VARIABLES ------------- //
-var ticking = false;
-var isFirefox = (/Firefox/i.test(navigator.userAgent));
-var isIe = (/MSIE/i.test(navigator.userAgent)) || (/Trident.*rv\:11\./i.test(navigator.userAgent));
-var scrollSensitivitySetting = 30; //Increase/decrease this number to change sensitivity to trackpad gestures (up = less sensitive; down = more sensitive)
-var slideDurationSetting = 600; //Amount of time for which slide is "locked"
-var currentSlideNumber = 0;
-var totalSlideNumber = $(".background").length;
+class StickyNavigation {
 
-// ------------- DETERMINE DELTA/SCROLL DIRECTION ------------- //
-function parallaxScroll(evt) {
-  if (isFirefox) {
-    //Set delta for Firefox
-    delta = evt.detail * (-120);
-  } else if (isIe) {
-    //Set delta for IE
-    delta = -evt.deltaY;
-  } else {
-    //Set delta for all other browsers
-    delta = evt.wheelDelta;
-  }
+	constructor() {
+		this.currentId = null;
+		this.currentTab = null;
+		this.tabContainerHeight = 70;
+		let self = this;
+		$('.et-hero-tab').click(function() {
+			self.onTabClick(event, $(this));
+		});
+		$(window).scroll(() => { this.onScroll(); });
+		$(window).resize(() => { this.onResize(); });
+	}
 
-  if (ticking != true) {
-    if (delta <= -scrollSensitivitySetting) {
-      //Down scroll
-      ticking = true;
-      if (currentSlideNumber !== totalSlideNumber - 1) {
-        currentSlideNumber++;
-        nextItem();
-      }
-      slideDurationTimeout(slideDurationSetting);
-    }
-    if (delta >= scrollSensitivitySetting) {
-      //Up scroll
-      ticking = true;
-      if (currentSlideNumber !== 0) {
-        currentSlideNumber--;
-      }
-      previousItem();
-      slideDurationTimeout(slideDurationSetting);
-    }
-  }
+	onTabClick(event, element) {
+		event.preventDefault();
+		let scrollTop = $(element.attr('href')).offset().top - this.tabContainerHeight + 1;
+		$('html, body').animate({ scrollTop: scrollTop }, 600);
+	}
+
+	onScroll() {
+		this.checkTabContainerPosition();
+    this.findCurrentTabSelector();
+	}
+
+	onResize() {
+		if(this.currentId) {
+			this.setSliderCss();
+		}
+	}
+
+	checkTabContainerPosition() {
+		let offset = $('.et-hero-tabs').offset().top + $('.et-hero-tabs').height() - this.tabContainerHeight;
+		if($(window).scrollTop() > offset) {
+			$('.et-hero-tabs-container').addClass('et-hero-tabs-container--top');
+		}
+		else {
+			$('.et-hero-tabs-container').removeClass('et-hero-tabs-container--top');
+		}
+	}
+
+	findCurrentTabSelector(element) {
+		let newCurrentId;
+		let newCurrentTab;
+		let self = this;
+		$('.et-hero-tab').each(function() {
+			let id = $(this).attr('href');
+			let offsetTop = $(id).offset().top - self.tabContainerHeight;
+			let offsetBottom = $(id).offset().top + $(id).height() - self.tabContainerHeight;
+			if($(window).scrollTop() > offsetTop && $(window).scrollTop() < offsetBottom) {
+				newCurrentId = id;
+				newCurrentTab = $(this);
+			}
+		});
+		if(this.currentId != newCurrentId || this.currentId === null) {
+			this.currentId = newCurrentId;
+			this.currentTab = newCurrentTab;
+			this.setSliderCss();
+		}
+	}
+
+	setSliderCss() {
+		let width = 0;
+		let left = 0;
+		if(this.currentTab) {
+			width = this.currentTab.css('width');
+			left = this.currentTab.offset().left;
+		}
+		$('.et-hero-tab-slider').css('width', width);
+		$('.et-hero-tab-slider').css('left', left);
+	}
+
 }
 
-// ------------- SET TIMEOUT TO TEMPORARILY "LOCK" SLIDES ------------- //
-function slideDurationTimeout(slideDuration) {
-  setTimeout(function() {
-    ticking = false;
-  }, slideDuration);
-}
-
-// ------------- ADD EVENT LISTENER ------------- //
-var mousewheelEvent = isFirefox ? "DOMMouseScroll" : "wheel";
-window.addEventListener(mousewheelEvent, _.throttle(parallaxScroll, 60), false);
-
-// ------------- SLIDE MOTION ------------- //
-function nextItem() {
-  var $previousSlide = $(".background").eq(currentSlideNumber - 1);
-  $previousSlide.removeClass("up-scroll").addClass("down-scroll");
-}
-
-function previousItem() {
-  var $currentSlide = $(".background").eq(currentSlideNumber);
-  $currentSlide.removeClass("down-scroll").addClass("up-scroll");
-}
+new StickyNavigation();

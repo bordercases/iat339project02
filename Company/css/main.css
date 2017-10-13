@@ -280,6 +280,27 @@ box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.2);
 
 /* ------------- styling of molecules ------------- */
 
+/* search bar */
+
+div.search-bar {
+  padding: 1em;
+}
+
+div.search-bar > input[type="text"] {
+  width: 20%;
+  padding: 0.8125em;
+  background: #f6f6f6;
+  margin-bottom: 1.6rem;
+  height: 3rem;
+  border-radius: 2px;
+  border: none;
+  transition: all .3s ease-in-out;
+}
+div.search-bar > button[type="button"] {
+  width: auto;
+  font-size:1rem;
+}
+
 /* product listing element */
 
 .product-listing {

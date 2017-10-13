@@ -21,6 +21,23 @@
 
 }
 
+@media (min-width: 25em) {
+  /* spec asked for specifically for the 5th child, although :last-child
+  would be more lifted */
+  .container .block:nth-child(5){
+    order: 1;
+  }
+
+  .feedback{
+    max-width: 750px;
+    height: auto;
+  }
+
+  .button-submit-style{
+    max-width: 80%;
+  }
+}
+
 footer{
   background-color: #343434;
 }
@@ -35,7 +52,7 @@ footer{
   align-items: center;
   height: 100vh;
   position: relative;
-  background: #eee;
+  background: #fff;
   text-align: center;
   padding: 0 2em;
 }

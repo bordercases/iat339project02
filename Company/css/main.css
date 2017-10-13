@@ -44,6 +44,16 @@ code {
   font-size: 1.2em;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer {}
+
+header {}
+
 /* ------------- styling of id section ------------- */
 
 #text, #atoms, #molecules {
@@ -144,50 +154,64 @@ figcaption {
 }
 
 .nav-default {
-  background-color: #222;
-  text-align: center;
+  background-color: #fff;
+box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.2);
   padding: 2.5%;
+  text-align: right;
+  font-family: 'Raleway', sans-serif;
 }
 
 .nav-title {
   font-family: 'Playfair Display', serif;
   position: relative;
-  color: white;
+  /*color: white;*/
   font-size: 1.2em;
   text-align: center;
   display: inline;
   float: left;
-  margin-bottom: 1rem;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  text-decoration: none;
 }
 
-.nav-link {
-  font-family: 'Raleway', sans-serif;
+.nav-logo-link, .nav-logo-link:visited {
+  text-decoration: none;
+  color: #333333;
+}
+
+.nav-link, .nav-link:visited {
+  font-family: margin-bottom: 1rem;
+  'Raleway', sans-serif;
   font-size: 1.2em;
   text-align: center;
   display: inline;
-  padding: 1%;
-  margin: 0 3% 3% 3%;
   text-decoration: none;
   text-transform: uppercase;
-  transition: border-bottom .2s ease;
+  color: #333333;
+  opacity: 0.7;
+  transition: all .3s ease-in-out;
+  margin-right: 1%;
 }
 
-.nav-link:link {
-  color: #ddd;
-  background-color: #222;
-  transition: border-bottom .2s ease;
+.sub-headers {
+  font-size: 0.6rem;
+  margin-bottom: 0.5rem;
 }
 
-/* as an element meant to be button-like we'll leave the visited behavior as per the normal look */
+.main-headers {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
 
-.nav-link:visited {
-  color: #ddd;
-  background-color: #222;
+.main-headers .nav-link {
+  margin-right: 2%;
+  letter-spacing: 1px;
 }
 
 .nav-link:hover {
-  border-bottom: solid 2px white;
-  transition: border-bottom .2s ease;
+  border-bottom: solid 2px #333;
+  transition: all .3s ease-in-out;
+  opacity: 1;
 }
 
 /* nav should stack in mobile */
@@ -212,7 +236,11 @@ figcaption {
   text-transform: uppercase;
   border-radius: 0.3rem;
   letter-spacing: 2px;
-  margin: 1rem;
+  /*margin: 1rem;*/
+  width: 100%;
+  height: 3rem;
+  transition: background-color 0.5s ease-in-out;
+
 }
 
 .button-submit-style {
@@ -330,6 +358,42 @@ input:checked.mandatory {
     checked:unchecked;
 }
 
+/*feedback*/
+
+.feedback {
+  width: 100%;
+}
+
+.feedback .feedback-box {
+  background-color: white;
+  box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.07);
+  height: auto;
+  padding: 1.5rem;
+}
+
+.feedback-inputs {
+  width: 100%;
+  padding: 0.8125em;
+  background: #f6f6f6;
+  margin-bottom: 1.6rem;
+  height: 3rem;
+  border-radius: 2px;
+  border: none;
+  transition: all .3s ease-in-out;
+}
+
+.feedback-inputs:focus {
+  outline: none;
+  background: white;
+  transition: all .3s ease-in-out;
+  border: solid 1px lightgrey;
+  /*box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);*/
+}
+
+.feedback-message {
+  height: 10rem;
+}
+
 /* color palette */
 
 /* c/o http://codeitdown.com/css-square-rectangle/ for this code */
@@ -400,7 +464,7 @@ input:checked.mandatory {
   background: #f5f9e9;
 }
 
-.our-white{
+.our-white {
   background: #f5f5f5;
 }
 
@@ -411,80 +475,87 @@ input:checked.mandatory {
 
 /*footer*/
 
+footer .nav-title {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
 
-.location, .email{
+.location, .email {
   font-style: italic;
   color: #f5f5f5;
   font-size: 0.9rem;
-
 }
 
-.email{
-  padding:1rem 0;
+.email {
+  padding: 1rem 0;
 }
 
-.footer-linkheading{
+.footer-linkheading {
   text-decoration: none;
   color: #f5f5f5;
   margin: 0 0 0.5rem 0;
   font-weight: bold;
-
-
 }
+
 /*except first child?*/
-.footer-link{
+
+.footer-link {
   font-size: 0.8rem;
   color: #f5f5f5;
   text-decoration: none;
   opacity: 0.5;
   transition: 0.2s linear;
--webkit-transition: 0.2s linear;
+  -webkit-transition: 0.2s linear;
 }
 
-.footer-link:hover{
+.footer-link:hover {
   transition: 0.2s linear;
--webkit-transition: 0.2s linear;
-opacity: 0.9;
-
+  -webkit-transition: 0.2s linear;
+  opacity: 0.9;
 }
 
-.footer-top{
-padding: 1.5rem;
+.footer-top {
+  padding: 1.5rem;
   text-align: center;
-    justify-content: center;
+  justify-content: center;
 }
 
-.footer-companyInfo{
+.footer-companyInfo {
   margin: 2% 5%;
 }
 
-.footer-listing{
+.footer-listing {
   margin: 2% 5%;
-
 }
 
-.footer-bottom{
- background-color: black;
- padding: 1.5rem;
-text-align: center;
+.footer-bottom {
+  background-color: black;
+  padding: 1.5rem;
+  text-align: center;
 }
 
-.social-list{
+.social-list {
   margin: 0.5rem;
 }
-.social-icon{
+
+.social-icon {
   color: white;
   max-width: 18px;
   height: auto;
   opacity: 0.7;
   margin: 0 0.5rem 0 0;
+  transition: 0.2s ease-in-out;
+
 }
 
 .fine-print{
       color: #f5f5f5;
       opacity: 0.5;
       font-size: 0.65rem;
+.social-icon:hover{
+  opacity: 1;
+  transition: 0.2s ease-in-out;
+
 }
 
-
-/*media queries*/

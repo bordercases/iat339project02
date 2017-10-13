@@ -176,11 +176,11 @@ box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.2);
 }
 
 /* maintains default style */
-.nav-link .lang-opt:nth-of-type(odd) {
+.nav-link lang-opt:nth-of-type(odd) {
 
 }
 
-.nav-link .lang-opt:nth-of-type(even) {
+.nav-link lang-opt:nth-of-type(even) {
   font-weight: 600;
   color:#bd8914;
 }

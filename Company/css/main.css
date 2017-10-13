@@ -1,10 +1,6 @@
 /* ------------- fonts ------------- */
 
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Raleway');
-img {
-  size: (max-width: 600px) 200px, 50vw;
-}
-
 /* ------------- body layout ------------- */
 
 body {
@@ -558,4 +554,3 @@ footer .nav-title {
   transition: 0.2s ease-in-out;
 
 }
-

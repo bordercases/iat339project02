@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name=viewport content="width=device-width, initial-scale=1">
   <title>Sommelier</title>
+  <link href="css/sommelier.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <link href="css/grids.css" rel="stylesheet">
 </head>
@@ -34,7 +35,74 @@
 </header>
 
 <body>
+  <div class="container row">
+    <section id="somm-left" class="container block">
+      <img src="img/coffee-example.jpg" alt="Currently Selected Ingredients" class="fill"></img>
+    </section>
 
+    <section id="somm-right" class="container block">
+      <header>
+        <h2 class="head-2">Choose Coffee Flavor</h2>
+      </header>
+      <div class="block">
+        <label for="product-choice-1">
+    	    <input type="checkbox" id="product-choice-1" class="optional"/>
+    	    <div class="product-choice">
+    	      <img class="product-image" src="img/coffee-example.jpg"
+    		   alt="Cold coffee in a stylish bottle"></img>
+    	      <span class="product-content">
+    		        <h2 class="head-2"> Vanilla </h2>
+    		          <p class="p-style">
+    		              Medium Size<br>
+    		                Vegan<br>
+    		          </p>
+    	      </span>
+    	    </div>
+    	  </label>
+      </div>
+
+      <div class="block">
+        <label for="product-choice-2">
+          <input type="checkbox" id="product-choice-2" class="optional"/>
+          <div class="product-choice">
+            <img class="product-image" src="img/coffee-example.jpg"
+           alt="Cold coffee in a stylish bottle"></img>
+            <span class="product-content">
+                <h2 class="head-2"> Hazelnut </h2>
+                  <p class="p-style">
+                      Medium Size<br>
+                        Vegan<br>
+                  </p>
+            </span>
+          </div>
+        </label>
+      </div>
+
+      <div class="block">
+        <label for="product-choice-3">
+    	    <input type="checkbox" id="product-choice-3" class="optional"/>
+    	    <div class="product-choice">
+    	      <img class="product-image" src="img/coffee-example.jpg"
+    		   alt="Cold coffee in a stylish bottle"></img>
+    	      <span class="product-content">
+    		        <h2 class="head-2"> Chocolate </h2>
+    		          <p class="p-style">
+    		              Medium Size<br>
+    		                Vegan<br>
+    		          </p>
+    	      </span>
+    	    </div>
+    	  </label>
+      </div>
+
+      <div class="block">
+        <button id="checkout" class="button-submit-style">Checkout</button>
+      </div>
+
+    </section>
+
+
+  </div>
 </body>
 
 

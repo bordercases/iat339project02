@@ -21,6 +21,18 @@
 
 }
 
+.container .row {
+    -ms-flex-wrap: row wrap;
+    -webkit-flex-wrap: row wrap;
+    flex-wrap: row wrap;
+}
+
+.container .col {
+    -ms-flex-wrap: col wrap;
+    -webkit-flex-wrap: col wrap;
+    flex-wrap: col wrap;
+}
+
 @media (min-width: 25em) {
   /* spec asked for specifically for the 5th child, although :last-child
   would be more lifted */

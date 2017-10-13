@@ -23,8 +23,6 @@
 .container .row {
    -webkit-flex-flow: row wrap;
    flex-flow: row wrap;
-   -webkit-align-content: flex-end;
-   align-content: flex-end;
 }
 
 .container .center {
@@ -32,6 +30,8 @@
     align-items: center;
     -webkit-justify-content: center;
     justify-content: center;
+    -webkit-align-content: flex-end;
+    align-content: flex-end;
 }
 
 .container .row {

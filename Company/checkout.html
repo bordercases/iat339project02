@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name=viewport content="width=device-width, initial-scale=1">
-  <title>About</title>
+  <title>Checkout</title>
+  <link href="css/checkout.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <link href="css/grids.css" rel="stylesheet">
 </head>
@@ -34,31 +35,51 @@
 </header>
 
 <body>
-  <!-- Hero -->
 
-  <!-- Main -->
-  <main class="et-main">
-    <section class="et-slide" id="tab-es6">
-      <h1>About us</h1>
-      <h3>something about us</h3>
+  <span class="container">
+
+    <section id="check-left" class="block">
+      <img src="img/png/coffee-example.jpg" alt="The coffee product that we built"></img>
     </section>
-    <section class="et-slide" id="tab-flexbox">
-      <h1>Flexbox</h1>
-      <h3>something about flexbox</h3>
+
+    <section id="check-right" class="container col block">
+
+      <div class="block">
+        <!-- CSS-Only Accordion: https://codepen.io/raubaca/pen/PZzpVe -->
+        <p>Open <strong>one</strong></p>
+
+        <div class="tab our-grey">
+          <input id="tab-four" type="radio" name="tabs2">
+          <label for="tab-four">Choice 1</label>
+          <div class="tab-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+          </div>
+        </div>
+        <div class="tab our-grey">
+          <input id="tab-five" type="radio" name="tabs2">
+          <label for="tab-five">Choice 2</label>
+          <div class="tab-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+          </div>
+        </div>
+        <div class="tab our-grey">
+          <input id="tab-six" type="radio" name="tabs2">
+          <label for="tab-six">Choice 3</label>
+          <div class="tab-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="block">
+      	<form action="#">
+      	  <button class="button-submit-style">Order Now</button>
+      	</form>
+      </div>
+
+
     </section>
-    <section class="et-slide" id="tab-react">
-      <h1>React</h1>
-      <h3>something about react</h3>
-    </section>
-    <section class="et-slide" id="tab-angular">
-      <h1>Angular</h1>
-      <h3>something about angular</h3>
-    </section>
-    <section class="et-slide" id="tab-other">
-      <h1>Other</h1>
-      <h3>something about other</h3>
-    </section>
-  </main>
+  </span>
 
 </body>
 
@@ -84,7 +105,7 @@
       </ul>
     </div>
 
-    <div class="footer-listing" >
+    <div class="footer-listing">
       <ul>
         <li><h6 class="footer-linkheading">Reference</a></h6></li>
         <li><a class="footer-link" href="styleguide.html">Styleguide</a></li>
@@ -109,7 +130,5 @@
 <!-- end of footer
 javascript -->
 <script src="javascript/fullScreenSlider.js" type="text/javascript"></script>
-
-</html>
 
 </html>

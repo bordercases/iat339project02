@@ -1,0 +1,17 @@
+img {
+  height:80%;
+  width:80%;
+}
+
+#checkout.button-submit-style {
+  max-width: 90%;
+  align-items: center;
+  margin: 0.2em;
+}
+
+@media (max-width: 63em) {
+  #somm-left {
+    visibility:hidden;
+    position:absolute;
+  }
+}

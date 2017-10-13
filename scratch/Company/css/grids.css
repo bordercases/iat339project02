@@ -12,38 +12,13 @@
 
   clear:both;
 }
-.container > .block {
+.container .block {
   flex-grow: 1;
+
   -ms-flex-basis: 30em;
   flex-basis: 30em;
-  padding-left: 1rem;
-}
+  padding-left:0.75em;
 
-/* c/o http://www.sketchingwithcss.com/samplechapter/cheatsheet.html */
-.container .row {
-   -webkit-flex-flow: row wrap;
-   flex-flow: row wrap;
-   -webkit-align-content: flex-end;
-   align-content: flex-end;
-}
-
-.container .center {
-    -webkit-align-items: center;
-    align-items: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-}
-
-.container .row {
-    -ms-flex-wrap: row wrap;
-    -webkit-flex-wrap: row wrap;
-    flex-wrap: row wrap;
-}
-
-.container .col {
-    -ms-flex-wrap: col wrap;
-    -webkit-flex-wrap: col wrap;
-    flex-wrap: col wrap;
 }
 
 @media (min-width: 25em) {
@@ -51,15 +26,6 @@
   would be more lifted */
   .container .block:nth-child(5){
     order: 1;
-  }
-
-  .feedback{
-    max-width: 750px;
-    height: auto;
-  }
-
-  .button-submit-style{
-    max-width: 80%;
   }
 }
 
@@ -77,7 +43,7 @@ footer{
   align-items: center;
   height: 100vh;
   position: relative;
-  background: #fff;
+  background: #eee;
   text-align: center;
   padding: 0 2em;
 }
@@ -138,26 +104,5 @@ footer{
   }
   .et-hero-tab {
     font-size: 1rem;
-  }
-}
-/* some separators to enforce the gestalt */
-
-/*.container .block:nth-of-type(even) {
-    border-left: 1px solid lightgrey;
-}*/
-
-.container > .block:nth-of-type(odd) {
-  border: 2px solid #f7f7f7;
-}
-
-.container > .block:hover {
-  background-color: #f7f7f7;
-  transition: all 0.5s ease-in-out;
-}
-
-@media (max-width: 63em) {
-  .container > .block:nth-of-type(odd) {
-    border-top: 0;
-    border: 2px solid #f7f7f7;
   }
 }

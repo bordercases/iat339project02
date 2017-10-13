@@ -281,6 +281,7 @@ figcaption {
   border: solid 1px #efefef;
   text-align: center;
   transition: all 0.5s;
+  display:block;
 }
 
 .product-listing:hover {
@@ -296,6 +297,40 @@ figcaption {
 
 .product-listing-content>* {
   margin: 0.4em;
+}
+
+/* product choice element */
+/* very similar to product listing but with some changes */
+
+.product-choice {
+  /*height:100%;
+    width:100%;*/
+  flex: 1;
+  padding: 20px;
+  position: relative;
+  background-color: #f5f9e9;
+  margin: 2rem;
+  overflow: hidden;
+  border: solid 1px #efefef;
+  text-align: center;
+  transition: all 0.5s;
+  display:block;
+}
+
+input.optional, input.mandatory {
+    visibility:hidden;
+    /* taking out of document flow to prevent the hidden element from moving blocks already there */
+    position:absolute;
+}
+
+input:checked.optional + div {
+    background-color: #90a959;
+    color: white;
+}
+
+input:checked.mandatory + div {
+    background-color:  #515751;
+    color: white;
 }
 
 /* color palette */

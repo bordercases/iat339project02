@@ -28,7 +28,7 @@
         <h2 class="head-2">Headings</h2>
       </header>
 
-      <section class="container">
+      <section class="container checker">
 
 	<div class="block">
 	  <code>
@@ -58,7 +58,7 @@
         <h2 class="head-2">Paragraphs</h2>
       </header>
 
-      <section class="container">
+      <section class="container checker">
 
         <div class="block">
 	  <code>
@@ -87,7 +87,7 @@
         <h2 class="head-2">Bulleted list</h2>
       </header>
 
-      <section class="container">
+      <section class="container checker">
 
 	<div class="block">
 	  <code>
@@ -118,7 +118,7 @@
         <h2 class="head-2">Numbered list</h2>
       </header>
 
-      <section class="container">
+      <section class="container checker">
 
 	<div class="block">
 	  <code>
@@ -154,7 +154,7 @@
         <h2 class="head-2">An in-text link</h2>
       </header>
 
-      <section class="container">
+      <section class="container checker">
 
 	<div class="block">
 	  <code>
@@ -178,7 +178,7 @@
         <h2 class="head-2">Navigation button</h2>
       </header>
 
-      <section class="container">
+      <section class="container checker">
 
 	<div class="block">
 	  <code>
@@ -200,7 +200,7 @@
         <h2 class="head-2">Submit and reset button</h2>
       </header>
 
-      <section class="container">
+      <section class="container checker">
 
 	<div class="block">
 	  <code>
@@ -225,7 +225,7 @@
         <h2 class="head-2">Text input field with label</h2>
       </header>
 
-      <section class="container">
+      <section class="container checker">
 
 	<div class="block">
 	  <code>
@@ -257,7 +257,7 @@
         <h2 class="head-2">Main Navigation</h2>
       </header>
 
-      <section class="container">
+      <section class="container checker">
 
 	<div class="block">
 	  <code>
@@ -288,7 +288,7 @@
         <h2 class="head-2">Product Listing</h2>
       </header>
 
-      <section class="container">
+      <section class="container checker">
 
 	<div class="block">
 	  <code>
@@ -302,6 +302,7 @@
 	    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;<br>
 	    &nbsp;&nbsp;&nbsp;&nbsp;&lt;button class="product-listing-button"&gt;Order Now&lt;/button&gt;<br>
 	    &nbsp;&nbsp;&lt;/span&gt;<br>
+	    &nbsp;&nbsp;&lt;button class="button-submit-style"&gt;Order Now&lt;/button&gt;<br>
 	    &lt;/div&gt;<br>
 	  </code>
         </div>
@@ -318,6 +319,105 @@
 	      <button class="button-submit-style">Order Now</button>
 	    </span>
 	  </div>
+        </div>
+
+      </section>
+
+    </article>
+
+<article>
+
+      <header>
+        <h2 class="head-2">Optional Selectable Product</h2>
+      </header>
+
+      <section class="container checker">
+
+	<div class="block">
+	  <code>
+	    &lt;label for="production-choice-1"&gt;<br>
+	    &nbsp;&nbsp;&lt;input type="checkbox" id="product-choice-1" class="optional"/&gt;<br>
+	    &nbsp;&nbsp;&lt;div class="product-choice"&gt;<br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;&lt;img class="product-image" src="img/coffee-example.jpg"<br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; alt="Cold coffee in a stylish bottle"&gt;&lt;/img&gt;<br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="product-content"&gt;<br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2 class="head-2">Cold Bitter Black Vanilla&lt;/h2&gt;<br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="p-style"&gt;<br>
+	    &nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Medium Size&lt;br&gt;<br>
+	    &nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vegan&lt;br&gt;<br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;<br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/span&gt;<br>
+	    &nbsp;&nbsp;&lt;/div&gt;<br>
+	    &lt;/label&gt;<br>
+	  </code>
+        </div>
+
+	<div class="block">
+	  <h4 class="head-4">Click Me</h4>
+	  <label for="product-choice-1">
+	    <input type="checkbox" id="product-choice-1" class="optional"/>
+	    <div class="product-choice">
+	      <img class="product-image" src="img/coffee-example.jpg"
+		   alt="Cold coffee in a stylish bottle"></img>
+	      <span class="product-content">
+		<h2 class="head-2"> Cold Bitter Black Vanilla </h2>
+		<p class="p-style">
+		  Medium Size<br>
+		  Vegan<br>
+		</p>
+	      </span>
+	    </div>
+	  </label>
+
+        </div>
+
+      </section>
+
+    </article>
+
+<article>
+
+      <header>
+        <h2 class="head-2">Mandatory Selectable Product</h2>
+      </header>
+
+      <section class="container checker">
+
+	<div class="block">
+	  <code>
+	    &lt;label for="production-choice-2"&gt;<br>
+	    &nbsp;&nbsp;&lt;input type="radio" id="product-choice-2" class="mandatory"/&gt;<br>
+	    &nbsp;&nbsp;&lt;div class="product-choice"&gt;<br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;&lt;img class="product-image" src="img/coffee-example.jpg"<br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; alt="Cold coffee in a stylish bottle"&gt;&lt;/img&gt;<br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="product-content"&gt;<br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2 class="head-2">Cold Bitter Black Vanilla &lt;/h2&gt;<br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="p-style"&gt;<br>
+	    &nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Medium Size&lt;br&gt;<br>
+	    &nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vegan&lt;br&gt;<br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;<br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/span&gt;<br>
+	    &nbsp;&nbsp&lt;/div&gt;<br>
+	    &lt;/label&gt;<br>
+	  </code>
+        </div>
+
+	<div class="block">
+	  <h4 class="head-4">Click Me</h4>
+	  <label for="product-choice-2">
+	    <input type="radio" id="product-choice-2" class="mandatory"/>
+	    <div class="product-choice">
+	      <img class="product-image" src="img/coffee-example.jpg"
+		   alt="Cold coffee in a stylish bottle"></img>
+	      <span class="product-content">
+		<h2 class="head-2"> Cold Bitter Black Vanilla </h2>
+		<p class="p-style">
+		  Medium Size<br>
+		  Vegan<br>
+		</p>
+	      </span>
+	    </div>
+	  </label>
         </div>
 
       </section>
@@ -359,68 +459,68 @@
         <h2 class="head-2">Color Swatches</h2>
       </header>
 
-      <section class="container">
+      <section class="container checker">
 
 	<div class="block">
-    <code>
-    &lt;div class="square our-green"&gt;<br>
-    &lt;span class="square-content"&gt;<br>
-      #36453b
-    &lt;/span&gt;<br>
-    &lt;/div&gt;<br>
-    &lt;div class="square our-red"&gt;<br>
-    &lt;span class="square-content"&gt;<br>
-      #515751
-    &lt;/span&gt;<br>
-    &lt;/div&gt;<br>
-    &lt;div class="square our-yellow normalize-color"&gt;<br>
-      &lt;span class="square-content"&gt;<br>
-    #8a6552
+	  <code>
+	    &lt;div class="square our-green"&gt;<br>
+	    &lt;span class="square-content"&gt;<br>
+	    #36453b
+	    &lt;/span&gt;<br>
+	    &lt;/div&gt;<br>
+	    &lt;div class="square our-red"&gt;<br>
+	    &lt;span class="square-content"&gt;<br>
+	    #515751
+	    &lt;/span&gt;<br>
+	    &lt;/div&gt;<br>
+	    &lt;div class="square our-yellow normalize-color"&gt;<br>
+	    &lt;span class="square-content"&gt;<br>
+	    #8a6552
       &lt;/span&gt;<br>
-    &lt;/div&gt;<br>
-    &lt;div class="square our-orange"&gt;<br>
-      &lt;span class="square-content"&gt;<br>
-    #90a959
-      &lt;/span&gt;<br>
-    &lt;/div&gt;<br>
-    &lt;div class="square our-grey"&gt;<br>
-      &lt;span class="square-content"&gt;<br>
-    #f5f9e9
-      &lt;/span&gt;<br>
-    &lt;/div&gt;<br>
-  </code>
+	    &lt;/div&gt;<br>
+	    &lt;div class="square our-orange"&gt;<br>
+	    &lt;span class="square-content"&gt;<br>
+	    #90a959
+	    &lt;/span&gt;<br>
+	    &lt;/div&gt;<br>
+	    &lt;div class="square our-grey"&gt;<br>
+	    &lt;span class="square-content"&gt;<br>
+	    #f5f9e9
+	    &lt;/span&gt;<br>
+	    &lt;/div&gt;<br>
+	  </code>
 	</div>
 
 	<div class="block">
-    <p class="p-style">
+	  <p class="p-style">
             Coffee Confessions combines hipness with formality. These colours are imbued in our brand.
-    </p>
+	  </p>
 
-    <div class="square our-black">
-    <span class="square-content">
-      #36453b
-    </span>
-  </div>
-  <div class="square our-grey">
-    <span class="square-content">
-      #515751
-    </span>
-  </div>
-    <div class="square our-brown normalize-color">
-      <span class="square-content">
-  #8a6552
-      </span>
+	  <div class="square our-black">
+	    <span class="square-content">
+	      #36453b
+	    </span>
+	  </div>
+	  <div class="square our-grey">
+	    <span class="square-content">
+	      #515751
+	    </span>
+	  </div>
+	  <div class="square our-brown normalize-color">
+	    <span class="square-content">
+	      #8a6552
+	    </span>
+	  </div>
+	  <div class="square our-green">
+	    <span class="square-content">
+	      #90a959
+	    </span>
     </div>
-    <div class="square our-green">
-      <span class="square-content">
-  #90a959
-      </span>
-    </div>
-    <div class="square our-beige">
-      <span class="square-content">
-  #f5f9e9
-      </span>
-    </div>
+	  <div class="square our-beige">
+	    <span class="square-content">
+	      #f5f9e9
+	    </span>
+	  </div>
 
 	</div>
       </section>

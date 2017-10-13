@@ -1,0 +1,6 @@
+@media (max-width: 63em) {
+  #check-left {
+    visibility:hidden;
+    position:absolute;
+  }
+}

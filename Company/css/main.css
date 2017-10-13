@@ -175,16 +175,6 @@ box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.2);
   color: #333333;
 }
 
-/* maintains default style */
-.nav-link lang-opt:nth-of-type(odd) {
-
-}
-
-.nav-link lang-opt:nth-of-type(even) {
-  font-weight: 600;
-  color:#bd8914;
-}
-
 .nav-link, .nav-link:visited {
   font-family: margin-bottom: 1rem;
   'Raleway', sans-serif;
@@ -197,6 +187,16 @@ box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.2);
   opacity: 0.7;
   transition: all .3s ease-in-out;
   margin-right: 1%;
+}
+
+/* maintains default style */
+.lang-opt:nth-of-type(odd) {
+  font-weight: 600;
+  color:#bd8914;
+}
+
+.lang-opt:nth-of-type(even) {
+
 }
 
 .sub-headers {

@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name=viewport content="width=device-width, initial-scale=1">
-  <title>Citations</title>
+  <title>Checkout</title>
+  <link href="css/checkout.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <link href="css/grids.css" rel="stylesheet">
 </head>
@@ -18,9 +19,8 @@
       <a class="nav-link" href="">Instagram</a>
       <a class="nav-link" href="">Facebook</a>
       <a class="nav-link" href="">Pinterest</a>
-      <a class="nav-link" href="">FR</a>
       <a class="nav-link lang-opt" href="">FR</a>
-      <span>|&nbsp;</span>
+      <span> | </span>
       <!-- language selection feedback may require javascript -->
       <a class="nav-link lang-opt" href="">EN</a>
     </div>
@@ -28,25 +28,59 @@
     <div class="main-headers">
       <a class="nav-link" href="sommelier.html">Sommelier</a>
       <a class="nav-link" href="curation.html">Curation</a>
-      <a class="nav-link" href="index.html#tab-about">About</a>
-      <a class="nav-link" href="index.html#tab-news">News</a>
-
+      <a class="nav-link" href="about.html">About</a>
+      <a class="nav-link" href="news.html">News</a>
     </div>
   </nav>
 </header>
 
 <body>
-  <ol>
-<li>https://codemyui.com/responsive-fullscreen-section-navigation-menu/</li>
-<li>https://icons8.com/</li>
-<li>http://eyexpo.co/contacts.html</li>
-<li>https://www.behance.net/gallery/55375009/Faur-le-Page-Website-Design-concept</li>
-<li>https://www.prettylittlething.us/onestepcheckout/</li>
-</ol>
+
+  <span class="container">
+
+    <section id="check-left" class="block">
+      <img src="img/coffee-example.jpg" alt="The coffee product that we built" class="fill"></img>
+    </section>
+
+    <section id="check-right" class="container col block">
+
+      <div class="block">
+        <!-- CSS-Only Accordion: https://codepen.io/raubaca/pen/PZzpVe -->
+        <div class="tab our-grey">
+          <input id="tab-four" type="radio" name="tabs2">
+          <label for="tab-four">Choice 1</label>
+          <div class="tab-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+          </div>
+        </div>
+        <div class="tab our-grey">
+          <input id="tab-five" type="radio" name="tabs2">
+          <label for="tab-five">Choice 2</label>
+          <div class="tab-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+          </div>
+        </div>
+        <div class="tab our-grey">
+          <input id="tab-six" type="radio" name="tabs2">
+          <label for="tab-six">Choice 3</label>
+          <div class="tab-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="block">
+      	<form action="#">
+      	  <button class="button-submit-style">Order Now</button>
+      	</form>
+      </div>
+
+
+    </section>
+  </span>
+
 </body>
 
-<!-- javascript -->
-<link href="javascript/fullScreenSlider.js" rel="javascript">
 
 <footer>
   <div class="container footer-top">
@@ -69,7 +103,7 @@
       </ul>
     </div>
 
-    <div class="footer-listing" >
+    <div class="footer-listing">
       <ul>
         <li><h6 class="footer-linkheading">Reference</a></h6></li>
         <li><a class="footer-link" href="styleguide.html">Styleguide</a></li>

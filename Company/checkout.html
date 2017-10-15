@@ -4,8 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name=viewport content="width=device-width, initial-scale=1">
-  <title>Checkout</title>
-  <link href="css/checkout.css" rel="stylesheet">
+  <title>Coffee Confessions</title>
   <link href="css/main.css" rel="stylesheet">
   <link href="css/grids.css" rel="stylesheet">
 </head>
@@ -15,10 +14,11 @@
     <a href="index.html" class="nav-logo-link">
       <span class="nav-title">LOGO</span>
     </a>
+
     <div class="sub-headers">
-      <a class="nav-link" href="">Instagram</a>
       <a class="nav-link" href="">Facebook</a>
-      <a class="nav-link" href="">Pinterest</a>
+      <a class="nav-link" href="">Instagram</a>
+      <a class="nav-link" href="">Twitter</a>
       <a class="nav-link lang-opt" href="">FR</a>
       <span> | </span>
       <!-- language selection feedback may require javascript -->
@@ -28,56 +28,185 @@
     <div class="main-headers">
       <a class="nav-link" href="sommelier.html">Sommelier</a>
       <a class="nav-link" href="curation.html">Curation</a>
-      <a class="nav-link" href="about.html">About</a>
-      <a class="nav-link" href="news.html">News</a>
+      <a class="nav-link" href="index.html#tab-about">About</a>
+      <a class="nav-link" href="index.html#tab-news">News</a>
     </div>
   </nav>
 </header>
 
 <body>
+<h1>Check Out</h1>
 
-  <span class="container">
+<section class="container">
+  <div>
+  <div class="checkout-subheader">
+    <span>
+      <!-- 1 icon -->
+    </span>
+    <h2>Billing Address</h2>
+  </div>
 
-    <section id="check-left" class="block">
-      <img src="img/coffee-example.jpg" alt="The coffee product that we built" class="fill"></img>
-    </section>
+  <label> First Name *</label> </br>
+  <input type="text" name="" class=""></input></br>
+  <label> Last Name *</label> </br>
+  <input type="text" name="" class=""></input></br>
+  <label> Email Address *</label> </br>
+  <input type="text" name="" class=""></input></br>
+  <label> Telephone *</label> </br>
+  <input type="text" name="" class=""></input></br>
+  <label> Country *</label> </br>
+  <select>
+    <option value=""></option>
+    <option value="ca">Canada</option>
+    <option value="us">US</option>
+  </select>
+  <!-- testing validation -->
+  <div> Please select an option</div>
+  <!--  -->
+  <label> Province/State *</label> </br>
+  <select>
+    <option value=""></option>
+  </select></br>
 
-    <section id="check-right" class="container col block">
+  <label> Address *</label> </br>
+  <input type="text" name="" class=""></input></br>
+  <label> City *</label> </br>
+  <input type="text" name="" class=""></input></br>
+  <label> Postal/Zip Code *</label> </br>
+  <input type="text" name="" class=""></input></br>
+  <label> Date of Birth *</label> </br>
+  <select>
+    <option value="Day"></option>
+  </select>
+  <select>
+    <option value="Month"></option>
+  </select>
+  <select>
+    <option value="Year"></option>
+  </select>
 
-      <div class="block">
-        <!-- CSS-Only Accordion: https://codepen.io/raubaca/pen/PZzpVe -->
-        <div class="tab our-grey">
-          <input id="tab-four" type="radio" name="tabs2">
-          <label for="tab-four">Choice 1</label>
-          <div class="tab-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
-          </div>
-        </div>
-        <div class="tab our-grey">
-          <input id="tab-five" type="radio" name="tabs2">
-          <label for="tab-five">Choice 2</label>
-          <div class="tab-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
-          </div>
-        </div>
-        <div class="tab our-grey">
-          <input id="tab-six" type="radio" name="tabs2">
-          <label for="tab-six">Choice 3</label>
-          <div class="tab-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
-          </div>
-        </div>
-      </div>
+  <div>
+    <input type="checkbox" name="" class=""></input>
+    <label> Ship to the same address </label>
+  </div>
 
-      <div class="block">
-      	<form action="#">
-      	  <button class="button-submit-style">Order Now</button>
-      	</form>
-      </div>
+  <div>
+    <input type="checkbox" name="" class=""></input>
+    <label> Use as my default billing address </label>
+  </div>
+</div>
+</section>
 
 
-    </section>
-  </span>
+<section>
+  <div>
+  <div class="checkout-subheader">
+    <span>
+      <!-- 2 icon -->
+    </span>
+    <h2>Shipping Method</h2>
+  </div>
+
+  <div>
+    <input type="radio" name="" class=""></input>
+    <label> Canada Standard: $11.00 </label>
+  </div>
+
+  <div>
+    <input type="radio" name="" class=""></input>
+    <label> Canada Express: $30.00 </label>
+  </div>
+</div>
+</section>
+
+<section>
+  <div>
+  <div class="checkout-subheader">
+    <span>
+      <!-- 2 icon -->
+    </span>
+    <h2>Payment Method</h2>
+  </div>
+
+  <div>
+    <input type="radio" name="" class=""></input>
+    <label> Pay by Credit or Debit card </label>
+  </div>
+
+  <div>
+    <input type="radio" name="" class=""></input>
+    <label> Paypal </label>
+  </div>
+</div>
+</section>
+
+<section>
+  <div>
+  <div class="checkout-subheader">
+    <span>
+      <!-- 2 icon -->
+    </span>
+    <h2>Payment Method</h2>
+  </div>
+  <strong>Coupon code (please enter your address details and select a shipping type before redeeming a code)</strong>
+    <br>
+  <input type="text" name="" class=""></input></br>
+  <button class="button-submit-style"> Apply coupon</button>
+</div>
+</section>
+
+<section>
+  <div>
+  <div class="checkout-subheader">
+    <span>
+      <!-- 2 icon -->
+    </span>
+    <h2>Review Your Order</h2>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th class="name"> Product</th>
+        <th class="total"> Subtotal</th>
+      </tr>
+    </thead>
+      <tbody>
+        <tr>
+          <td class="">Premium Vanilla Brew
+          Quantity:1
+          Size: 500ML
+          Container: Bottle</td>
+          <td class="total">
+            $30.00
+          </td>
+        </tr>
+      </tbody>
+  </table>
+
+  <table>
+      <tbody>
+        <tr>
+          <td class="">Subtotal:</td>
+          <td class="">$30.00</td>
+        </tr>
+        <tr>
+          <td class="">Shipping:</td>
+          <td class="">$11.00</td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+          <td class="">Grand Total:</td>
+          <td class="">$41.00</td>
+        </tr>
+      </tbody>
+  </table>
+
+
+  <button class="button-submit-style"> Place Order</button>
+</div>
+</section>
 
 </body>
 
@@ -95,17 +224,19 @@
     <div class="footer-listing">
       <ul>
         <li>
-          <h6 class="footer-linkheading"><a class="footer-linkheading" href="index.html">Coffesion</a></h6></li>
+          <h6 class="footer-linkheading"><a class="footer-linkheading" href="index.html">Coffee Confession</a></h6></li>
         <li><a class="footer-link" href="sommelier.html">Sommelier</a></li>
         <li><a class="footer-link" href="curation.html">Curation</a></li>
-        <li><a class="footer-link" href="about.html">About us</a></li>
-        <li><a class="footer-link" href="news.html">News</a></li>
+        <li><a class="footer-link" href="index.html#tab-about">About us</a></li>
+        <li><a class="footer-link" href="index.html#tab-news">News</a></li>
+        <li><a class="footer-link" href="cart.html">Cart</a></li>
       </ul>
     </div>
 
     <div class="footer-listing">
       <ul>
-        <li><h6 class="footer-linkheading">Reference</a></h6></li>
+        <li>
+          <h6 class="footer-linkheading">Reference</a></h6></li>
         <li><a class="footer-link" href="styleguide.html">Styleguide</a></li>
         <li><a class="footer-link" href="citations.html">Citation</a></li>
       </ul>
@@ -116,9 +247,9 @@
     <span class="fine-print"> iat334 assignment 1 project copyright kenneth bruskiewicz, ying chen</span>
     <div class="social-list">
 
-<a href="" ><img src="img/png/fb.png" alt="facebook icon" class="social-icon"></a>
- <a href="" ><img src="img/png/insta.png" alt="facebook icon" class="social-icon"></a>
-<a href="" ><img src="img/png/twitt.png" alt="facebook icon" class="social-icon"></a>
+      <a href=""><img src="img/png/fb.png" alt="facebook icon" class="social-icon"></a>
+      <a href=""><img src="img/png/insta.png" alt="facebook icon" class="social-icon"></a>
+      <a href=""><img src="img/png/twitt.png" alt="facebook icon" class="social-icon"></a>
       </ul>
     </div>
     <a href="#" id="#top"><i></i></a>

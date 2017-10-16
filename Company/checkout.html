@@ -35,179 +35,187 @@
 </header>
 
 <body>
-<h1>Check Out</h1>
 
-<section class="container">
-  <div>
-  <div class="checkout-subheader">
-    <span>
-      <!-- 1 icon -->
-    </span>
-    <h2>Billing Address</h2>
-  </div>
+  <div class="checkout-content">
+  <h1>Check Out</h1>
 
-  <label> First Name *</label> </br>
-  <input type="text" name="" class=""></input></br>
-  <label> Last Name *</label> </br>
-  <input type="text" name="" class=""></input></br>
-  <label> Email Address *</label> </br>
-  <input type="text" name="" class=""></input></br>
-  <label> Telephone *</label> </br>
-  <input type="text" name="" class=""></input></br>
-  <label> Country *</label> </br>
-  <select>
-    <option value=""></option>
-    <option value="ca">Canada</option>
-    <option value="us">US</option>
-  </select>
-  <!-- testing validation -->
-  <div> Please select an option</div>
-  <!--  -->
-  <label> Province/State *</label> </br>
-  <select>
-    <option value=""></option>
-  </select></br>
+  <div class="container">
+    <section class="checkout-group">
+      <div class="container our-grey checkout-headerbox">
+        <span class="circle-num our-black">1</span>
+        <h2 class="checkout-step ">Billing Address</h2>
+      </div>
 
-  <label> Address *</label> </br>
-  <input type="text" name="" class=""></input></br>
-  <label> City *</label> </br>
-  <input type="text" name="" class=""></input></br>
-  <label> Postal/Zip Code *</label> </br>
-  <input type="text" name="" class=""></input></br>
-  <label> Date of Birth *</label> </br>
-  <select>
-    <option value="Day"></option>
-  </select>
-  <select>
-    <option value="Month"></option>
-  </select>
-  <select>
-    <option value="Year"></option>
-  </select>
+      <label class="field-label"> First Name *</label>
+      <input type="text" name="" class="feedback-inputs"></input>
 
-  <div>
-    <input type="checkbox" name="" class=""></input>
-    <label> Ship to the same address </label>
-  </div>
+      <label class="field-label"> Last Name *</label>
+      <input type="text" name="" class="feedback-inputs"></input>
 
-  <div>
-    <input type="checkbox" name="" class=""></input>
-    <label> Use as my default billing address </label>
-  </div>
+      <label class="field-label"> Email Address *</label>
+      <input type="text" name="" class= "feedback-inputs"></input>
+
+      <label class="field-label"> Telephone *</label>
+      <input type="text" name="" class="feedback-inputs"></input>
+
+      <label class="field-label"> Country *</label>
+      <select class="dropdown">
+        <option value=" "></option>
+        <option value="ca">Canada</option>
+        <option value="us">US</option>
+      </select>
+      <!-- testing validation -->
+      <!-- <div> Please select an option</div> -->
+      <!--  -->
+      <label class="field-label"> Province/State *</label>
+      <select class="dropdown">
+        <option value=" "></option>
+        <option value="bc">British Columbia</option>
+      </select>
+
+      <label class="field-label"> Address *</label>
+      <input type="text" name="" class="feedback-inputs"></input>
+
+      <label class="field-label"> City *</label>
+      <input type="text" name="" class="feedback-inputs"></input>
+
+      <label class="field-label"> Postal/Zip Code *</label>
+      <input type="text" name="" class="feedback-inputs"></input>
+
+      <label class="field-label"> Date of Birth *</label>
+      <select class="dropdown-auto" >
+        <option value="Day"> Day</option>
+        <option value="1"> 1</option>
+      </select>
+      <select class="dropdown-auto" >
+        <option value="Month">Month</option>
+        <option value="1"> 1</option>
+      </select>
+      <select class="dropdown-auto" >
+        <option value="Year">Year</option>
+        <option value="2000"> 2000</option>
+      </select>
+      <div>
+        <label class="field-label">
+          <input type="checkbox" name="" class=""></input>
+          Ship to the same address
+        </label>
+      </div>
+
+      <div>
+        <label class="field-label">
+          <input type="checkbox" name="" class=""></input>
+          Use as my default billing address
+        </label>
+      </div>
+  </section>
+
+
+<section class="checkout-group">
+      <div class="checkout-subgroup">
+      <div class="container our-grey checkout-headerbox">
+        <span class="circle-num our-black">2</span>
+        <h2 class="checkout-step ">Shipping Method</h2>
+      </div>
+
+        <label class="field-label">
+          <input type="radio" name="" class=""></input>
+          Canada Standard: $11.00
+        </label>
+
+        <label class="field-label">
+          <input type="radio" name="" class=""></input>
+          Canada Express: $30.00
+        </label>
+    </div>
+
+
+      <!-- payment -->
+      <div class="checkout-subgroup">
+      <div class="container our-grey checkout-headerbox">
+        <span class="circle-num our-black">3</span>
+        <h2 class="checkout-step ">Payment Method</h2>
+      </div>
+
+        <label class="field-label">
+          <input type="radio" name="" class=""></input>
+          Pay by Credit or Debit card
+        </label>
+
+        <label class="field-label">
+          <input type="radio" name="" class=""></input>
+          Paypal
+        </label>
+
+    </div>
+    </section>
+      <!-- end of shipping & payment method -->
+
+    <section class="checkout-group">
+      <div class="checkout-subgroup">
+      <div class="container our-grey checkout-headerbox">
+        <span class="circle-num our-black">4</span>
+        <h2 class="checkout-step ">Coupon Code</h2>
+      </div>
+      <strong>Coupon code (please enter your address details and select a shipping type before redeeming a code)</strong>
+      <input type="text" name="" class="feedback-inputs"></input>
+      <button class="button-submit-style"> Apply coupon</button>
 </div>
-</section>
+
+<div class="checkout-subgroup">
+      <div class="container our-grey checkout-headerbox">
+        <span class="circle-num our-black">5</span>
+        <h2 class="checkout-step ">Review Your Order</h2>
+      </div>
+
+      <table class="onestepcheckout-summary">
+        <thead>
+          <tr>
+            <th class="name"> Product</th>
+            <th class="total"> Subtotal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="name">
+              <span class="summary-info">Premium Vanilla Brew</span>
+              <span class="summary-info">Quantity:1 </span>
+              <span class="summary-info">Size: 500ML <span>
+              <span class="summary-info">Container: Bottle</span>
+            </td>
+            <td class="total">
+              $30.00
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="onestepcheckout-totals">
+        <tbody>
+          <tr>
+            <td class="name">Subtotal:</td>
+            <td class="total">$30.00</td>
+          </tr>
+          <tr>
+            <td class="name">Shipping:</td>
+            <td class="total">$11.00</td>
+          </tr>
+          <tr>
+          </tr>
+          <tr class="grand-total">
+            <td class="name">Grand Total:</td>
+            <td class="total">$41.00</td>
+          </tr>
+        </tbody>
+      </table>
 
 
-<section>
-  <div>
-  <div class="checkout-subheader">
-    <span>
-      <!-- 2 icon -->
-    </span>
-    <h2>Shipping Method</h2>
-  </div>
+      <button class="button-submit-style"> Place Order</button>
+    </div>
+    </section>
 
-  <div>
-    <input type="radio" name="" class=""></input>
-    <label> Canada Standard: $11.00 </label>
-  </div>
-
-  <div>
-    <input type="radio" name="" class=""></input>
-    <label> Canada Express: $30.00 </label>
-  </div>
 </div>
-</section>
-
-<section>
-  <div>
-  <div class="checkout-subheader">
-    <span>
-      <!-- 2 icon -->
-    </span>
-    <h2>Payment Method</h2>
-  </div>
-
-  <div>
-    <input type="radio" name="" class=""></input>
-    <label> Pay by Credit or Debit card </label>
-  </div>
-
-  <div>
-    <input type="radio" name="" class=""></input>
-    <label> Paypal </label>
-  </div>
 </div>
-</section>
-
-<section>
-  <div>
-  <div class="checkout-subheader">
-    <span>
-      <!-- 2 icon -->
-    </span>
-    <h2>Payment Method</h2>
-  </div>
-  <strong>Coupon code (please enter your address details and select a shipping type before redeeming a code)</strong>
-    <br>
-  <input type="text" name="" class=""></input></br>
-  <button class="button-submit-style"> Apply coupon</button>
-</div>
-</section>
-
-<section>
-  <div>
-  <div class="checkout-subheader">
-    <span>
-      <!-- 2 icon -->
-    </span>
-    <h2>Review Your Order</h2>
-  </div>
-
-  <table>
-    <thead>
-      <tr>
-        <th class="name"> Product</th>
-        <th class="total"> Subtotal</th>
-      </tr>
-    </thead>
-      <tbody>
-        <tr>
-          <td class="">Premium Vanilla Brew
-          Quantity:1
-          Size: 500ML
-          Container: Bottle</td>
-          <td class="total">
-            $30.00
-          </td>
-        </tr>
-      </tbody>
-  </table>
-
-  <table>
-      <tbody>
-        <tr>
-          <td class="">Subtotal:</td>
-          <td class="">$30.00</td>
-        </tr>
-        <tr>
-          <td class="">Shipping:</td>
-          <td class="">$11.00</td>
-        </tr>
-        <tr>
-        </tr>
-        <tr>
-          <td class="">Grand Total:</td>
-          <td class="">$41.00</td>
-        </tr>
-      </tbody>
-  </table>
-
-
-  <button class="button-submit-style"> Place Order</button>
-</div>
-</section>
-
 </body>
 
 

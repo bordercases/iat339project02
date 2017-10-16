@@ -58,9 +58,17 @@
     height: auto;
   }
 
-  .button-submit-style{
+  /*.button-submit-style{
     max-width: 80%;
+  }*/
+}
+
+/*1024px*/
+@media (min-width: 50em) {
+  .checkout-group{
+    max-width: 30%;
   }
+
 }
 
 footer{

@@ -731,16 +731,22 @@ width: 65%;
     border-bottom: 1px solid rgba(0,0,0,.25);
 }
 
-/*image*/
+/*about us*/
 
-.img{
-  position: absolute;
+.parallax-img{
+  position: relative;
   z-index: 12;
   top: 0;
   left: 0;
   height: 700px;
  width: 100%;
- background: #1b1b54;
+ background-color: navy;
+ background-image: url(../img/coffee-brewing.jpg);
+opacity: 0.65;
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
 }
 
 .line{
@@ -754,10 +760,53 @@ width: 65%;
 display: inline-block;
 }
 
-.header-text{
-  position: relative;
-top: 50%;
+.parallax-text{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
 color: white;
 vertical-align: middle;
 text-align: center;
+}
+
+.overlay-box{
+  /*width: 50%;*/
+  position: relative;
+  margin: 2rem 0;
+  padding: 0 1rem;
+}
+
+/*.color-box{
+  background-color: yellow;
+  width: 100%;
+  height: auto;
+  position: absolute;
+}*/
+.overlay-box h1{
+  font-size: 1.5em;
+  border-top: solid black 1px;
+      display: inline-block;
+      text-transform: uppercase;
+      /*font-family: 'Raleway', sans-serif;*/
+}
+
+.overlay-box p{
+  font-family: 'Raleway', sans-serif;
+  /*padding: 3em 0;*/
+  margin-bottom: 0;
+    line-height: 28px;
+    color: grey;
+}
+
+.img{
+  width: 100%;
+  height: auto;
+}
+
+.img-half{
+  height: auto;
+  background-size: cover;
+  width: 50%;
 }

@@ -1,16 +1,28 @@
 img {
-  height:80%;
-  width:80%;
+  height:100%;
+  width:100%;
 }
 
 #checkout.button-submit-style {
-  max-width: 90%;
+  max-width: 100%;
   align-items: center;
   margin: 0.2em;
 }
 
 @media (max-width: 63em) {
+  .container {
+    -webkit-flex-direction: row;
+    flex-direction: row;
+  }
   #somm-left {
+    -webkit-flex: 7 0 0;
+    flex: 9 0 0;
+  }
+  #somm-right {
+    -webkit-flex: 1 0 0;
+    flex: 1 0 0;
+  }
+  .slider-range-values {
     visibility:hidden;
     position:absolute;
   }

@@ -36,128 +36,95 @@
 
 <body>
   <div class="container row">
-    <section id="somm-left" class="container block">
-      <img src="img/coffee-example.jpg" alt="Currently Selected Ingredients"></img>
-    </section>
-    <div>
-    <header>
-      <h2 class="head-2">Choose Coffee Flavor</h2>
-    </header>
-    <section id="somm-right" class="container block">
 
-      <div class="block">
-        <label for="product-choice-1">
-    	    <input type="checkbox" id="product-choice-1" class="optional"/>
-    	    <div class="product-choice">
-    	      <img class="product-image" src="img/coffee-example.jpg"
-    		   alt="Cold coffee in a stylish bottle"></img>
-    	      <span class="product-content">
-    		        <h2 class="head-2"> Vanilla </h2>
-    		          <p class="p-style">
-    		              Medium Size<br>
-    		                Vegan<br>
-    		          </p>
-    	      </span>
-    	    </div>
-    	  </label>
-      </div>
+      <section id="somm-left" class="container block">
 
-      <div class="block">
-        <label for="product-choice-2">
-          <input type="checkbox" id="product-choice-2" class="optional"/>
-          <div class="product-choice">
-            <img class="product-image" src="img/coffee-example.jpg"
-           alt="Cold coffee in a stylish bottle"></img>
-            <span class="product-content">
-                <h2 class="head-2"> Hazelnut </h2>
-                  <p class="p-style">
-                      Medium Size<br>
-                        Vegan<br>
-                  </p>
-            </span>
+          <img src="img/coffee-example.jpg" alt="Currently Selected Ingredients"></img>
+
+      </section>
+
+      <article id="somm-right" class="container block">
+
+        <section>
+
+          <div class="slider">
+              <div class="slider-range-wrapper vertical">
+                <input type="range" value="3" step="1" min="1" max="3">
+              </div>
+
+              <div class="slider-range-values">
+                  <!-- this will be filled with content handled by the javascript displayNextValues.js -->
+                  <!-- unfortunately the datalist element is not supported by Safari -->
+                  <span id="option-1" class="slider-option" style="display: none;">
+                    <p>Ice Cream</p>
+                  </span>
+                  <span id="option-2" class="slider-option" style="display: none;">
+                    <p>Milk</p>
+                  </span>
+                  <span id="option-3" class="slider-option" style="display: none;">
+                    <p>Cream</p>
+                  </span>
+              </div>
           </div>
-        </label>
-      </div>
 
-      <div class="block">
-        <label for="product-choice-3">
-    	    <input type="checkbox" id="product-choice-3" class="optional"/>
-    	    <div class="product-choice">
-    	      <img class="product-image" src="img/coffee-example.jpg"
-    		   alt="Cold coffee in a stylish bottle"></img>
-    	      <span class="product-content">
-    		        <h2 class="head-2"> Chocolate </h2>
-    		          <p class="p-style">
-    		              Medium Size<br>
-    		                Vegan<br>
-    		          </p>
-    	      </span>
-    	    </div>
-    	  </label>
-      </div>
-      <div class="block">
-        <form action="checkout.html">
-          <button id="checkout" class="button-submit-style">Checkout</button>
-        </form>
-      </div>
-    </section>
+        </section>
+
+    </article>
+
+
   </div>
-
-
-
-
-
+  <div class="block">
+    <form id="checkout" action="checkout.html">
+        <button  class="button-submit-style">Checkout</button>
+    </form>
   </div>
 </body>
 
 
 <footer>
-  <div class="container footer-top">
-    <div class="footer-companyInfo">
-      <!-- <img alt="logo"> -->
-      <span class="nav-title">Coffee Confessions</span>
-      <div class="location">123-4567 east 123rd street</div>
-      <div class="location"> Vancouver, BC 123 567 Canada</div>
-      <div class="email">123@test.ca</div>
-    </div>
+    <div class="container footer-top">
+        <div class="footer-companyInfo">
+            <!-- <img alt="logo"> -->
+            <span class="nav-title">Coffee Confessions</span>
+            <div class="location">123-4567 east 123rd street</div>
+            <div class="location"> Vancouver, BC 123 567 Canada</div>
+            <div class="email">123@test.ca</div>
+        </div>
 
     <div class="footer-listing">
-      <ul>
-        <li>
-          <h6 class="footer-linkheading"><a class="footer-linkheading" href="index.html">Coffesion</a></h6></li>
-        <li><a class="footer-link" href="sommelier.html">Sommelier</a></li>
-        <li><a class="footer-link" href="curation.html">Curation</a></li>
-        <li><a class="footer-link" href="about.html">About us</a></li>
-        <li><a class="footer-link" href="news.html">News</a></li>
-      </ul>
+        <ul>
+            <li><h6 class="footer-linkheading"><a class="footer-linkheading" href="index.html">Coffesion</a></h6></li>
+            <li><a class="footer-link" href="sommelier.html">Sommelier</a></li>
+            <li><a class="footer-link" href="curation.html">Curation</a></li>
+            <li><a class="footer-link" href="about.html">About us</a></li>
+            <li><a class="footer-link" href="news.html">News</a></li>
+        </ul>
     </div>
 
     <div class="footer-listing" >
-      <ul>
-        <li><h6 class="footer-linkheading">Reference</a></h6></li>
+        <ul>
+            <li><h6 class="footer-linkheading">Reference</a></h6></li>
         <li><a class="footer-link" href="styleguide.html">Styleguide</a></li>
         <li><a class="footer-link" href="citations.html">Citation</a></li>
-      </ul>
+        </ul>
     </div>
-  </div>
-
-  <div class="footer-bottom">
-    <span class="fine-print"> iat334 assignment 1 project copyright kenneth bruskiewicz, ying chen</span>
-    <div class="social-list">
-
-<a href="" ><img src="img/png/fb.png" alt="facebook icon" class="social-icon"></a>
- <a href="" ><img src="img/png/insta.png" alt="facebook icon" class="social-icon"></a>
-<a href="" ><img src="img/png/twitt.png" alt="facebook icon" class="social-icon"></a>
-      </ul>
     </div>
-    <a href="#" id="#top"><i></i></a>
-  </div>
+
+    <div class="footer-bottom">
+        <span class="fine-print"> iat334 assignment 1 project copyright kenneth bruskiewicz, ying chen</span>
+        <div class="social-list">
+            <a href="" ><img src="img/png/fb.png" alt="facebook icon" class="social-icon"></a>
+            <a href="" ><img src="img/png/insta.png" alt="facebook icon" class="social-icon"></a>
+            <a href="" ><img src="img/png/twitt.png" alt="facebook icon" class="social-icon"></a>
+        </ul>
+        </div>
+        <a href="#" id="#top"><i></i></a>
+    </div>
 </footer>
 
 <!-- end of footer
-javascript -->
+     javascript -->
 <script src="javascript/fullScreenSlider.js" type="text/javascript"></script>
-
-</html>
+<script src="javascript/displayNextValues.js" type="text/javascript"></script>
 
 </html>

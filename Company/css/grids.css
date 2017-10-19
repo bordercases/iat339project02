@@ -46,20 +46,19 @@
     flex-wrap: col wrap;
 }
 
-@media (min-width: 25em) {
+@media (min-width:63em) {
   /* spec asked for specifically for the 5th child, although :last-child
   would be more lifted */
-  .container .block:nth-child(5){
+  /*.container .block:nth-child(5){
     order: 1;
+  }*/
+  .container > .block:nth-of-type(odd) {
+    border-top: 0;
+    border: 2px solid #f7f7f7;
   }
-
   .feedback{
     max-width: 750px;
     height: auto;
-  }
-
-  .button-submit-style{
-    max-width: 80%;
   }
 }
 
@@ -153,11 +152,4 @@ footer{
 .container > .block:hover {
   background-color: #f7f7f7;
   transition: all 0.5s ease-in-out;
-}
-
-@media (max-width: 63em) {
-  .container > .block:nth-of-type(odd) {
-    border-top: 0;
-    border: 2px solid #f7f7f7;
-  }
 }

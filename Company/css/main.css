@@ -16,20 +16,14 @@ body {
 
 .container .block:nth-of-type(odd) {
   padding: 1rem;
-  margin: 1rem;
+  margin: 0;
+  /*margin: 1rem;*/
   border: 2px solid #f7f7f7;
 }
 
 .container .block:nth-of-type(odd):hover {
   background-color: #f7f7f7;
   transition: all 0.5s ease-in-out;
-}
-
-@media (max-width: 63em) {
-  .container .block:nth-of-type(odd) {
-    border-top: 0;
-    border: 2px solid #f7f7f7;
-  }
 }
 
 hr {
@@ -74,6 +68,11 @@ header {}
 .head-3 {
   font-size: 1.3em;
   /*text-transform: uppercase;*/
+}
+
+.head-4 {
+    font-size: 1em;
+    /*text-transform: uppercase;*/
 }
 
 /* get around section styling h1 */
@@ -220,6 +219,40 @@ box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.2);
   opacity: 1;
 }
 
+/* slider */
+
+/* slider orientation */
+/* https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range */
+
+.slider {
+  position:relative;
+}
+
+.slider-range-wrapper input {
+  position:absolute;
+  /*width: 150px;
+  height: 20px;*/
+  width:24em;
+  height:10px;
+  margin: 0;
+  transform-origin: 12em 12em;
+  /*default horizontal*/
+  transform: rotate(0);
+}
+.slider-range-wrapper.vertical  input {
+  transform: rotate(-90deg);
+}
+.slider-range-wrapper.horizontal input  {
+  transform: rotate(0);
+}
+
+.slider-range-values {
+  padding-left:2em;
+}
+
+.slider-option {
+}
+
 /* nav should stack in mobile */
 
 @media (max-width: 63em) {
@@ -266,6 +299,11 @@ box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.2);
   background-color: #4a4a4a;
   color: white;
   /*border: solid 1px white;*/
+}
+@media (min-width: 63em) {
+  .button-submit-style{
+    max-width: 100%;
+  }
 }
 
 .button-reset-style {

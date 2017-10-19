@@ -10,9 +10,22 @@ img {
 }
 
 @media (max-width: 63em) {
+  footer {
+    display: none;
+  }
+  html {
+    height:100%;
+  }
+  body {
+    height: 100%;
+  }
   .container {
+    height: 100%;
     -webkit-flex-direction: row;
     flex-direction: row;
+  }
+  input {
+    height:100%;
   }
   #somm-left {
     -webkit-flex: 7 0 0;
@@ -21,9 +34,5 @@ img {
   #somm-right {
     -webkit-flex: 1 0 0;
     flex: 1 0 0;
-  }
-  .slider-range-values {
-    visibility:hidden;
-    position:absolute;
   }
 }

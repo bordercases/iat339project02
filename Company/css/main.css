@@ -11,10 +11,6 @@ body {
   margin: 0;
   padding-top: 6rem;
 }
-.container {
-  height: 100%;
-}
-
 /* some separators to enforce the gestalt */
 
 /*.container .block:nth-of-type(even) {

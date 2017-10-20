@@ -9,6 +9,7 @@
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   clear:both;
+  height: auto;
 }
 
 .container > .block {

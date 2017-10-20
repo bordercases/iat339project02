@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <title>Sommelier</title>
+  <link href="css/sommelier.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/grids.css" rel="stylesheet">
+</head>
+
+<header>
+  <nav class="nav-default">
+    <a href="index.html" class="nav-logo-link">
+      <span class="nav-title">LOGO</span>
+    </a>
+    <div class="sub-headers">
+      <a class="nav-link" href="">Instagram</a>
+      <a class="nav-link" href="">Facebook</a>
+      <a class="nav-link" href="">Pinterest</a>
+      <a class="nav-link lang-opt" href="">FR</a>
+      <span>|&nbsp;</span>
+      <!-- language selection feedback may require javascript -->
+      <a class="nav-link lang-opt" href="">EN</a>
+    </div>
+
+    <div class="main-headers">
+      <a class="nav-link" href="sommelier-1.html">Sommelier</a>
+      <a class="nav-link" href="curation.html">Curation</a>
+      <a class="nav-link" href="index.html#tab-about">About</a>
+      <a class="nav-link" href="index.html#tab-news">News</a>
+    </div>
+  </nav>
+</header>
+
+<body>
+  <div class="container row-wrap">
+
+      <section id="somm-left" class="container block">
+
+          <img id="somm-img" src="" alt="Currently Selected Ingredients"></img>
+
+      </section>
+      <div id="somm-select" class="block">
+        <!-- slider options appear as headers -->
+        <header>
+          <!-- this will be filled with content handled by the javascript displayNextValues.js -->
+          <!-- unfortunately the datalist element is not supported by Safari -->
+          <span id="ice" class="slider-option" style="display: inline;">
+            <h2 class="head-2">Ice Cream</h2>
+          </span>
+
+          <span id="milk" class="slider-option" style="display: none;">
+            <h2 class="head-2">Milk</h2>
+          </span>
+
+          <span id="cream" class="slider-option" style="display: none;">
+            <h2 class="head-2">Cream</h2>
+          </span>
+        </header>
+
+        <div class="slider">
+          <div id="sliderInputWrapper" class="slider-range-wrapper vertical">
+              <input type="range" step="1" min="1" max="3">
+              <span class="slider-range-value">
+              </span>
+          </div>
+        </div>
+
+      </div>
+
+      <section id="somm-right" class="container block">
+
+        <div class="slider-range-content block">
+
+            <span id="content-1" class="slider-content center" style="display: inline">
+              <div class="slider-content-img">
+
+                <figure>
+                  <img src="http://via.placeholder.com/150x150" alt="150x150 Placeholder" style="width:auto;height:auto;"/>
+                  <figcaption>Chocolate Ice Cream</figcaption>
+                </figure>
+
+                <figure>
+                  <img src="http://via.placeholder.com/150x150" alt="150x150 Placeholder" style="width:auto;height:auto;"/>
+                  <figcaption>Vanilla Ice Cream</figcaption>
+                </figure>
+
+                <figure>
+                  <img src="http://via.placeholder.com/150x150" alt="150x150 Placeholder" style="width:auto;height:auto;"/>
+                  <figcaption>Almond Ice Cream</figcaption>
+                </figure>
+
+              </div>
+
+              <!-- <p class="p-style">
+                Minus quia quisquam amet. Iure quia repudiandae blanditiis laboriosam illum. Quisquam aut asperiores aspernatur esse.<br><br>
+              </p> -->
+
+            </span>
+
+            <span id="content-2" class="slider-content center" style="display: none;">
+
+              <div class="slider-content-img">
+
+                <figure>
+                  <img src="http://via.placeholder.com/150x150" alt="150x150 Placeholder" style="width:auto;height:auto;"/>
+                  <figcaption>Skim Milk</figcaption>
+                </figure>
+
+                <figure>
+                  <img src="http://via.placeholder.com/150x150" alt="150x150 Placeholder" style="width:auto;height:auto;"/>
+                  <figcaption>2% Milk</figcaption>
+                </figure>
+
+                <figure>
+                  <img src="http://via.placeholder.com/150x150" alt="150x150 Placeholder" style="width:auto;height:auto;"/>
+                  <figcaption>3.25% Milk</figcaption>
+                </figure>
+
+              </div>
+
+              <!-- <p class="p-style">
+                Minus quia quisquam amet. Iure quia repudiandae blanditiis laboriosam illum. Quisquam aut asperiores aspernatur esse.<br><br>
+              </p> -->
+
+            </span>
+
+            <span id="content-3" class="slider-content center" style="display: none;">
+              <div class="slider-content-img">
+
+                <figure>
+                  <img src="http://via.placeholder.com/150x150" alt="150x150 Placeholder" style="width:auto;height:auto;"/>
+                  <figcaption>Heavy Cream</figcaption>
+                </figure>
+
+                <figure>
+                  <img src="http://via.placeholder.com/150x150" alt="150x150 Placeholder" style="width:auto;height:auto;"/>
+                  <figcaption>Coffee Cream</figcaption>
+                </figure>
+
+                <figure>
+                  <img src="http://via.placeholder.com/150x150" alt="150x150 Placeholder" style="width:auto;height:auto;"/>
+                  <figcaption>Half-and-Half</figcaption>
+                </figure>
+
+              </div>
+
+              <!-- <p class="p-style">
+                Minus quia quisquam amet. Iure quia repudiandae blanditiis laboriosam illum. Quisquam aut asperiores aspernatur esse.<br><br>
+              </p> -->
+
+            </span>
+
+          </div>
+        </div>
+
+
+      </section>
+
+
+  </div>
+  <div class="block">
+    <form id="next" action="sommelier-2.html">
+        <button  class="button-submit-style button-bottom">Next</button>
+    </form>
+  </div>
+</body>
+
+
+<footer>
+    <div class="container footer-top">
+        <div class="footer-companyInfo">
+            <!-- <img alt="logo"> -->
+            <span class="nav-title">Coffee Confessions</span>
+            <div class="location">123-4567 east 123rd street</div>
+            <div class="location"> Vancouver, BC 123 567 Canada</div>
+            <div class="email">123@test.ca</div>
+        </div>
+
+    <div class="footer-listing">
+        <ul>
+            <li><h6 class="footer-linkheading"><a class="footer-linkheading" href="index.html">Coffesion</a></h6></li>
+            <li><a class="footer-link" href="sommelier.html">Sommelier</a></li>
+            <li><a class="footer-link" href="curation.html">Curation</a></li>
+            <li><a class="footer-link" href="about.html">About us</a></li>
+            <li><a class="footer-link" href="news.html">News</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-listing" >
+        <ul>
+            <li><h6 class="footer-linkheading">Reference</a></h6></li>
+        <li><a class="footer-link" href="styleguide.html">Styleguide</a></li>
+        <li><a class="footer-link" href="citations.html">Citation</a></li>
+        </ul>
+    </div>
+    </div>
+
+    <div class="footer-bottom">
+        <span class="fine-print"> iat334 assignment 1 project copyright kenneth bruskiewicz, ying chen</span>
+        <div class="social-list">
+            <a href="" ><img src="img/png/fb.png" alt="facebook icon" class="social-icon"></a>
+            <a href="" ><img src="img/png/insta.png" alt="facebook icon" class="social-icon"></a>
+            <a href="" ><img src="img/png/twitt.png" alt="facebook icon" class="social-icon"></a>
+        </ul>
+        </div>
+        <a href="#" id="#top"><i></i></a>
+    </div>
+</footer>
+
+<!-- end of footer
+     javascript -->
+<!-- sommType tag used by sommelier.js to adjust image and set state -->
+<meta id="somm-type" name="topping"/>
+<script src="javascript/sommelier.js"></script>
+<script src="javascript/fullScreenSlider.js" type="text/javascript"></script>
+<script src="javascript/displayNextValues.js" type="text/javascript"></script>
+
+</html>

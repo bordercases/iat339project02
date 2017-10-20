@@ -64,7 +64,7 @@ input[type=radio]:checked + label::after {
   transform: rotateX(180deg);
 }
 
-@media (max-width: 63em) {
+@media (max-width: 50em) {
   #check-left {
     visibility:hidden;
     position:absolute;

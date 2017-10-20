@@ -29,20 +29,27 @@ sliderOptions[firstValue].style.display = "inline"
 sliderContents[firstValue].style.display = "inline"
 
 document.addEventListener("input", function(event) {
+  var currentOptIndex = (sliderOptions.length - parseInt(event.target.value));
   for (var i = 0; i < sliderOptions.length; i++) {
     var sliderOption = sliderOptions[i];
     var sliderContent = sliderContents[i];
 
-    if (i != (sliderOptions.length - parseInt(event.target.value))) {
+    if (i != currentOptIndex) {
       sliderOption.style.display = "none"
       sliderContent.style.display = "none"
 
     } else {
       sliderOption.style.display = "inline"
       sliderContent.style.display = "inline"
-
     }
   }
+  // one of: "richness", "topping", "flavorant"
+  var sommType = document.getElementById('somm-type').name;
+  // store the result
+  sessionStorage.setItem(sommType, sliderOptions[currentOptIndex].id);
+  // set image
+  document.getElementById('somm-img').src =
+    "img/png/coffee/"+sessionStorage.getItem("richness")+"-"+sessionStorage.getItem("topping")+".png";
 });
 
 // * findun hidden element and turn it off

@@ -6,6 +6,7 @@
 body {
   /*padding: 1em;*/
   margin: 0;
+  padding-top: 6rem;
 }
 
 /* some separators to enforce the gestalt */
@@ -77,6 +78,20 @@ nav {
 
 header {
   z-index: 2;
+}
+
+select{
+  border: 1px solid #ccc;
+font-size: 16px;
+height: 34px;
+width: 100%;
+margin:1rem 0;
+padding-left: 0.5rem;
+}
+
+img{
+  width: 100%;
+  height: auto;
 }
 
 /* ------------- styling of id section ------------- */
@@ -206,7 +221,7 @@ figcaption {
 }
 
 .nav-default {
-  background-color: #fff;
+  background-color: #ffffffde;
   box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.2);
   padding: 2.5%;
   text-align: right;
@@ -377,78 +392,6 @@ div.search-bar>button[type="button"] {
   width: auto;
   font-size: 1rem;
 }
-
-/* product listing element */
-
-.kit-header{
-
-}
-
-.product-listing {
-  height: auto;
-  min-width: 18rem;
-  max-width: 25em;
-  flex: 1;
-  padding: 20px;
-  position: relative;
-  background-color: #f8f8f8bd;
-  margin: 1rem;
-  overflow: hidden;
-  transition: all 0.5s;
-  display: block;
-}
-
-.product-listing:hover {
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
-}
-
-.product-image {
-  max-width: 100%;
-  height: auto;
-}
-
-.product-content {
-    margin: 1em;
-}
-
-.product-content>* {
-  margin-bottom: 0.4em;
-      font-family: 'Raleway', sans-serif;
-      font-size: 1rem;
-}
-
-.product-name{
-  font-weight: bold;
-}
-
-.product-descrip{
-  font-size: 0.8rem;
-  font-weight: 100;
-}
-
-
-/* product choice element */
-
-/* very similar to product listing but with some changes */
-
-.product-choice {
-  /*height:100%;
-    width:100%;*/
-  flex: 1;
-  padding: 20px;
-  position: relative;
-  background-color: #f5f9e9;
-  margin: 2rem;
-  overflow: hidden;
-  border: solid 1px #efefef;
-  text-align: center;
-  transition: all 0.5s;
-}
-
-.product-choice:hover {
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
-}
-
 input.optional, input.mandatory {
   visibility: hidden;
   /* taking out of document flow to prevent the hidden element from moving blocks already there */
@@ -692,7 +635,7 @@ footer .nav-title {
 
 .checkout-content {
   margin: 1rem;
-  padding-top: 120px;
+  /*padding-top: 120px;*/
 }
 
 .checkout-group {
@@ -831,11 +774,6 @@ background-color: #00000038;
   margin-bottom: 0;
   line-height: 28px;
   color: grey;
-}
-
-.img {
-  width: 100%;
-  height: auto;
 }
 
 .img-half {

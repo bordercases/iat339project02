@@ -89,22 +89,24 @@ footer{
   text-align: center;
   padding: 0 1em;
 }
-.feedback-section h1 {
+.feedback-section h1, .centered-h1 {
   font-size: 2rem;
   margin: 0;
-  letter-spacing: 1rem;
+  letter-spacing: 0.8rem;
+  text-align: center;
 }
-.feedback-section h3, .news-section h3 {
+.feedback-section h3, .news-section h3, .centered-h3{
   font-size: 1rem;
   letter-spacing: 0.3rem;
+  text-align: center;
   opacity: 0.6;
 }
 
 @media (min-width: 800px) {
-  .feedback-section h1, .head-1 {
+  .feedback-section h1, .head-1, .centered-h1 {
     font-size: 3rem;
   }
-  .feedback-section h3, .head-3 {
+  .feedback-section h3, .head-3, .centered-h3 {
     font-size: 1rem;
   }
   .et-hero-tab {

@@ -1,0 +1,146 @@
+/* product listing element */
+
+.products-page{
+  margin: 3rem 0;
+}
+
+.product-listing {
+  height: auto;
+  min-width: 18rem;
+  max-width: 25em;
+  flex: 1;
+  padding: 20px;
+  position: relative;
+  background-color: #f8f8f8bd;
+  margin: 1rem;
+  overflow: hidden;
+  transition: all 0.5s;
+  display: block;
+}
+
+.product-listing:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.product-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-content {
+    margin: 1em;
+}
+
+.product-content>* {
+  margin-bottom: 0.4em;
+      font-family: 'Raleway', sans-serif;
+      font-size: 1rem;
+}
+
+.product-name{
+  font-weight: bold;
+}
+
+.product-descrip{
+  font-size: 0.8rem;
+  font-weight: 100;
+  padding: 0.5rem 0;
+}
+
+/*product detail page*/
+
+.product-detail{
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0 2rem 0;
+}
+
+.product-detail .product-content{
+max-width: 20rem;
+min-width: 5rem;
+height: auto;
+}
+
+.product-detail .product-name{
+  font-weight: normal;
+  font-size: 1.3rem;
+}
+
+.product-detail .product-price{
+  font-weight: bold;
+}
+
+.product-detail ul{
+list-style-type: circle;
+padding-left: 1rem;
+}
+
+.quantity{
+
+}
+
+.quantity input{
+    border: 1px solid #ccc;
+  font-size: 16px;
+  height: 34px;
+  width: 50%;
+  margin:0.5rem 0;
+  padding-left: 0.5rem;
+}
+
+.similar-products{
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f1f133;
+padding: 3rem 0 3rem 0;
+}
+
+.product-suggestion{
+  align-items: center;
+  justify-content: center;
+}
+
+.product-suggestion a{
+  max-width: 12rem;
+  height: auto;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+
+/*product purchased*/
+.product-purchased{
+  padding: 10%;
+  text-align: center;
+  height: 100vh;
+}
+
+.purchased-coffee-icon{
+  width: 3rem;
+  height: auto;
+}
+
+
+/* product choice element */
+
+/* very similar to product listing but with some changes */
+
+.product-choice {
+  /*height:100%;
+    width:100%;*/
+  flex: 1;
+  padding: 20px;
+  position: relative;
+  background-color: #f5f9e9;
+  margin: 2rem;
+  overflow: hidden;
+  border: solid 1px #efefef;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.product-choice:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}

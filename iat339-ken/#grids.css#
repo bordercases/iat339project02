@@ -31,7 +31,7 @@
   background-color: #AAA; }
 */
 
-@media (min-width: 25em) {
+@media (min-width: 50em) {
   /* spec asked for specifically for the 5th child, although :last-child
   would be more lifted */
   .container .block:nth-child(5){

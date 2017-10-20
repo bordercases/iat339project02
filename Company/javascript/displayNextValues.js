@@ -2,6 +2,14 @@
 // data: the slider, the elements of the DOM that are affected
 // we'll specify this under "slider-wrapper"
 
+var sliderInput = document.getElementById('sliderInputWrapper').getElementsByTagName('input')[0];
+var currentParentHeight = window.getComputedStyle(document.getElementById('sliderInputWrapper').parentNode).height;
+sliderInput.style.width =  currentParentHeight;
+window.addEventListener('resize', function(){
+  var currentParentHeight = window.getComputedStyle(document.getElementById('sliderInputWrapper').parentNode).height;
+  sliderInput.style.width =  currentParentHeight;
+}, true);
+
 // select elements determined by slider
 var sliderOptions = document.getElementsByClassName('slider-option');
 var sliderContents = document.getElementsByClassName('slider-content');
@@ -16,8 +24,7 @@ for (var i = 0; i < sliderContents.length; i++) {
 }
 
 // set the current value as not hidden
-var sliderInput = document.getElementsByTagName('input');
-var firstValue = sliderOptions.length - (parseInt(sliderInput[0].value))
+var firstValue = sliderOptions.length - (parseInt(sliderInput.value))
 sliderOptions[firstValue].style.display = "inline"
 sliderContents[firstValue].style.display = "inline"
 

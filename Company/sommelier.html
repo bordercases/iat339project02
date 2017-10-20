@@ -35,78 +35,120 @@
 </header>
 
 <body>
-  <div class="container row">
+  <div class="container row-wrap">
 
       <section id="somm-left" class="container block">
 
           <img src="img/coffee-example.jpg" alt="Currently Selected Ingredients"></img>
 
       </section>
+      <div id="somm-select" class="block">
+        <!-- slider options appear as headers -->
+        <header>
+          <!-- this will be filled with content handled by the javascript displayNextValues.js -->
+          <!-- unfortunately the datalist element is not supported by Safari -->
+          <span id="option-1" class="slider-option" style="display: inline;">
+            <h2 class="head-2">Ice Cream</h2>
+          </span>
 
-      <article id="somm-right" class="container block">
+          <span id="option-2" class="slider-option" style="display: none;">
+            <h2 class="head-2">Milk</h2>
+          </span>
 
-        <section>
+          <span id="option-3" class="slider-option" style="display: none;">
+            <h2 class="head-2">Cream</h2>
+          </span>
+        </header>
 
-          <div class="slider">
-              <div class="slider-range-wrapper vertical">
-                <input type="range" value="3" step="1" min="1" max="3">
-              </div>
-
-              <div class="container">
-                <div class="slider-range-values block">
-                    <!-- this will be filled with content handled by the javascript displayNextValues.js -->
-                    <!-- unfortunately the datalist element is not supported by Safari -->
-                    <span id="option-1" class="slider-option" style="display: none;">
-                      <h2 class="head-2">Ice Cream</h2>
-                    </span>
-                    <span id="option-2" class="slider-option" style="display: none;">
-                      <h2 class="head-2">Milk</h2>
-                    </span>
-                    <span id="option-3" class="slider-option" style="display: none;">
-                      <h2 class="head-2">Cream</h2>
-                    </span>
-                </div>
-                <div class="slider-range-content block">
-                  <span id="content-1" class="slider-content" style="display: none">
-                    <p class="p-style">
-                      Minus quia quisquam amet. Iure quia repudiandae blanditiis laboriosam illum. Quisquam aut asperiores aspernatur esse.<br>
-                      Qui nihil voluptas sint hic dolor ut. Est id sequi dolores blanditiis unde est. Quaerat debitis aut qui ex omnis ut. Quia totam iste blanditiis. Est nihil ea unde adipisci numquam laborum quia. Nobis sapiente ut ipsa molestias voluptatem distinctio.<br>
-                      Qui placeat aliquid velit suscipit nesciunt beatae eos natus. Quis eos mollitia hic. Ipsam quae iste culpa itaque vel aut fugiat qui.<br>
-                      Libero ullam reprehenderit fuga rerum quae omnis aut. Et et qui fuga veritatis temporibus. Qui ea voluptas ratione qui voluptatem sit. Ipsum reprehenderit quos fugiat error possimus ea fugit culpa. Est molestiae sit eos.<br>
-                      Molestiae nemo quisquam fugiat asperiores. Eaque iste qui ea rerum eum porro. Omnis magnam aut dicta quia repellat sint ex qui. Alias rerum facilis eum qui ratione quam quidem. Nostrum quisquam enim id optio enim quis quia quidem.<br>
-                    </p>
-                  </span>
-                  <span id="content-2" class="slider-content" style="display: none;">
-                    <p class="p-style">
-                      Minus quia quisquam amet. Iure quia repudiandae blanditiis laboriosam illum. Quisquam aut asperiores aspernatur esse.<br>
-                      Qui nihil voluptas sint hic dolor ut. Est id sequi dolores blanditiis unde est. Quaerat debitis aut qui ex omnis ut. Quia totam iste blanditiis. Est nihil ea unde adipisci numquam laborum quia. Nobis sapiente ut ipsa molestias voluptatem distinctio.<br>
-                      Qui placeat aliquid velit suscipit nesciunt beatae eos natus. Quis eos mollitia hic. Ipsam quae iste culpa itaque vel aut fugiat qui.<br>
-                      Libero ullam reprehenderit fuga rerum quae omnis aut. Et et qui fuga veritatis temporibus. Qui ea voluptas ratione qui voluptatem sit. Ipsum reprehenderit quos fugiat error possimus ea fugit culpa. Est molestiae sit eos.<br>
-                      Molestiae nemo quisquam fugiat asperiores. Eaque iste qui ea rerum eum porro. Omnis magnam aut dicta quia repellat sint ex qui. Alias rerum facilis eum qui ratione quam quidem. Nostrum quisquam enim id optio enim quis quia quidem.<br>
-                    </p>
-                  </span>
-                  <span id="content-3" class="slider-content" style="display: none;">
-                    <p class="p-style">
-                      Minus quia quisquam amet. Iure quia repudiandae blanditiis laboriosam illum. Quisquam aut asperiores aspernatur esse.<br>
-                      Qui nihil voluptas sint hic dolor ut. Est id sequi dolores blanditiis unde est. Quaerat debitis aut qui ex omnis ut. Quia totam iste blanditiis. Est nihil ea unde adipisci numquam laborum quia. Nobis sapiente ut ipsa molestias voluptatem distinctio.<br>
-                      Qui placeat aliquid velit suscipit nesciunt beatae eos natus. Quis eos mollitia hic. Ipsam quae iste culpa itaque vel aut fugiat qui.<br>
-                      Libero ullam reprehenderit fuga rerum quae omnis aut. Et et qui fuga veritatis temporibus. Qui ea voluptas ratione qui voluptatem sit. Ipsum reprehenderit quos fugiat error possimus ea fugit culpa. Est molestiae sit eos.<br>
-                      Molestiae nemo quisquam fugiat asperiores. Eaque iste qui ea rerum eum porro. Omnis magnam aut dicta quia repellat sint ex qui. Alias rerum facilis eum qui ratione quam quidem. Nostrum quisquam enim id optio enim quis quia quidem.<br>
-                    </p>
-                  </span>
-                </div>
-              </div>
+        <div class="slider">
+          <div id="sliderInputWrapper" class="slider-range-wrapper vertical">
+              <input type="range" step="1" min="1" max="3">
+              <span class="slider-range-value">
+              </span>
           </div>
+        </div>
 
-        </section>
+      </div>
 
-    </article>
+      <section id="somm-right" class="container block">
+
+        <div class="slider-range-content block">
+
+            <span id="content-1" class="slider-content" style="display: inline">
+              <div class="slider-content-img">
+
+                <figure>
+                  <img src="http://via.placeholder.com/150x150" alt="150x150 Placeholder" style="width:auto;height:auto;"/>
+                  <figcaption>Chocolate Ice Cream</figcaption>
+                </figure>
+
+                <figure>
+                  <img src="http://via.placeholder.com/150x150" alt="150x150 Placeholder" style="width:auto;height:auto;"/>
+                  <figcaption>Vanilla Ice Cream</figcaption>
+                </figure>
+
+                <figure>
+                  <img src="http://via.placeholder.com/150x150" alt="150x150 Placeholder" style="width:auto;height:auto;"/>
+                  <figcaption>Almond Ice Cream</figcaption>
+                </figure>
+
+              </div>
+
+              <p class="p-style">
+                Minus quia quisquam amet. Iure quia repudiandae blanditiis laboriosam illum. Quisquam aut asperiores aspernatur esse.<br><br>
+                </p>
+            </span>
+
+            <span id="content-2" class="slider-content" style="display: none;">
+
+              <div class="slider-content-img">
+                <figure>
+                  <img src="http://via.placeholder.com/150x150" alt="150x150 Placeholder" style="width:auto;height:auto;"/>
+                  <figcaption>Skim Milk</figcaption>
+                </figure>
+                <figure>
+                  <img src="http://via.placeholder.com/150x150" alt="150x150 Placeholder" style="width:auto;height:auto;"/>
+                  <figcaption>2% Milk</figcaption>
+                </figure>
+                <figure>
+                  <img src="http://via.placeholder.com/150x150" alt="150x150 Placeholder" style="width:auto;height:auto;"/>
+                  <figcaption>3.25% Milk</figcaption>
+                </figure>
+              </div>
+
+              <p class="p-style">
+                Minus quia quisquam amet. Iure quia repudiandae blanditiis laboriosam illum. Quisquam aut asperiores aspernatur esse.<br><br>
+              </p>
+            </span>
+            <span id="content-3" class="slider-content" style="display: none;">
+              <div class="slider-content-img">
+                <figure>
+                  <img src="http://via.placeholder.com/150x150" alt="150x150 Placeholder" style="width:auto;height:auto;"/>
+                  <figcaption>Heavy Cream</figcaption>
+                </figure>
+                <figure>
+                  <img src="http://via.placeholder.com/150x150" alt="150x150 Placeholder" style="width:auto;height:auto;"/>
+                  <figcaption>Coffee Cream</figcaption>
+                </figure>
+                <figure>
+                  <img src="http://via.placeholder.com/150x150" alt="150x150 Placeholder" style="width:auto;height:auto;"/>
+                  <figcaption>Half-and-Half</figcaption>
+                </figure>
+              </div>
+              <p class="p-style">
+                Minus quia quisquam amet. Iure quia repudiandae blanditiis laboriosam illum. Quisquam aut asperiores aspernatur esse.<br><br>
+            </span>
+          </div>
+        </div>
+
+
+      </section>
 
 
   </div>
   <div class="block">
     <form id="checkout" action="checkout.html">
-        <button  class="button-submit-style">Checkout</button>
+        <button  class="button-submit-style button-bottom">Checkout</button>
     </form>
   </div>
 </body>

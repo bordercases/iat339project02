@@ -90,11 +90,19 @@ header {
 /* headers */
 
 [class*="head-"] {
-  font-family: 'Playfair Display', serif;
+  /*font-family: 'Playfair Display', serif;*/
+
+  font-family: 'Times New Roman', sans-serif;
   margin: 2.15% 0 2.15% 0;
   /*text-transform: uppercase;*/
 }
 
+.head-1{
+    /*text-transform: uppercase;*/
+    letter-spacing: 0.5rem;
+    padding-top: 1rem;
+    margin: 0;
+}
 .head-2 {
   font-size: 1.5em;
   /*text-transform: uppercase;*/
@@ -102,16 +110,19 @@ header {
 
 .head-3 {
   font-size: 1.3em;
+      letter-spacing: 0.3rem;
   /*text-transform: uppercase;*/
 }
-
-/* get around section styling h1 */
 
 /* https://stackoverflow.com/questions/26290849/why-is-size-of-h1-different-inside-a-section-element */
 
 section h1 {
   letter-spacing: 5px;
   font-size: 2em;
+  /*text-align: center;
+    text-transform: uppercase;
+    padding-top: 1rem;
+    margin: 0;*/
 }
 
 section h3 {
@@ -178,23 +189,18 @@ figcaption {
 
 /* anchor and button styles */
 
-.inline-link {
+.inline-link, .inline-link:visited {
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
   color: grey;
   font-weight: bold;
-}
-
-.inline-link:link {
-  color: #5a3819;
-}
-
-.inline-link:visited {
-  color: #3a5918;
+        transition: all .5s;
+      color: #a58b2f;
 }
 
 .inline-link:hover {
-  color: #59181a;
+  color: #816d25;
+      transition: all .5s;
   font-weight: bold;
   text-decoration: underline;
 }
@@ -324,10 +330,11 @@ figcaption {
   color: #c7c7c7;
 }
 
-.button-reset-style:hover {
+.button-reset-style:hover,.button-reset-style:focus {
   transition: all 0.5s ease-in-out;
   color: #515751;
   background-color: #e3e3e3;
+  outline:none;
 }
 
 /* as an element meant to be button-like we'll leave the visited behavior as per the normal look */
@@ -336,6 +343,15 @@ figcaption {
   border: 2px solid #e3e3e3;
   background-color: transparent;
   color: #c7c7c7;
+}
+
+.button-drink-size{
+  width: auto;
+  min-width: 80px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin: 0.5rem 0.5rem 0 0;
+  height: auto;
 }
 
 /* ------------- styling of molecules ------------- */
@@ -364,13 +380,18 @@ div.search-bar>button[type="button"] {
 
 /* product listing element */
 
+.kit-header{
+
+}
+
 .product-listing {
-  /*height:100%;
-    width:100%;*/
+  height: auto;
+  min-width: 18rem;
+  max-width: 25em;
   flex: 1;
   padding: 20px;
   position: relative;
-  /*background-color: #f8f8f8;*/
+  background-color: #f8f8f8bd;
   margin: 1rem;
   overflow: hidden;
   transition: all 0.5s;
@@ -386,11 +407,25 @@ div.search-bar>button[type="button"] {
   height: auto;
 }
 
-.product-content {}
+.product-content {
+    margin: 1em;
+}
 
 .product-content>* {
-  margin: 0.4em;
+  margin-bottom: 0.4em;
+      font-family: 'Raleway', sans-serif;
+      font-size: 1rem;
 }
+
+.product-name{
+  font-weight: bold;
+}
+
+.product-descrip{
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+
 
 /* product choice element */
 
@@ -722,7 +757,7 @@ font-family: 'Raleway', sans-serif;*/
   border-bottom: 1px solid rgba(0, 0, 0, .25);
 }
 
-/*about us*/
+/*styling index*/
 
 .parallax-img {
   position: relative;
@@ -745,10 +780,11 @@ font-family: 'Raleway', sans-serif;*/
   border-bottom: solid 1px white;
   display: inline-block;
   margin: 0 1rem;
+  padding-top: 0.5rem;
 }
 
 .inline-h3 {
-  margin: 0;
+  /*margin: 0;*/
   display: inline-block;
   color: white;
 }
@@ -762,6 +798,9 @@ font-family: 'Raleway', sans-serif;*/
   color: white;
   vertical-align: middle;
   text-align: center;
+  border-top: solid 1px #ffffff69;
+  border-bottom: solid 1px #ffffff69;
+background-color: #00000038;
 }
 
 .overlay-box {
@@ -809,12 +848,75 @@ font-family: 'Raleway', sans-serif;*/
   display: inline-block;
   /*color: white;*/
   transition: all 0.5s ease-in-out;
-background-color: rgba(0, 0, 0, 0.47);
+/*background-color: rgba(0, 0, 0, 0.47);*/
 }
 
-.translate-right:hover {
-  transition: all 0.5s ease-in-out;
-  transform: translate(50px, 0px);
-/*transform: scale(1.2);*/
-  /*background-color: red;*/
+.translate-right:hover .line{
+    transition: all 0.5s ease-in-out;
+    transform: translate(50px, 0px);
+  /*transform: scale(1.5);*/
+    /*background-color: red;*/
+}
+
+/*news section*/
+
+.news-section{
+background: #cacaca1f;
+padding: 1.5rem 0;
+
+}
+.news-content{
+  vertical-align:middle;
+  justify-content: center;
+}
+.news-article{
+    position: relative;
+        margin: 2rem 1rem;
+        max-width: 30rem;
+        min-width: 15rem;
+        height: auto;
+        flex:1;
+}
+.news-picture{}
+
+.news-header{
+  text-align: center;
+}
+
+.ribbon {
+  display: block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 0;
+  height: 100px;
+  position: absolute;
+  content: ;
+  left: 1rem;
+  overflow: visible;
+  outline: none;
+  border: 33px solid #a58b2f;
+  border-top: 0 solid rgba(0,0,0,1);
+  border-bottom: 8px solid rgba(0,0,0,0);
+  -webkit-border-radius: 0;
+  color: rgba(0,0,0,1);
+  }
+
+
+  .news-date{
+    position: absolute;
+    color: white;
+    text-align: center;
+    top: 1rem;
+    left: -15px;
+    font-family: 'Raleway', sans-serif;
+  }
+.month{
+  font-weight: bold;
+      font-size: 0.9rem;
+      letter-spacing: 0.1em;
+}
+
+.date{
+  font-weight: 100;
 }

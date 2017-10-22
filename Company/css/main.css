@@ -784,10 +784,10 @@ background-color: #00000038;
 }
 
 .overlay-box {
-  /*width: 50%;*/
   position: relative;
-  margin: 2rem 0;
-  padding: 0 1rem;
+  /*margin: 2rem 0;*/
+  padding: 1rem 2rem;
+  width: 50%;
 }
 
 /*.color-box{
@@ -816,7 +816,8 @@ background-color: #00000038;
 .img-half {
   height: auto;
   background-size: cover;
-  width: 50%;
+  max-width: 50%;
+  min-width: 300px;
 }
 
 .translate-right {

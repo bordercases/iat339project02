@@ -34,141 +34,162 @@
     </div>
   </nav>
 </header>
+<style>
+  .block {
+      flex-basis: min-content;
+  }
 
+  /* https://codepen.io/manabox/pen/raQmpL */
+  /* we will style labels, not radio buttons */
+  input[type="radio"] {
+    display: none;
+  }
+
+  input[type="radio"]:checked + label span {
+    border: 1px solid red;
+  }
+
+  /*label {
+    visibility: hidden;
+  }*/
+
+  /*.somm-control {
+    display:none;
+  }*/
+
+</style>
 <body>
-  <div class="container row-wrap">
 
-      <section id="somm-left" class="container block">
+  <div id="somm-all" class="container">
 
-          <img id="somm-img" src="" alt="Currently Selected Ingredients"></img>
+    <section id="somm-left" class="block">
+      <img src=""
+           alt="A cartoon picture of coffee based on what you've selected"/>
+    </section>
 
-      </section>
-      <div id="somm-select" class="block">
-        <!-- slider options appear as headers -->
-        <header>
-          <!-- this will be filled with content handled by the javascript displayNextValues.js -->
-          <!-- unfortunately the datalist element is not supported by Safari -->
-          <span id="ice" class="slider-option" style="display: inline;">
-            <h2 class="head-2">Ice Cream</h2>
-          </span>
+    <section id="somm-right" class="container block">
 
-          <span id="milk" class="slider-option" style="display: none;">
-            <h2 class="head-2">Milk</h2>
-          </span>
+        <div class="block somm-control">
+            <header>
+              <h2 class="head-2">
+                Richness
+              </h2>
+            </header>
+            <form name="richness">
 
-          <span id="cream" class="slider-option" style="display: none;">
-            <h2 class="head-2">Cream</h2>
-          </span>
-        </header>
+              <input type="radio" id="richness-1" name="richness">
+              <label for="richness-1">
+                <span class="square our-dark">Dark</span>
+              </label>
 
-        <div class="slider">
-          <div id="sliderInputWrapper" class="slider-range-wrapper vertical">
-              <input type="range" step="1" min="1" max="3">
-              <span class="slider-range-value">
-              </span>
-          </div>
+              <input type="radio" id="richness-2" name="richness">
+              <label for="richness-2">
+                <span class="square our-medium-dark">Medium-Dark</span>
+              </label>
+
+              <input type="radio" id="richness-3" name="richness">
+              <label for="richness-3">
+                <span class="square our-medium">Medium</span>
+              </label>
+
+              <input type="radio" id="richness-4" name="richness">
+              <label for="richness-4">
+                <span class="square our-blond-medium">Blond-Medium</span>
+              </label>
+
+              <input type="radio" id="richness-5" name="richness">
+              <label for="richness-5">
+                <span class="square our-blond-medium">Blond
+              </label>
+            </form>
+            <button class="button-submit-style button-bottom somm-nav">Next</button>
         </div>
 
-      </div>
+        <div class="block somm-control">
+          <header>
+            <h2 class="head-2">
+              Topping
+            </h2>
+          </header>
 
-      <section id="somm-right" class="container block">
+          <form name="topping">
 
-        <div class="slider-range-content block">
+            <input type="radio" id="topping-1" name="topping">
+            <label for="topping-1">
+              <span class="square our-medium">Coffee Cream</span>
+            </label>
 
-            <span id="content-1" class="slider-content center" style="display: inline">
-              <div class="slider-content-img">
+            <input type="radio" id="topping-2" name="topping">
+            <label for="topping-2">
+              <span class="square our-medium">Whole Milk</span>
+            </label>
 
-                <figure>
-                  <img src="http://via.placeholder.com/150x150" alt="150x150 Placeholder" style="width:auto;height:auto;"/>
-                  <figcaption>Chocolate Ice Cream</figcaption>
-                </figure>
+            <input type="radio" id="topping-3" name="topping">
+            <label for="topping-3">
+              <span class="square our-medium">2% Milk</span>
+            </label>
 
-                <figure>
-                  <img src="http://via.placeholder.com/150x150" alt="150x150 Placeholder" style="width:auto;height:auto;"/>
-                  <figcaption>Vanilla Ice Cream</figcaption>
-                </figure>
+            <input type="radio" id="topping-4" name="topping">
+            <label for="topping-4">
+              <span class="square our-medium">Skim Milk</span>
+            </label>
 
-                <figure>
-                  <img src="http://via.placeholder.com/150x150" alt="150x150 Placeholder" style="width:auto;height:auto;"/>
-                  <figcaption>Almond Ice Cream</figcaption>
-                </figure>
+            <input type="radio" id="topping-5" name="topping">
+            <label for="topping-5">
+              <span class="square our-grey">None</span>
+            </label>
 
-              </div>
-
-              <!-- <p class="p-style">
-                Minus quia quisquam amet. Iure quia repudiandae blanditiis laboriosam illum. Quisquam aut asperiores aspernatur esse.<br><br>
-              </p> -->
-
-            </span>
-
-            <span id="content-2" class="slider-content center" style="display: none;">
-
-              <div class="slider-content-img">
-
-                <figure>
-                  <img src="http://via.placeholder.com/150x150" alt="150x150 Placeholder" style="width:auto;height:auto;"/>
-                  <figcaption>Skim Milk</figcaption>
-                </figure>
-
-                <figure>
-                  <img src="http://via.placeholder.com/150x150" alt="150x150 Placeholder" style="width:auto;height:auto;"/>
-                  <figcaption>2% Milk</figcaption>
-                </figure>
-
-                <figure>
-                  <img src="http://via.placeholder.com/150x150" alt="150x150 Placeholder" style="width:auto;height:auto;"/>
-                  <figcaption>3.25% Milk</figcaption>
-                </figure>
-
-              </div>
-
-              <!-- <p class="p-style">
-                Minus quia quisquam amet. Iure quia repudiandae blanditiis laboriosam illum. Quisquam aut asperiores aspernatur esse.<br><br>
-              </p> -->
-
-            </span>
-
-            <span id="content-3" class="slider-content center" style="display: none;">
-              <div class="slider-content-img">
-
-                <figure>
-                  <img src="http://via.placeholder.com/150x150" alt="150x150 Placeholder" style="width:auto;height:auto;"/>
-                  <figcaption>Heavy Cream</figcaption>
-                </figure>
-
-                <figure>
-                  <img src="http://via.placeholder.com/150x150" alt="150x150 Placeholder" style="width:auto;height:auto;"/>
-                  <figcaption>Coffee Cream</figcaption>
-                </figure>
-
-                <figure>
-                  <img src="http://via.placeholder.com/150x150" alt="150x150 Placeholder" style="width:auto;height:auto;"/>
-                  <figcaption>Half-and-Half</figcaption>
-                </figure>
-
-              </div>
-
-              <!-- <p class="p-style">
-                Minus quia quisquam amet. Iure quia repudiandae blanditiis laboriosam illum. Quisquam aut asperiores aspernatur esse.<br><br>
-              </p> -->
-
-            </span>
-
-          </div>
+          </form>
+          <button class="button-submit-style button-bottom somm-nav">Next</button>
         </div>
 
+        <div class="block somm-control">
 
-      </section>
+          <header>
+            <h2 class="head-2">
+              Roast Flavor
+            </h2>
+          </header>
 
+          <form name="flavor">
+
+            <input type="radio" id="flavor-1" name="flavor">
+            <label for="flavor-1">
+              <span class="square">Vanilla</span>
+            </label>
+
+            <input type="radio" id="flavor-2" name="flavor">
+            <label for="flavor-2">
+              <span class="square">Hazlenut</span>
+            </label>
+
+            <input type="radio" id="flavor-3" name="flavor">
+            <label for="flavor-3">
+              <span class="square">Sweet Potato</span>
+            </label>
+
+            <input type="radio" id="flavor-4" name="flavor">
+            <label for="flavor-4">
+              <span class="square our-grey">No Flavor</span>
+            </label>
+            <button class="button-submit-style button-bottom">Next</button>
+          </form>
+
+        </div>
+
+        <div class="block">
+          <form id="checkout" action="checkout.html">
+              <button  class="button-submit-style button-bottom somm-nav">Checkout</button>
+          </form>
+        </div>
+
+    </section>
 
   </div>
-  <div class="block">
-    <form id="next" action="sommelier-2.html">
-        <button  class="button-submit-style button-bottom">Next</button>
-    </form>
-  </div>
+
+
+
 </body>
-
 
 <footer>
     <div class="container footer-top">
@@ -215,6 +236,7 @@
      javascript -->
 <!-- sommType tag used by sommelier.js to adjust image and set state -->
 <meta id="somm-type" name="topping"/>
+<script src="javascript/wrap.js"></script>
 <script src="javascript/sommelier.js"></script>
 <script src="javascript/fullScreenSlider.js" type="text/javascript"></script>
 <script src="javascript/displayNextValues.js" type="text/javascript"></script>

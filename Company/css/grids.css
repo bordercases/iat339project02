@@ -86,26 +86,6 @@ footer {
 
 /*others*/
 
-.centered-h1 {
-  font-size: 2rem;
-  margin: 0;
-  letter-spacing: 0.8rem;
-  text-align: center;
-}
-
-.centered-h3 {
-  font-size: 1rem;
-  letter-spacing: 0.3rem;
-  text-align: center;
-  opacity: 0.6;
-}
-
-@media (min-width: 50em) {
-  .button-submit-style {
-    max-width: 100%;
-  }
-}
-
 @media (min-width: 800px) {
   .centered-h1 {
     font-size: 3rem;
@@ -118,7 +98,8 @@ footer {
   }
 }
 
-@media (max-width: 775px) {
+/*screen is smaller than 775px*/
+@media (max-width: 850px) {
   .overlay-box, .img-half {
     width: 100%;
     max-width: 100%;
@@ -126,6 +107,15 @@ footer {
   .footer-companyInfo {
     width: 100%;
     text-align: center;
+  }
+
+  .button-submit-style {
+    max-width: 100%;
+  }
+
+  .top-link{
+    bottom: -3em;
+    right: -2rem;
   }
 }
 

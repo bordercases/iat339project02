@@ -3,16 +3,17 @@
 *, *::before, *::after {
   box-sizing: border-box;
 }
+
 .container {
   display: -ms-flex;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  clear:both;
+  clear: both;
   height: auto;
 }
 
-.container > .block {
+.container>.block {
   flex-grow: 1;
   -ms-flex-basis: 30em;
   flex-basis: 30em;
@@ -20,9 +21,10 @@
 }
 
 /* c/o http://www.sketchingwithcss.com/samplechapter/cheatsheet.html */
+
 .container .row-wrap {
-   -webkit-flex-flow: row wrap;
-   flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
 }
 
 .container .row {
@@ -31,24 +33,24 @@
 }
 
 .container .center {
-    -webkit-align-items: center;
-    align-items: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-align-content: flex-end;
-    align-content: flex-end;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: flex-end;
+  align-content: flex-end;
 }
 
 .container .row {
-    -ms-flex-wrap: row wrap;
-    -webkit-flex-wrap: row wrap;
-    flex-wrap: row wrap;
+  -ms-flex-wrap: row wrap;
+  -webkit-flex-wrap: row wrap;
+  flex-wrap: row wrap;
 }
 
 .container .col {
-    -ms-flex-wrap: col wrap;
-    -webkit-flex-wrap: col wrap;
-    flex-wrap: col wrap;
+  -ms-flex-wrap: col wrap;
+  -webkit-flex-wrap: col wrap;
+  flex-wrap: col wrap;
 }
 
 @media (min-width:50em) {
@@ -57,61 +59,55 @@
   /*.container .block:nth-child(5){
     order: 1;
   }*/
-  .container > .block:nth-of-type(odd) {
+  .container>.block:nth-of-type(odd) {
     border-top: 0;
     border: 2px solid #f7f7f7;
   }
-  .feedback{
+  .feedback {
     max-width: 750px;
     height: auto;
   }
-
   /*.button-submit-style{
     max-width: 80%;
   }*/
 }
 
 /*1024px*/
+
 @media (min-width: 50em) {
-  .checkout-group{
+  .checkout-group {
     max-width: 30%;
   }
-
 }
 
-footer{
+footer {
   background-color: #343434;
 }
 
 /*others*/
 
-.feedback-section {
-      /*font-family: 'Playfair Display', serif;*/
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  position: relative;
-  background: #fff;
-  text-align: center;
-  padding: 0 1em;
-}
-.feedback-section h1, .centered-h1 {
+.centered-h1 {
   font-size: 2rem;
   margin: 0;
   letter-spacing: 0.8rem;
   text-align: center;
 }
-.feedback-section h3, .news-section h3, .centered-h3{
+
+.centered-h3 {
   font-size: 1rem;
   letter-spacing: 0.3rem;
   text-align: center;
   opacity: 0.6;
 }
 
+@media (min-width: 50em) {
+  .button-submit-style {
+    max-width: 100%;
+  }
+}
+
 @media (min-width: 800px) {
-  .feedback-section h1, .head-1, .centered-h1 {
+  .centered-h1 {
     font-size: 3rem;
   }
   .feedback-section h3, .head-3, .centered-h3 {
@@ -121,17 +117,29 @@ footer{
     font-size: 1rem;
   }
 }
+
+@media (max-width: 775px) {
+  .overlay-box, .img-half {
+    width: 100%;
+    max-width: 100%;
+  }
+  .footer-companyInfo {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 /* some separators to enforce the gestalt */
 
 /*.container .block:nth-of-type(even) {
     border-left: 1px solid lightgrey;
 }*/
 
-.container > .block:nth-of-type(odd) {
+.container>.block:nth-of-type(odd) {
   border: 2px solid #f7f7f7;
 }
 
-.container > .block:hover {
-  background-color: #f7f7f7;
+.container>.block:hover {
+  background-color: #f7f7f747;
   transition: all 0.5s ease-in-out;
 }

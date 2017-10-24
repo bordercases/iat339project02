@@ -49,6 +49,20 @@
   padding: 0.5rem 0;
 }
 
+/*placeholder usage*/
+.blank{
+background: white;
+height: auto;
+min-width: 18rem;
+max-width: 25em;
+flex: 1;
+padding: 20px;
+position: relative;
+margin: 1rem;
+overflow: hidden;
+display: block;
+}
+
 /*product detail page*/
 
 .product-detail{

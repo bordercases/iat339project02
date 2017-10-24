@@ -113,7 +113,7 @@ img {
   letter-spacing: 0.3rem;
   padding-top: 1rem;
   margin: 0;
-  font-size: 1.6em;
+  font-size: 1.7em;
   border-top: solid black 1px;
   display: inline-block;
   text-transform: uppercase;
@@ -121,7 +121,7 @@ img {
 }
 
 .head-2 {
-  font-size: 1.4em;
+  font-size: 1.5em;
   letter-spacing: 0.3rem;
   /*border-top: solid black 1px;*/
   display: inline-block;
@@ -142,6 +142,11 @@ img {
   color: white;
   letter-spacing: 3px;
   font-weight: 100;
+}
+
+[class*="centered"] {
+  text-align: center;
+display: block;
 }
 
 /* https://stackoverflow.com/questions/26290849/why-is-size-of-h1-different-inside-a-section-element */
@@ -233,12 +238,14 @@ figcaption {
   text-decoration: underline;
 }
 
+/*nav*/
 .nav-default {
   background-color: #ffffffde;
   box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.2);
   padding: 2.5%;
   text-align: right;
   font-family: 'Raleway', sans-serif;
+  width: 100%;
 }
 
 .nav-title {
@@ -269,6 +276,47 @@ figcaption {
   opacity: 0.7;
   transition: all .3s ease-in-out;
   margin-right: 1%;
+}
+
+.hidden{
+  display: none;
+}
+
+#nav-toggle{
+  text-align: center;
+  background: white;
+  color: black;
+  transition: all .3s ease-in-out;
+}
+
+#nav-toggle .cart-link{
+  float: right;
+  margin-top: 5px;
+margin-right: 3%;
+}
+
+#nav-toggle .cart-icon{
+    max-width: 30px;
+}
+
+.menu{
+  color: black;
+      padding-left: 50px;
+}
+
+#nav-toggle .menu:hover{
+  border-bottom: none;
+}
+
+#nav-items{
+  background: #efefef;
+}
+
+.mobile-row{
+  color: white;
+  padding: 0.7rem 0;
+  display: block;
+  text-decoration:none;
 }
 
 /* maintains default style */
@@ -465,7 +513,7 @@ input:checked.mandatory {
   position: relative;
   background: #fff;
   text-align: center;
-  padding: 3rem 1rem;
+  padding: 5rem 1rem;
 }
 
 .feedback .feedback-box {
@@ -681,8 +729,13 @@ text-decoration: none;
 /*-------------checkout--------*/
 
 .checkout-content {
-  margin: 7rem 3%;
+  margin: 8rem 3%;
   /*padding-top: 120px;*/
+}
+
+.checkout-content .head-3{
+  display: inline-block;
+  margin-left: 2%;
 }
 
 .checkout-group {
@@ -710,7 +763,7 @@ text-decoration: none;
 }
 
 .checkout-headerbox {
-  /*margin: 1rem;*/
+margin-bottom: 1rem;
   padding: 0.5rem;
   /*text-transform: uppercase;
 font-family: 'Raleway', sans-serif;*/
@@ -810,7 +863,7 @@ font-family: 'Raleway', sans-serif;*/
 .overlay-box {
   position: relative;
   align-items: center;
-  padding: 1rem 5%;
+    padding: 1rem 5% 3rem 5%;
   width: 50%;
 }
 

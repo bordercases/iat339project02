@@ -345,7 +345,8 @@ figcaption {
   border-radius: 0.3rem;
   letter-spacing: 2px;
   /*margin: 1rem;*/
-  width: 100%;
+  width: 30%;
+  padding: 0 auto;
   height: 3rem;
   transition: background-color 0.5s ease-in-out;
 }
@@ -355,6 +356,7 @@ figcaption {
   color: white;
   padding: 14px 20px 13px;
   font-size: 14px;
+  width: 100%;
   line-height: 1.2;
 }
 
@@ -380,6 +382,8 @@ figcaption {
   border: 2px solid #e3e3e3;
   background-color: transparent;
   color: #c7c7c7;
+  width: 100%;
+  padding: 14px 20px 13px;
 }
 
 .button-reset-style:hover,.button-reset-style:focus {
@@ -492,10 +496,8 @@ input:checked.mandatory {
 /* c/o http://codeitdown.com/css-square-rectangle/ for this code */
 
 .square {
-  display: flex;
   text-align: center;
   align-items: center;
-  justify-content: center;
   position: relative;
   width: 16%;
   overflow: hidden;

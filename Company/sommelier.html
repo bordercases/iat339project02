@@ -63,49 +63,52 @@
   <div id="somm-all" class="container">
 
     <section id="somm-left" class="block">
-      <img src=""
-           alt="A cartoon picture of coffee based on what you've selected"/>
+      <img id="somm-img"
+          src=""
+          alt="A cartoon picture of coffee based on what you've selected"/>
     </section>
 
     <section id="somm-right" class="container block">
 
         <div class="block somm-control">
-            <header>
-              <h2 class="head-2">
-                Richness
-              </h2>
-            </header>
-            <form name="richness">
 
-              <input type="radio" id="richness-1" name="richness">
-              <label for="richness-1">
-                <span class="square our-dark">Dark</span>
-              </label>
+          <header>
+            <h2 class="head-2">
+              Richness
+            </h2>
+          </header>
 
-              <input type="radio" id="richness-2" name="richness">
-              <label for="richness-2">
-                <span class="square our-medium-dark">Medium-Dark</span>
-              </label>
+          <form name="richness">
 
-              <input type="radio" id="richness-3" name="richness">
-              <label for="richness-3">
-                <span class="square our-medium">Medium</span>
-              </label>
+            <input type="radio" id="richness-1" name="richness" value="dark" checked>
+            <label for="richness-1">
+              <span class="square our-dark">Dark</span>
+            </label>
 
-              <input type="radio" id="richness-4" name="richness">
-              <label for="richness-4">
-                <span class="square our-blond-medium">Blond-Medium</span>
-              </label>
+            <input type="radio" id="richness-2" name="richness">
+            <label for="richness-2">
+              <span class="square our-medium-dark">Medium-Dark</span>
+            </label>
 
-              <input type="radio" id="richness-5" name="richness">
-              <label for="richness-5">
-                <span class="square our-blond-medium">Blond
-              </label>
-            </form>
-            <button class="button-submit-style button-bottom somm-nav">Next</button>
+            <input type="radio" id="richness-3" name="richness" value="medium">
+            <label for="richness-3">
+              <span class="square our-medium">Medium</span>
+            </label>
+
+            <input type="radio" id="richness-4" name="richness">
+            <label for="richness-4">
+              <span class="square our-blond-medium">Blond-Medium</span>
+            </label>
+
+            <input type="radio" id="richness-5" name="richness" value="light">
+            <label for="richness-5">
+              <span class="square our-blond-medium">Blond</span>
+            </label>
+          </form>
         </div>
 
         <div class="block somm-control">
+
           <header>
             <h2 class="head-2">
               Topping
@@ -114,33 +117,32 @@
 
           <form name="topping">
 
-            <input type="radio" id="topping-1" name="topping">
+            <input type="radio" id="topping-1" name="topping" value="" checked>
             <label for="topping-1">
               <span class="square our-medium">Coffee Cream</span>
             </label>
 
-            <input type="radio" id="topping-2" name="topping">
+            <input type="radio" id="topping-2" name="topping" value="">
             <label for="topping-2">
               <span class="square our-medium">Whole Milk</span>
             </label>
 
-            <input type="radio" id="topping-3" name="topping">
+            <input type="radio" id="topping-3" name="topping" value="">
             <label for="topping-3">
               <span class="square our-medium">2% Milk</span>
             </label>
 
-            <input type="radio" id="topping-4" name="topping">
+            <input type="radio" id="topping-4" name="topping" value="">
             <label for="topping-4">
               <span class="square our-medium">Skim Milk</span>
             </label>
 
-            <input type="radio" id="topping-5" name="topping">
+            <input type="radio" id="topping-5" name="topping" value="none">
             <label for="topping-5">
               <span class="square our-grey">None</span>
             </label>
 
           </form>
-          <button class="button-submit-style button-bottom somm-nav">Next</button>
         </div>
 
         <div class="block somm-control">
@@ -168,18 +170,21 @@
               <span class="square">Sweet Potato</span>
             </label>
 
-            <input type="radio" id="flavor-4" name="flavor">
+            <input type="radio" id="flavor-4" name="flavor" checked>
             <label for="flavor-4">
               <span class="square our-grey">No Flavor</span>
             </label>
-            <button class="button-submit-style button-bottom">Next</button>
-          </form>
 
+          </form>
+        </div>
+
+        <div class="block">
+          <button id="switchOptions" class="button-bottom somm-nav">Next</button>
         </div>
 
         <div class="block">
           <form id="checkout" action="checkout.html">
-              <button  class="button-submit-style button-bottom somm-nav">Checkout</button>
+              <button  class="button-submit-style button-bottom">Checkout</button>
           </form>
         </div>
 

@@ -1,5 +1,13 @@
-
+#switchOptions {
+  display: none;
+}
 
 @media (max-width: 50em) {
-  #somm-all {}
+  /*.square {
+    float: none;
+  }*/
+
+  #somm-all.container {
+
+  }
 }

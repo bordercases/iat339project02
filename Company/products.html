@@ -6,13 +6,14 @@
   <meta name=viewport content="width=device-width, initial-scale=1">
   <title>Curation</title>
   <link href="css/main.css" rel="stylesheet">
-  <link href="css/grids.css" rel="stylesheet">
   <link href="css/products.css" rel="stylesheet">
+  <link href="css/grids.css" rel="stylesheet">
+
 
 </head>
 
 <header>
-  <nav class="nav-default">
+  <nav class="nav-default" id="nav-default">
     <a href="index.html" class="nav-logo-link">
       <span class="nav-title">BREWSTER</span>
     </a>
@@ -28,8 +29,8 @@
     </div>
 
     <div class="main-headers">
-      <a class="nav-link" href="sommelier-1.html">Sommelier</a>
-      <a class="nav-link" href="products.html">Starter Kit</a>
+      <a class="nav-link" href="sommelier.html">Customize</a>
+      <a class="nav-link" href="products.html">Products</a>
       <a class="nav-link" href="index.html#tab-about">About</a>
       <a class="nav-link" href="index.html#tab-news">News</a>
       <a class="cart-link" href="cart.html">
@@ -37,19 +38,45 @@
       </a>
     </div>
   </nav>
+
+  <!-- nav for mobile -->
+  <nav id="nav-toggle" class="hidden">
+      <div class="mobile-row" href="">
+        <div class="nav-title menu">BREWSTER</div>
+        <a class="cart-link" href="cart.html">
+          <img src="img/icons/cart.png" class="cart-icon"> </img>
+        </a>
+      </div>
+      <div class="" id="nav-items">
+        <a class="mobile-row" href="">
+          <div class="nav-link">Customize</div>
+        </a>
+        <a class="mobile-row" href="">
+          <div class="nav-link">Products</div>
+        </a>
+        <a class="mobile-row" href="">
+          <div class="nav-link">News</div>
+        </a>
+        <div class="mobile-row">
+          <a href=""><img src="img/icons/fb-blk.png" alt="black facebook icon" class="social-icon"></a>
+          <a href=""><img src="img/icons/insta-blk.png" alt="black instagram icon" class="social-icon"></a>
+         <a href=""><img src="img/icons/twitt-blk.png" alt="black twitter icon" class="social-icon"></a>
+        </div>
+        <div class="mobile-row">
+          <a class="nav-link lang-opt" href="">FR</a>
+          <span> | </span>
+          <a class="nav-link lang-opt" href="">EN</a>
+        </div>
+    </div>
+  </nav>
 </header>
 
 <body>
   <div id="#content" class="products-page">
 
-    <header>
-      <h1 class="centered-h1">Starter Kits</h1>
-      <h1 class="centered-h3">Cold brewed coffee kits.</h1>
-
-      <!-- <div class="search-bar">
-        <input type="text"></input>
-        <button type="button" class="button-reset-style">Find Product</button>
-      </div> -->
+    <header class="products-header">
+      <h1 class="head-1">Premade</h1>
+      <h3 class="head-3">Cold brewed coffee.</h3>
     </header>
 
     <section class="container row center">
@@ -114,10 +141,6 @@
           <button class="button-submit-style">See Details</button>
         </form>
       </div>
-    </section>
-
-
-    <section class="container row center">
 
       <div class="product-listing">
         <div class="">
@@ -158,6 +181,9 @@
         </form>
       </div>
 
+      <div class="blank">
+
+      </div>
     </section>
 
   </div>

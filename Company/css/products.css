@@ -6,9 +6,23 @@
   margin: 3rem 0;
 }
 
+.products-header{
+      margin: 8rem 3% 0 3%;
+}
+
+.products-header .head-3{
+  display: inline-block;
+  margin-left: 2%;
+}
+
+.center{
+  align-items: center;
+justify-content: center;
+}
+
 .product-listing {
   height: auto;
-  min-width: 18rem;
+  min-width: 20em;
   max-width: 25em;
   flex: 1;
   padding: 20px;
@@ -18,10 +32,15 @@
   overflow: hidden;
   transition: all 0.5s;
   display: block;
+  transition: all .3s ease-in-out;
+
 }
 
 .product-listing:hover {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  transform:scale(1.01);
+  transition: all .3s ease-in-out;
+
 }
 
 .product-image {
@@ -49,12 +68,26 @@
   padding: 0.5rem 0;
 }
 
+/*placeholder usage*/
+.blank{
+background: white;
+height: auto;
+min-width: 18rem;
+max-width: 25em;
+flex: 1;
+padding: 20px;
+position: relative;
+margin: 1rem;
+overflow: hidden;
+display: block;
+}
+
 /*product detail page*/
 
 .product-detail{
   align-items: center;
   justify-content: center;
-  padding: 3rem 0 2rem 0;
+  padding: 7.5rem 0 2rem 0;
 }
 
 .product-detail .product-content{
@@ -102,18 +135,27 @@ padding: 3rem 0 3rem 0;
   justify-content: center;
 }
 
-.product-suggestion a{
+.suggestion-block{
   max-width: 12rem;
   height: auto;
   text-decoration: none;
   color: black;
   text-align: center;
   margin: 2rem 0;
+  transition: all .3s ease-in-out;
+
+}
+
+.suggestion-block:hover{
+  border-radius: 1rem;
+  transition: all .3s ease-in-out;
+  max-width: 13rem;
 }
 
 
 /*product purchased*/
 .product-purchased{
+  margin-top: 7rem;
   padding: 10%;
   text-align: center;
   height: 100vh;

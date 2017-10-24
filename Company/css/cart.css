@@ -1,0 +1,33 @@
+.cart-table {
+  border: 2px solid grey;
+}
+body {
+  padding-top: 10%;
+}
+
+th, tr, td {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  padding: 1%;
+}
+
+td.cart-table-prod-image img {
+  height: 5em;
+  width: 5em;
+}
+
+td.cart-table-prod-quantity #cart-prod-quantity {
+  text-align: center;
+}
+
+.container .col {
+  flex-flow: column;
+}
+
+#interactions.container {
+   justify-content: space-between;
+}
+
+.left {
+  float:left;
+}

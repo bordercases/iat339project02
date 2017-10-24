@@ -102,8 +102,8 @@ img {
 /* stylized headers */
 
 [class*="head-"] {
-  /*font-family: 'Playfair Display', serif;*/
-  font-family: 'Times New Roman', sans-serif;
+  font-family: 'Playfair Display', serif;
+  /*font-family: 'Times New Roman', sans-serif;*/
   margin: 2.15% 0 2.15% 0;
   /*text-transform: uppercase;*/
 }

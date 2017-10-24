@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta name=viewport content="width=device-width, initial-scale=1">
   <title>Checkout</title>
-  <link href="css/checkout.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <link href="css/grids.css" rel="stylesheet">
+  <link href="css/cart.css" rel="stylesheet">
 </head>
 
 <header>
@@ -39,49 +39,73 @@
 </header>
 
 <body>
+  <header>
+    <h1 class="head-1">
+      Coffee Cart
+    </h1>
+  </header>
 
-  <span class="container">
+  <section class="container row-wrap">
 
-    <section id="check-left" class="block">
-      <img src="img/coffee-example.jpg" alt="The coffee product that we built" class="fill"></img>
-    </section>
+    <div class="block">
+      <!-- Inspired by https://www.konared.com/cart -->
+      <table class="cart-table">
+        <thread>
+          <tr>
+            <th class="cart-table-prod-image">Product</th>
+            <th class="cart-table-prod-title"></th>
+            <th class="cart-table-prod-quantity">Quantity</th>
+            <th class="cart-table-prod-total">Total</th>
+            <th class="cart-table-prod-remove"></th>
+          </tr>
+        </thread>
+        <tbody>
+          <tr>
+            <td class="cart-table-prod-image">
+              <img src="img/png/coffee/dark-cream.png" alt="Your Product"/>
 
-    <section id="check-right" class="container col block">
+            </td>
+            <td class="cart-table-prod-title">
+                <!-- Product Description -->
+                Dark Coffee with Cream Bottle
+            </td>
+            <td class="cart-table-prod-quantity">
+              <input id="cart-prod-quantity" class="field-input" type="number" name="quantity" value="1"/>
+            </td>
+            <td class="cart-table-prod-total"
+              <p id="price" class="p-style">
+                $6.99
+              </p>
+            </td>
+            <td class="cart-table-prod-remove">
+              <button>X</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
 
-      <div class="block">
-        <!-- CSS-Only Accordion: https://codepen.io/raubaca/pen/PZzpVe -->
-        <div class="tab our-grey">
-          <input id="tab-four" type="radio" name="tabs2">
-          <label for="tab-four">Choice 1</label>
-          <div class="tab-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
-          </div>
+      <div id="interactions" class="container row-wrap">
+
+        <div id="order-notes">
+          <label id="order-notes-label" for="order-notes">
+            Order Notes
+          </label><br>
+          <input id="order-notes-input" class="field-input feedback-section" name="order-notes" type="text"/>
         </div>
-        <div class="tab our-grey">
-          <input id="tab-five" type="radio" name="tabs2">
-          <label for="tab-five">Choice 2</label>
-          <div class="tab-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
-          </div>
+
+        <div id="purchase-action">
+          <span id="purchase-action-subtotal"><h3 class="head-3">$6.99</p></span>
+          <h4 class="head-4">Shipping and taxes calculated at checkout</h4>
+          <span id="purchase-action-buttons">
+            <button class="button-reset-style left">Update Cart</button>
+            <button class="button-submit-style left">Checkout</button>
+          </span>
         </div>
-        <div class="tab our-grey">
-          <input id="tab-six" type="radio" name="tabs2">
-          <label for="tab-six">Choice 3</label>
-          <div class="tab-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
-          </div>
-        </div>
+
       </div>
+    </div>
 
-      <div class="block">
-      	<form action="#">
-      	  <button class="button-submit-style">Order Now</button>
-      	</form>
-      </div>
-
-
-    </section>
-  </span>
+  </section>
 
 </body>
 
@@ -119,11 +143,9 @@
   <div class="footer-bottom">
     <span class="fine-print"> iat334 assignment 1 project copyright kenneth bruskiewicz, ying chen</span>
     <div class="social-list">
-
-<a href="" ><img src="img/png/fb.png" alt="facebook icon" class="social-icon"></a>
- <a href="" ><img src="img/png/insta.png" alt="facebook icon" class="social-icon"></a>
-<a href="" ><img src="img/png/twitt.png" alt="facebook icon" class="social-icon"></a>
-      </ul>
+      <a href="" ><img src="img/png/fb.png" alt="facebook icon" class="social-icon"></a>
+      <a href="" ><img src="img/png/insta.png" alt=" icon" class="social-icon"></a>
+      <a href="" ><img src="img/png/twitt.png" alt="facebook icon" class="social-icon"></a>
     </div>
     <a href="#" id="#top"><i></i></a>
   </div>

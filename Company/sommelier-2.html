@@ -12,27 +12,63 @@
 </head>
 
 <header>
-  <nav class="nav-default">
+  <nav class="nav-default" id="nav-default">
     <a href="index.html" class="nav-logo-link">
-      <span class="nav-title">LOGO</span>
+      <span class="nav-title">BREWSTER</span>
     </a>
+
     <div class="sub-headers">
-      <a class="nav-link" href="">Instagram</a>
       <a class="nav-link" href="">Facebook</a>
-      <a class="nav-link" href="">Pinterest</a>
+      <a class="nav-link" href="">Instagram</a>
+      <a class="nav-link" href="">Twitter</a>
       <a class="nav-link lang-opt" href="">FR</a>
-      <span>|&nbsp;</span>
+      <span> | </span>
       <!-- language selection feedback may require javascript -->
       <a class="nav-link lang-opt" href="">EN</a>
     </div>
 
     <div class="main-headers">
-      <a class="nav-link" href="sommelier-1.html">Sommelier</a>
-      <a class="nav-link" href="curation.html">Curation</a>
+      <a class="nav-link" href="sommelier.html">Customize</a>
+      <a class="nav-link" href="products.html">Products</a>
       <a class="nav-link" href="index.html#tab-about">About</a>
       <a class="nav-link" href="index.html#tab-news">News</a>
+      <a class="cart-link" href="cart.html">
+        <img src="img/icons/cart.png" class="cart-icon"> </img>
+      </a>
     </div>
   </nav>
+
+  <!-- nav for mobile -->
+  <nav id="nav-toggle" class="hidden">
+      <div class="mobile-row" href="">
+        <div class="nav-title menu">BREWSTER</div>
+        <a class="cart-link" href="cart.html">
+          <img src="img/icons/cart.png" class="cart-icon"> </img>
+        </a>
+      </div>
+      <div class="" id="nav-items">
+        <a class="mobile-row" href="">
+          <div class="nav-link">Customize</div>
+        </a>
+        <a class="mobile-row" href="">
+          <div class="nav-link">Products</div>
+        </a>
+        <a class="mobile-row" href="">
+          <div class="nav-link">News</div>
+        </a>
+        <div class="mobile-row">
+          <a href=""><img src="img/icons/fb-blk.png" alt="black facebook icon" class="social-icon"></a>
+          <a href=""><img src="img/icons/insta-blk.png" alt="black instagram icon" class="social-icon"></a>
+         <a href=""><img src="img/icons/twitt-blk.png" alt="black twitter icon" class="social-icon"></a>
+        </div>
+        <div class="mobile-row">
+          <a class="nav-link lang-opt" href="">FR</a>
+          <span> | </span>
+          <a class="nav-link lang-opt" href="">EN</a>
+        </div>
+    </div>
+  </nav>
+
 </header>
 
 <body>
@@ -163,52 +199,58 @@
 
   </div>
   <div class="block">
-    <form id="checkout" action="checkout.html">
-        <button  class="button-submit-style button-bottom">Checkout</button>
+    <form id="checkout" action="cart.html">
+        <button  class="button-submit-style button-bottom">Confirm</button>
     </form>
   </div>
 </body>
 
 
 <footer>
-    <div class="container footer-top">
-        <div class="footer-companyInfo">
-            <!-- <img alt="logo"> -->
-            <span class="nav-title">Coffee Confessions</span>
-            <div class="location">123-4567 east 123rd street</div>
-            <div class="location"> Vancouver, BC 123 567 Canada</div>
-            <div class="email">123@test.ca</div>
-        </div>
+  <div class="container footer-top">
+    <div class="footer-companyInfo">
+      <!-- <img alt="logo"> -->
+      <div class="nav-title">BREWSTER</div>
+      <div class="location">123-4567 east 123rd street</div>
+      <div class="location"> Vancouver, BC 123 567 Canada</div>
+      <div class="email">support@brewster.ca</div>
+    </div>
 
     <div class="footer-listing">
-        <ul>
-            <li><h6 class="footer-linkheading"><a class="footer-linkheading" href="index.html">Coffesion</a></h6></li>
-            <li><a class="footer-link" href="sommelier.html">Sommelier</a></li>
-            <li><a class="footer-link" href="curation.html">Curation</a></li>
-            <li><a class="footer-link" href="about.html">About us</a></li>
-            <li><a class="footer-link" href="news.html">News</a></li>
-        </ul>
+      <ul>
+        <li>
+          <h6 class="footer-linkheading"><a class="footer-linkheading" href="index.html">Brewster</a></h6></li>
+        <li><a class="footer-link" href="sommelier.html">Customize</a></li>
+        <li><a class="footer-link" href="curation.html">Products</a></li>
+        <li><a class="footer-link" href="index.html#tab-about">About us</a></li>
+        <li><a class="footer-link" href="index.html#tab-news">News</a></li>
+      </ul>
     </div>
 
-    <div class="footer-listing" >
-        <ul>
-            <li><h6 class="footer-linkheading">Reference</a></h6></li>
+    <div class="footer-listing">
+      <ul>
+        <li>
+          <h6 class="footer-linkheading">Reference</a></h6></li>
         <li><a class="footer-link" href="styleguide.html">Styleguide</a></li>
         <li><a class="footer-link" href="citations.html">Citation</a></li>
-        </ul>
-    </div>
+      </ul>
     </div>
 
-    <div class="footer-bottom">
-        <span class="fine-print"> iat334 assignment 1 project copyright kenneth bruskiewicz, ying chen</span>
-        <div class="social-list">
-            <a href="" ><img src="img/png/fb.png" alt="facebook icon" class="social-icon"></a>
-            <a href="" ><img src="img/png/insta.png" alt="facebook icon" class="social-icon"></a>
-            <a href="" ><img src="img/png/twitt.png" alt="facebook icon" class="social-icon"></a>
-        </ul>
-        </div>
-        <a href="#" id="#top"><i></i></a>
+    <a class="top-link" href="#">
+      <div>^</div>
+    </a>
+  </div>
+
+  <div class="footer-bottom">
+    <span class="fine-print"> iat334 assignment 1 project copyright kenneth bruskiewicz, ying chen</span>
+    <div class="social-list">
+      <a href=""><img src="img/icons/fb.png" alt="white facebook icon" class="social-icon"></a>
+      <a href=""><img src="img/icons/insta.png" alt="white instagram icon" class="social-icon"></a>
+      <a href=""><img src="img/icons/twitt.png" alt="white twitter icon" class="social-icon"></a>
+      </ul>
     </div>
+    <a href="#" id="#top"><i></i></a>
+  </div>
 </footer>
 
 <!-- end of footer
@@ -218,5 +260,6 @@
 <script src="javascript/sommelier.js"></script>
 <script src="javascript/fullScreenSlider.js" type="text/javascript"></script>
 <script src="javascript/displayNextValues.js" type="text/javascript"></script>
+<script src="javascript/hamburger.js" type="text/javascript"></script>
 
 </html>

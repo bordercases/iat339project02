@@ -104,6 +104,11 @@ footer {
     width: 100%;
     max-width: 100%;
   }
+
+  .our-products .img-half{
+    order:2;
+  }
+
   .footer-companyInfo {
     width: 100%;
     text-align: center;
@@ -130,6 +135,6 @@ footer {
 }
 
 .container>.block:hover {
-  background-color: #f7f7f747;
+  background-color:rgba(247, 247, 247, 0.61);
   transition: all 0.5s ease-in-out;
 }

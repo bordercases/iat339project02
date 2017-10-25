@@ -27,7 +27,7 @@ justify-content: center;
   flex: 1;
   padding: 20px;
   position: relative;
-  background-color: #f8f8f8bd;
+  background-color: #f9f9f9;
   margin: 1rem;
   overflow: hidden;
   transition: all 0.5s;
@@ -37,8 +37,8 @@ justify-content: center;
 }
 
 .product-listing:hover {
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
-  transform:scale(1.01);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transform:scale(1.02);
   transition: all .3s ease-in-out;
 
 }
@@ -126,7 +126,7 @@ padding-left: 1rem;
 .similar-products{
   align-items: center;
   justify-content: center;
-  background-color: #f1f1f133;
+  background-color: whitesmoke;
 padding: 3rem 0 3rem 0;
 }
 
@@ -150,6 +150,8 @@ padding: 3rem 0 3rem 0;
   border-radius: 1rem;
   transition: all .3s ease-in-out;
   max-width: 13rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
 }
 
 

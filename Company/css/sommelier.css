@@ -32,6 +32,11 @@ input[type="radio"] {
   max-height: 30rem;
 }
 
+/* hide the src in the case where we select a "none" flavor */
+#somm-img-flavor[src=""] {
+   display: none;
+}
+
 #somm-img-flavor {
   position: absolute;
   top: 70%;

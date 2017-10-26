@@ -39,7 +39,12 @@ var refreshImage = function () {
   var flavor = sessionStorage.getItem("flavor");
 
   sommImgCoffee.src = "img/png/coffee/"+richness+"-"+topping+".png";
-  sommImgFlavor.src = "img/icons/flavors/"+flavor+".png"
+
+  if (flavor != "none") {
+    sommImgFlavor.src = "img/icons/flavors/"+flavor+".png"
+  } else {
+    sommImgFlavor.src = "";
+  }
 }
 
 initSommelierImageData();

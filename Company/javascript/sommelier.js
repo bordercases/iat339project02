@@ -23,17 +23,12 @@ for (var i = 0; i < inputRadios.length; i++) {
       var name = e.target.name;
       var value = e.target.value;
       console.log(name+" "+value)
-      refreshImage({ name : value });
+      refreshImage({ "name" : name, "value": value });
     }
   );
 }
 var refreshImage = function (data) {
-  if (data["richness"]) {
-    sessionStorage.setItem("richness", data["richness"]);
-  }
-  if (data["topping"]) {
-    sessionStorage.setItem("topping", data["topping"]);
-  }
+  sessionStorage.setItem(data["name"], data["value"]);
   // if (data["flavor"]) {
   //   sessionStorage.setItem("flavor", data["flavor"]);
   // }

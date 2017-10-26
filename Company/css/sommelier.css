@@ -18,8 +18,9 @@
 
 .cup-block{
   width: auto;
-height: auto;
-max-height: 30rem;
+  height: auto;
+  margin: auto;
+  max-height: 30rem;
 }
 
 #somm-right .somm-control{

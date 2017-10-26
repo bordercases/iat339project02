@@ -1,19 +1,16 @@
 'use strict';
 // Keeps track of Sommelier state and sets it between pages
-
-if (sessionStorage.getItem("topping") === null ) {
+function initSommelierImageData () {
+  if (sessionStorage.getItem("topping") === null ) {
     sessionStorage.setItem("topping","milk");
+  }
+  if (sessionStorage.getItem("richness") === null) {
+    sessionStorage.setItem("richness","dark");
+  }
+  if (sessionStorage.getItem("flavor") === null) {
+    sessionStorage.setItem("flavor","none");
+  }
 }
-if (sessionStorage.getItem("richness") === null) {
-  sessionStorage.setItem("richness","dark");
-}
-
-var richness = sessionStorage.getItem("richness");
-var topping = sessionStorage.getItem("topping");
-
-// set sommelier image to the current variables
-var sommImg = document.getElementById('somm-img');
-sommImg.src = "img/png/coffee/"+richness+"-"+topping+".png";
 
 var inputRadios = document.querySelectorAll("input[type=radio]");
 for (var i = 0; i < inputRadios.length; i++) {
@@ -23,17 +20,27 @@ for (var i = 0; i < inputRadios.length; i++) {
       var name = e.target.name;
       var value = e.target.value;
       console.log(name+" "+value)
-      refreshImage({ "name" : name, "value": value });
+      setImageData({ "name" : name, "value": value });
+      refreshImage();
     }
   );
 }
-var refreshImage = function (data) {
+
+var setImageData = function (data) {
   sessionStorage.setItem(data["name"], data["value"]);
-  // if (data["flavor"]) {
-  //   sessionStorage.setItem("flavor", data["flavor"]);
-  // }
-  var sommImg = document.getElementById('somm-img');
+};
+
+var refreshImage = function () {
+  var sommImgCoffee = document.getElementById('somm-img-coffee');
+  var sommImgFlavor = document.getElementById('somm-img-flavor');
+
   var richness = sessionStorage.getItem("richness");
   var topping = sessionStorage.getItem("topping");
-  sommImg.src = "img/png/coffee/"+richness+"-"+topping+".png";
+  var flavor = sessionStorage.getItem("flavor");
+
+  sommImgCoffee.src = "img/png/coffee/"+richness+"-"+topping+".png";
+  sommImgFlavor.src = "img/icons/flavors/"+flavor+".png"
 }
+
+initSommelierImageData();
+refreshImage();

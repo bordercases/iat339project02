@@ -71,39 +71,17 @@
 
 </header>
 
-<style>
-  .block {
-    flex-basis: min-content;
-  }
-
-  /* https://codepen.io/manabox/pen/raQmpL */
-
-  /* we will style labels, not radio buttons */
-
-  input[type="radio"] {
-    display: none;
-  }
-
-  /*input[type="radio"]:checked + label span {
-    border: 1px solid red;
-  }*/
-
-  /*label {
-    visibility: hidden;
-  }*/
-
-  /*.somm-control {
-    display:none;
-  }*/
-</style>
-
-<body class="">
+<body>
 
   <div id="somm-all" class="container ">
+
     <section id="somm-left" class="block container">
-      <div class="cup-block">
-        <img id="somm-img" src="" alt="A cartoon picture of coffee based on what you've selected" />
+
+      <div class="img-block">
+        <img id="somm-img-flavor" src="" alt="A cartoon icon of the flavor you have selected"/>
+        <img id="somm-img-coffee" src="" alt="A cartoon picture of coffee based on what you've selected" />
       </div>
+
     </section>
 
     <section id="somm-right" class="container block">
@@ -169,9 +147,9 @@
               <span class="square coffee-cream">Coffee Cream</span>
             </label>
 
-          <input type="radio" id="topping-2" name="topping" value="whole">
+          <input type="radio" id="topping-2" name="topping" value="ice">
           <label for="topping-2">
-              <span class="square milk-whole">Whole Milk</span>
+              <span class="square ice-cream">Ice Cream</span>
             </label>
 
           <input type="radio" id="topping-3" name="topping" value="milk">
@@ -215,11 +193,6 @@
           <input type="radio" id="flavor-2" name="flavor" value="hazelnut">
           <label for="flavor-2">
               <span class="square hazelnut">Hazelnut</span>
-            </label>
-
-          <input type="radio" id="flavor-3" name="flavor" value="sweet-potato">
-          <label for="flavor-3">
-              <span class="square sw-potato">Sweet Potato</span>
             </label>
 
             <input type="radio" id="flavor-4" name="flavor" value="cinnamon">

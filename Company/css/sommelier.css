@@ -90,17 +90,16 @@ input[type="radio"] {
 
 }
 
-/* TODO */
 .ice-cream {
-    background-image: url(../img/milk.jpg);
+    background-image: url(../img/ice-cream.png);
 
 }
-.milk-2percent{
+.milk-2percent {
   background-image: url(../img/milk.jpg);
 
 }
 
-.milk-skim{
+.milk-skim {
   background-image: url(../img/milk.jpg);
 }
 

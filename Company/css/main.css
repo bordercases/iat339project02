@@ -244,12 +244,14 @@ figcaption {
 
 .nav-title {
   font-family: 'Playfair Display', serif;
+  /*font-family: 'Times New Roman', sans-serif;*/
+
   position: relative;
   font-size: 1.2em;
   display: inline;
   float: left;
-  font-size: 2rem;
-  letter-spacing: 2px;
+  font-size: 2.5rem;
+  letter-spacing: 3px;
   text-decoration: none;
 }
 
@@ -281,6 +283,8 @@ figcaption {
   background: white;
   color: black;
   transition: all .3s ease-in-out;
+    box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.3);
+
 }
 
 #nav-toggle .cart-link{
@@ -298,8 +302,31 @@ margin-right: 3%;
       padding-left: 50px;
 }
 
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #f00;
+}
+
 #nav-toggle .menu:hover{
   border-bottom: none;
+}
+
+#nav-toggle:focus{
+  animation: example 4s infinite;
+}
+
+
+@keyframes example {
+  from{
+    /*0-nav height*/
+    top: -400px;
+  }
+  to{
+    top:0;
+  }
 }
 
 #nav-items{
@@ -315,12 +342,12 @@ margin-right: 3%;
 
 /* maintains default style */
 
-.lang-opt:nth-of-type(odd) {
+.lang-opt:nth-of-type(even) {
   font-weight: 600;
   color: #bd8914;
 }
 
-.lang-opt:nth-of-type(even) {}
+.lang-opt:nth-of-type(odd) {}
 
 .sub-headers {
   font-size: 0.6rem;
@@ -507,7 +534,7 @@ input:checked.mandatory {
 }
 
 .feedback-section {
-  /*font-family: 'Playfair Display', serif;*/
+  font-family: 'Playfair Display', serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -663,7 +690,7 @@ footer .nav-title {
   font-size: 0.8rem;
   color: #f5f5f5;
   text-decoration: none;
-  opacity: 0.5;
+  opacity: 0.7;
   transition: 0.2s linear;
   -webkit-transition: 0.2s linear;
 }
@@ -671,7 +698,7 @@ footer .nav-title {
 .footer-link:hover {
   transition: 0.2s linear;
   -webkit-transition: 0.2s linear;
-  opacity: 0.9;
+  opacity: 1;
 }
 
 .footer-top {

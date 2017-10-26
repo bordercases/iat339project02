@@ -1,3 +1,11 @@
+.block {
+  flex-basis: min-content;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
 /*clearing all borders*/
 #somm-left, #somm-right .somm-control, #somm-right .block{
   border: none;
@@ -11,15 +19,31 @@
   margin: 9rem 1rem;
 }
 
-#somm-left{
+#somm-left {
   padding: 5%;
   opacity:0.8;
 }
 
-.cup-block{
+.img-block {
+  position:relative;
   width: auto;
-height: auto;
-max-height: 30rem;
+  height: auto;
+  margin: auto;
+  max-height: 30rem;
+}
+
+/* hide the src in the case where we select a "none" flavor */
+#somm-img-flavor[src=""] {
+   display: none;
+}
+
+#somm-img-flavor {
+  position: absolute;
+  top: 70%;
+  left: 45%;
+  width:50%;
+  height:auto;
+  /*max-height: 10rem;*/
 }
 
 #somm-right .somm-control{
@@ -66,16 +90,16 @@ max-height: 30rem;
 
 }
 
-.milk-whole {
-    background-image: url(../img/milk.jpg);
+.ice-cream {
+    background-image: url(../img/ice-cream.png);
 
 }
-.milk-2percent{
+.milk-2percent {
   background-image: url(../img/milk.jpg);
 
 }
 
-.milk-skim{
+.milk-skim {
   background-image: url(../img/milk.jpg);
 }
 

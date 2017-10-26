@@ -534,25 +534,25 @@ input:checked.mandatory {
 /* c/o http://codeitdown.com/css-square-rectangle/ for this code */
 
 .square {
-  /*display: flex;*/
+  display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  width: 16%;
   overflow: hidden;
   margin: 0.5%;
-  width: 15%;
   float: left;
   transition: all 0.5s ease-in-out;
   color: white;
   font-size: 0.9rem;
-  font-family: 'Raleway', sans-serif;
-  border-radius: 8px;
-  padding: 1rem;
-  text-align: center;
+font-family: 'Raleway', sans-serif;
+border-radius: 8px;
+padding: 1rem;
+    text-align: center;
 }
 
 .square:hover, input[type="radio"]:checked + label span {
-  width: 15%;
+  width: 20%;
   height: auto;
   transition: all 0.5s ease-in-out;
 }

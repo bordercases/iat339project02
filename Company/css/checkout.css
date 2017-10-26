@@ -6,7 +6,7 @@
   color: #fff;
   overflow: hidden;
 }
-input {
+/*input {
   position: absolute;
   opacity: 0;
   z-index: -1;
@@ -19,7 +19,7 @@ label {
   font-weight: bold;
   line-height: 3;
   cursor: pointer;
-}
+}*/
 
 .tab-content {
   max-height: 0;
@@ -42,7 +42,7 @@ label::after {
   position: absolute;
   right: 0;
   top: 0;
-  display: block;
+  /*display: block;*/
   width: 3em;
   height: 3em;
   line-height: 3;
@@ -81,20 +81,6 @@ input[type=radio]:checked + label::after {
   margin-bottom: 1rem;
 }
 
-.circle-num {
-  border-radius: 50%;
-  display: inline-block;
-  height: 22px;
-  margin: 0 8px 0 0;
-  width: 22px;
-  /*background: #000;*/
-  color: #fff;
-  font-size: 12px;
-  line-height: 21px;
-  text-align: center;
-  align-self: center;
-}
-
 .checkout-headerbox {
   /*margin: 1rem;*/
   padding: 0.5rem;
@@ -104,6 +90,7 @@ font-family: 'Raleway', sans-serif;*/
 
 .checkout-step {
   margin: 0;
+  color: white
 }
 
 .onestepcheckout-summary th {
@@ -133,6 +120,20 @@ font-family: 'Raleway', sans-serif;*/
   border-bottom: 1px solid rgba(0, 0, 0, .25);
 }
 
+/*ovveride main style*/
+.head-2{
+/*emulating head-3 style*/
+  font-size: 1.1rem;
+  font-weight: 100;
+  letter-spacing: 0.2rem;
+  margin: 0.5rem;
+  display: inline-block;
+  text-transform: none;
+}
+
+.head-3{
+  display: inline-block;
+}
 
 @media (max-width: 50em) {
   #check-left {

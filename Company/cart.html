@@ -6,8 +6,8 @@
   <meta name=viewport content="width=device-width, initial-scale=1">
   <title>Checkout</title>
   <link href="css/main.css" rel="stylesheet">
-  <link href="css/grids.css" rel="stylesheet">
   <link href="css/cart.css" rel="stylesheet">
+  <link href="css/grids.css" rel="stylesheet">
 </head>
 
 <header>
@@ -72,13 +72,12 @@
 
 
 <body>
-  <header>
-    <h1 class="head-1">
+  <div class="cart-body">
+      <h1 class="head-2">
       Coffee Cart
     </h1>
-  </header>
 
-  <section class="container row-wrap">
+  <section class="container row-wrap cart-content">
 
     <div class="block">
       <!-- Inspired by https://www.konared.com/cart -->
@@ -86,7 +85,7 @@
         <thread>
           <tr>
             <th class="cart-table-prod-image">Product</th>
-            <th class="cart-table-prod-title"></th>
+            <th class="cart-table-prod-title">Description</th>
             <th class="cart-table-prod-quantity">Quantity</th>
             <th class="cart-table-prod-total">Total</th>
             <th class="cart-table-prod-remove"></th>
@@ -95,12 +94,13 @@
         <tbody>
           <tr>
             <td class="cart-table-prod-image">
+              <a href="sommelier.html" class="">
               <img src="img/png/coffee/dark-cream.png" alt="Your Product"/>
-
+            </a>
             </td>
             <td class="cart-table-prod-title">
-                <!-- Product Description -->
-                Dark Coffee with Cream Bottle
+                <div>Dark Coffee with Cream Bottle<div>
+                  <div>Bottle: 250mL</div>
             </td>
             <td class="cart-table-prod-quantity">
               <input id="cart-prod-quantity" class="field-input" type="number" name="quantity" value="1"/>
@@ -111,7 +111,7 @@
               </p>
             </td>
             <td class="cart-table-prod-remove">
-              <button>X</button>
+              <button class="delete"> X </button>
             </td>
           </tr>
         </tbody>
@@ -120,19 +120,24 @@
       <div id="interactions" class="container row-wrap">
 
         <div id="order-notes">
-          <label id="order-notes-label" for="order-notes">
-            Order Notes
+          <label id="order-notes-label" class="field-label"for="order-notes">
+            Order Notes:
           </label><br>
-          <input id="order-notes-input" class="field-input feedback-section" name="order-notes" type="text"/>
+          <textarea id="order-notes-input" class="field-input order-textarea" name="order-notes"/></textarea>
         </div>
 
         <div id="purchase-action">
-          <span id="purchase-action-subtotal"><h3 class="head-3">$6.99</p></span>
-          <h4 class="head-4">Shipping and taxes calculated at checkout</h4>
+
+          <div class="subtotal">
+          <label class="subtotal-label">Subtotal:</label>
+          <span id="purchase-action-subtotal"><h2 class="head-2">$6.99</h2></span>
+        </div>
+
+          <div class="warning">* Shipping and taxes calculated at checkout</div>
           <span id="purchase-action-buttons">
-            <button class="button-reset-style left">Update Cart</button>
+            <button class="button-reset-style left clear">Clear Cart</button>
             <form id="checkout" action="checkout.html">
-              <button class="button-submit-style left">Checkout</button>
+              <button class="button-submit-style left">Checkout ></button>
             </form>
           </span>
         </div>
@@ -141,7 +146,7 @@
     </div>
 
   </section>
-
+</div>
 </body>
 
 <footer>

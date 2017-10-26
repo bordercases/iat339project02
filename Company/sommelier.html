@@ -40,32 +40,32 @@
 
   <!-- nav for mobile -->
   <nav id="nav-toggle" class="hidden">
-      <div class="mobile-row" href="">
-        <div class="nav-title menu">BREWSTER</div>
-        <a class="cart-link" href="cart.html">
+    <div class="mobile-row" href="">
+      <div class="nav-title menu">BREWSTER</div>
+      <a class="cart-link" href="cart.html">
           <img src="img/icons/cart.png" class="cart-icon"> </img>
         </a>
+    </div>
+    <div class="" id="nav-items">
+      <a class="mobile-row" href="">
+        <div class="nav-link">Customize</div>
+      </a>
+      <a class="mobile-row" href="">
+        <div class="nav-link">Products</div>
+      </a>
+      <a class="mobile-row" href="">
+        <div class="nav-link">News</div>
+      </a>
+      <div class="mobile-row">
+        <a href=""><img src="img/icons/fb-blk.png" alt="black facebook icon" class="social-icon"></a>
+        <a href=""><img src="img/icons/insta-blk.png" alt="black instagram icon" class="social-icon"></a>
+        <a href=""><img src="img/icons/twitt-blk.png" alt="black twitter icon" class="social-icon"></a>
       </div>
-      <div class="" id="nav-items">
-        <a class="mobile-row" href="">
-          <div class="nav-link">Customize</div>
-        </a>
-        <a class="mobile-row" href="">
-          <div class="nav-link">Products</div>
-        </a>
-        <a class="mobile-row" href="">
-          <div class="nav-link">News</div>
-        </a>
-        <div class="mobile-row">
-          <a href=""><img src="img/icons/fb-blk.png" alt="black facebook icon" class="social-icon"></a>
-          <a href=""><img src="img/icons/insta-blk.png" alt="black instagram icon" class="social-icon"></a>
-         <a href=""><img src="img/icons/twitt-blk.png" alt="black twitter icon" class="social-icon"></a>
-        </div>
-        <div class="mobile-row">
-          <a class="nav-link lang-opt" href="">FR</a>
-          <span> | </span>
-          <a class="nav-link lang-opt" href="">EN</a>
-        </div>
+      <div class="mobile-row">
+        <a class="nav-link lang-opt" href="">FR</a>
+        <span> | </span>
+        <a class="nav-link lang-opt" href="">EN</a>
+      </div>
     </div>
   </nav>
 
@@ -73,18 +73,20 @@
 
 <style>
   .block {
-      flex-basis: min-content;
+    flex-basis: min-content;
   }
 
   /* https://codepen.io/manabox/pen/raQmpL */
+
   /* we will style labels, not radio buttons */
+
   input[type="radio"] {
     display: none;
   }
 
-  input[type="radio"]:checked + label span {
+  /*input[type="radio"]:checked + label span {
     border: 1px solid red;
-  }
+  }*/
 
   /*label {
     visibility: hidden;
@@ -93,195 +95,213 @@
   /*.somm-control {
     display:none;
   }*/
-
 </style>
-<body>
 
-  <div id="somm-all" class="container">
+<body class="">
 
-    <section id="somm-left" class="block">
-      <img id="somm-img"
-          src=""
-          alt="A cartoon picture of coffee based on what you've selected"/>
+  <div id="somm-all" class="container ">
+    <section id="somm-left" class="block container">
+      <div class="cup-block">
+      <img id="somm-img" src="" alt="A cartoon picture of coffee based on what you've selected" />
+            </div>
     </section>
 
     <section id="somm-right" class="container block">
 
-        <div class="block somm-control">
+      <div class="block somm-control">
 
-          <header>
-            <h2 class="head-2">
+        <header>
+          <span class="circle-num our-black">1</span>
+
+          <h2 class="head-2">
               Richness
             </h2>
-          </header>
+            <p class="p-style">
+               Caffeine richness level decreases as the roast gets darker but becomes more caramelized.
+              <p>
+        </header>
 
-          <form name="richness">
+        <form name="richness">
 
-            <input type="radio" id="richness-1" name="richness" value="dark" checked>
-            <label for="richness-1">
+          <input type="radio" id="richness-1" name="richness" value="dark" checked>
+          <label for="richness-1">
               <span class="square our-dark">Dark</span>
             </label>
 
-            <input type="radio" id="richness-2" name="richness">
-            <label for="richness-2">
+          <input type="radio" id="richness-2" name="richness">
+          <label for="richness-2">
               <span class="square our-medium-dark">Medium-Dark</span>
             </label>
 
-            <input type="radio" id="richness-3" name="richness" value="medium">
-            <label for="richness-3">
+          <input type="radio" id="richness-3" name="richness" value="medium">
+          <label for="richness-3">
               <span class="square our-medium">Medium</span>
             </label>
 
-            <input type="radio" id="richness-4" name="richness">
-            <label for="richness-4">
+          <input type="radio" id="richness-4" name="richness">
+          <label for="richness-4">
               <span class="square our-blond-medium">Blond-Medium</span>
             </label>
 
-            <input type="radio" id="richness-5" name="richness" value="light">
-            <label for="richness-5">
-              <span class="square our-blond-medium">Blond</span>
+          <input type="radio" id="richness-5" name="richness" value="light">
+          <label for="richness-5">
+              <span class="square our-blond">Blond</span>
             </label>
-          </form>
-        </div>
+        </form>
+      </div>
 
-        <div class="block somm-control">
+      <div class="block somm-control toppings">
 
-          <header>
-            <h2 class="head-2">
+        <header>
+          <span class="circle-num our-black">2</span>
+          <h2 class="head-2">
               Topping
             </h2>
-          </header>
+            <p class="p-style">
+               Spice up the routine by adding toppings!
+              <p>
+        </header>
 
-          <form name="topping">
+        <form name="topping">
 
-            <input type="radio" id="topping-1" name="topping" value="" checked>
-            <label for="topping-1">
-              <span class="square our-medium">Coffee Cream</span>
+          <input type="radio" id="topping-1" name="topping" value="" checked>
+          <label for="topping-1">
+              <span class="square coffee-cream">Coffee Cream</span>
             </label>
 
-            <input type="radio" id="topping-2" name="topping" value="">
-            <label for="topping-2">
-              <span class="square our-medium">Whole Milk</span>
+          <input type="radio" id="topping-2" name="topping" value="">
+          <label for="topping-2">
+              <span class="square milk-whole">Whole Milk</span>
             </label>
 
-            <input type="radio" id="topping-3" name="topping" value="">
-            <label for="topping-3">
-              <span class="square our-medium">2% Milk</span>
+          <input type="radio" id="topping-3" name="topping" value="">
+          <label for="topping-3">
+              <span class="square milk-2percent">2% Milk</span>
             </label>
 
-            <input type="radio" id="topping-4" name="topping" value="">
-            <label for="topping-4">
-              <span class="square our-medium">Skim Milk</span>
+          <input type="radio" id="topping-4" name="topping" value="">
+          <label for="topping-4">
+              <span class="square milk-skim">Skim Milk</span>
             </label>
 
-            <input type="radio" id="topping-5" name="topping" value="none">
-            <label for="topping-5">
-              <span class="square our-grey">None</span>
+          <input type="radio" id="topping-5" name="topping" value="none">
+          <label for="topping-5">
+              <span class="square our-none">None</span>
             </label>
 
-          </form>
-        </div>
+        </form>
+      </div>
 
-        <div class="block somm-control">
+      <div class="block somm-control flavor">
 
-          <header>
-            <h2 class="head-2">
+        <header>
+          <span class="circle-num our-black">3</span>
+
+          <h2 class="head-2">
               Roast Flavor
             </h2>
-          </header>
+            <p class="p-style">
+            Add some spices to the coffee as it brews!
+          </p>
+        </header>
 
-          <form name="flavor">
+        <form name="flavor">
 
-            <input type="radio" id="flavor-1" name="flavor">
-            <label for="flavor-1">
-              <span class="square">Vanilla</span>
+          <input type="radio" id="flavor-1" name="flavor">
+          <label for="flavor-1">
+              <span class="square vanilla">Vanilla</span>
             </label>
 
-            <input type="radio" id="flavor-2" name="flavor">
-            <label for="flavor-2">
-              <span class="square">Hazlenut</span>
+          <input type="radio" id="flavor-2" name="flavor">
+          <label for="flavor-2">
+              <span class="square hazelnut">Hazelnut</span>
             </label>
 
-            <input type="radio" id="flavor-3" name="flavor">
-            <label for="flavor-3">
-              <span class="square">Sweet Potato</span>
+          <input type="radio" id="flavor-3" name="flavor">
+          <label for="flavor-3">
+              <span class="square sw-potato">Sweet Potato</span>
             </label>
 
-            <input type="radio" id="flavor-4" name="flavor" checked>
+            <input type="radio" id="flavor-4" name="flavor">
             <label for="flavor-4">
-              <span class="square our-grey">No Flavor</span>
+                <span class="square cinnamon">Cinnamon</span>
+              </label>
+
+          <input type="radio" id="flavor-5" name="flavor" checked>
+          <label for="flavor-5">
+              <span class="square our-none">No Flavor</span>
             </label>
 
-          </form>
-        </div>
+        </form>
+      </div>
 
-        <div class="block">
-          <button id="switchOptions" class="button-bottom somm-nav">Next</button>
-        </div>
+      <div class="block">
+        <button id="switchOptions" class="button-bottom button-submit-style button-next">Next ></button>
+      </div>
 
-        <div class="block">
-          <form id="checkout" action="cart.html">
-              <button  class="button-submit-style button-bottom">Confirm</button>
-          </form>
-        </div>
+      <div class="block">
+        <form id="checkout" action="cart.html">
+          <button class="button-submit-style button-bottom">Confirm</button>
+        </form>
+      </div>
 
     </section>
 
   </div>
-  </body>
+</body>
 
 
-  <footer>
-    <div class="container footer-top">
-      <div class="footer-companyInfo">
-        <!-- <img alt="logo"> -->
-        <div class="nav-title">BREWSTER</div>
-        <div class="location">123-4567 east 123rd street</div>
-        <div class="location"> Vancouver, BC 123 567 Canada</div>
-        <div class="email">support@brewster.ca</div>
-      </div>
-
-      <div class="footer-listing">
-        <ul>
-          <li>
-            <h6 class="footer-linkheading"><a class="footer-linkheading" href="index.html">Brewster</a></h6></li>
-          <li><a class="footer-link" href="sommelier.html">Customize</a></li>
-          <li><a class="footer-link" href="curation.html">Products</a></li>
-          <li><a class="footer-link" href="index.html#tab-about">About us</a></li>
-          <li><a class="footer-link" href="index.html#tab-news">News</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-listing">
-        <ul>
-          <li>
-            <h6 class="footer-linkheading">Reference</a></h6></li>
-          <li><a class="footer-link" href="styleguide.html">Styleguide</a></li>
-          <li><a class="footer-link" href="citations.html">Citation</a></li>
-        </ul>
-      </div>
-
-      <a class="top-link" href="#">
-        <div>^</div>
-      </a>
+<footer>
+  <div class="container footer-top">
+    <div class="footer-companyInfo">
+      <!-- <img alt="logo"> -->
+      <div class="nav-title">BREWSTER</div>
+      <div class="location">123-4567 east 123rd street</div>
+      <div class="location"> Vancouver, BC 123 567 Canada</div>
+      <div class="email">support@brewster.ca</div>
     </div>
 
-    <div class="footer-bottom">
-      <span class="fine-print"> iat334 assignment 1 project copyright kenneth bruskiewicz, ying chen</span>
-      <div class="social-list">
-        <a href=""><img src="img/icons/fb.png" alt="white facebook icon" class="social-icon"></a>
-        <a href=""><img src="img/icons/insta.png" alt="white instagram icon" class="social-icon"></a>
-        <a href=""><img src="img/icons/twitt.png" alt="white twitter icon" class="social-icon"></a>
-        </ul>
-      </div>
-      <a href="#" id="#top"><i></i></a>
+    <div class="footer-listing">
+      <ul>
+        <li>
+          <h6 class="footer-linkheading"><a class="footer-linkheading" href="index.html">Brewster</a></h6></li>
+        <li><a class="footer-link" href="sommelier.html">Customize</a></li>
+        <li><a class="footer-link" href="curation.html">Products</a></li>
+        <li><a class="footer-link" href="index.html#tab-about">About us</a></li>
+        <li><a class="footer-link" href="index.html#tab-news">News</a></li>
+      </ul>
     </div>
-  </footer>
+
+    <div class="footer-listing">
+      <ul>
+        <li>
+          <h6 class="footer-linkheading">Reference</a></h6></li>
+        <li><a class="footer-link" href="styleguide.html">Styleguide</a></li>
+        <li><a class="footer-link" href="citations.html">Citation</a></li>
+      </ul>
+    </div>
+
+    <a class="top-link" href="#">
+      <div>^</div>
+    </a>
+  </div>
+
+  <div class="footer-bottom">
+    <span class="fine-print"> iat334 assignment 1 project copyright kenneth bruskiewicz, ying chen</span>
+    <div class="social-list">
+      <a href=""><img src="img/icons/fb.png" alt="white facebook icon" class="social-icon"></a>
+      <a href=""><img src="img/icons/insta.png" alt="white instagram icon" class="social-icon"></a>
+      <a href=""><img src="img/icons/twitt.png" alt="white twitter icon" class="social-icon"></a>
+      </ul>
+    </div>
+    <a href="#" id="#top"><i></i></a>
+  </div>
+</footer>
 
 <!-- end of footer
      javascript -->
 <!-- sommType tag used by sommelier.js to adjust image and set state -->
-<meta id="somm-type" name="topping"/>
+<meta id="somm-type" name="topping" />
 <script src="javascript/wrap.js"></script>
 <script src="javascript/sommelier.js"></script>
 <script src="javascript/fullScreenSlider.js" type="text/javascript"></script>

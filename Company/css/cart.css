@@ -1,19 +1,81 @@
 .cart-table {
-  border: 2px solid grey;
+      border-bottom: 1px solid lightgrey;
 }
-body {
-  padding-top: 10%;
+
+.cart-body {
+  margin: 17% 3% 5% 3%;
+}
+
+.cart-content{
+  margin: 1rem 0;
+}
+
+.delete{
+  background: transparent;
+    border: 1px solid lightgrey;
+    width: 30px;
+    height: 30px;
+    transition: all .3s ease-in-out;
+        border-radius: 5px;
+}
+
+.delete:hover, .clear:hover{
+  transition: all .3s ease-in-out;
+  background: white;
+  border: 2px solid indianred;
+}
+
+#order-notes{
+  width: 50%;
+}
+.order-textarea{
+      height: 8rem;
+      width: 100%;
+}
+
+.cart-table-prod-title{
+text-align: left;
+}
+
+.subtotal{
+  border-bottom: black solid;
+margin: 1rem 0;
+padding: 0.5rem 0;
+}
+.subtotal-label{
+  display: inline-block;
+font-size: 1.5rem;
+font-weight: bold;
+}
+ #purchase-action{
+       margin: 1rem 0;
+ }
+
+#purchase-action-subtotal{
+  right: 0;
+float: right;
+}
+
+.warning{
+  font-weight: 100;
+font-style: italic;
+color: indianred;
+margin: 0.5rem 0;
 }
 
 th, tr, td {
   font-family: 'Raleway', sans-serif;
   text-align: center;
-  padding: 1%;
+  padding: 2% 1%;
+}
+
+tr{
+  border-bottom: lightgrey solid 1px;
 }
 
 td.cart-table-prod-image img {
-  height: 5em;
-  width: 5em;
+  height: auto;
+      max-width: 5em;
 }
 
 td.cart-table-prod-quantity #cart-prod-quantity {

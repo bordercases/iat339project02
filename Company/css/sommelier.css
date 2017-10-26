@@ -1,13 +1,142 @@
+/*clearing all borders*/
+#somm-left, #somm-right .somm-control, #somm-right .block{
+  border: none;
+}
+
 #switchOptions {
   display: none;
 }
 
-@media (max-width: 50em) {
-  /*.square {
-    float: none;
-  }*/
+#somm-all{
+  margin: 9rem 1rem;
+}
 
-  #somm-all.container {
+#somm-left{
+  padding: 5%;
+  opacity:0.8;
+}
 
-  }
+.cup-block{
+  width: auto;
+height: auto;
+max-height: 30rem;
+}
+
+#somm-right .somm-control{
+  padding: 1rem;
+  border-bottom: solid whitesmoke;
+}
+
+.somm-control header{
+  margin: 1rem 0;
+}
+
+/* coffee colors */
+.our-blond {
+  background: rgb(234,194,154);
+}
+
+.our-blond-medium {
+  background: rgb(206, 164, 122);
+}
+
+.our-medium {
+  background: rgb(175, 127, 78);
+}
+
+.our-medium-dark {
+  background: rgb(125, 96, 67);
+}
+
+.our-dark {
+  background: rgb(101, 84, 74);
+}
+
+/*toppings*/
+.toppings .square{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    color: black;
+    font-weight: 400;
+}
+
+.coffee-cream {
+    background-image: url(../img/coffeeCream.jpeg);
+
+}
+
+.milk-whole {
+    background-image: url(../img/milk.jpg);
+
+}
+.milk-2percent{
+  background-image: url(../img/milk.jpg);
+
+}
+
+.milk-skim{
+  background-image: url(../img/milk.jpg);
+}
+
+/* flavorant colors */
+
+.flavor .square{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    font-weight: 400;
+}
+
+.vanilla{
+  background-image: url(../img/vanilla.jpg);
+  color: white;
+
+}
+.hazelnut{
+  background-image: url(../img/hazelnuts.jpg);
+  color: white;
+
+}
+.sw-potato{
+  background-image: url(../img/sw-potato.JPG);
+  color: white;
+
+}
+.cinnamon{
+  color: white;
+  background-image: url(../img/cinnamon.jpg);
+}
+
+label .our-none {
+  color: black;
+  border: 1px solid grey;
+  text-shadow: none;
+}
+
+.button-next{
+  border: lightgrey solid;
+background-color: whitesmoke;
+color: black;
+height: 5rem;
+}
+.button-next:hover{
+background-color: #cccccc;
+color: black;
+}
+
+.button-bottom{
+  margin-top: 0.5rem;
+}
+
+
+/*overrides the one in main*/
+.p-style{
+  line-height: 1rem;
+padding: 0;
+font-size: 0.9rem;
+}
+
+.square{
+      text-shadow:5px 5px 10px #753109;
 }

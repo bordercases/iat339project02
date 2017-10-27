@@ -4,120 +4,121 @@
 <head>
   <meta charset="utf-8">
   <meta name=viewport content="width=device-width, initial-scale=1">
-  <title>Coffee Confessions</title>
+  <title>Checkout</title>
   <link href="css/main.css" rel="stylesheet">
   <link href="css/checkout.css" rel="stylesheet">
   <link href="css/grids.css" rel="stylesheet">
 </head>
 
-<header>
-  <nav class="nav-default" id="nav-default">
-    <a href="index.html" class="nav-logo-link">
-      <span class="nav-title">BREWSTER</span>
-    </a>
 
-    <div class="sub-headers">
-      <a class="nav-link" href="">Facebook</a>
-      <a class="nav-link" href="">Instagram</a>
-      <a class="nav-link" href="">Twitter</a>
-      <a class="nav-link lang-opt" href="">FR</a>
-      <span> | </span>
-      <!-- language selection feedback may require javascript -->
-      <a class="nav-link lang-opt" href="">EN</a>
-    </div>
-
-    <div class="main-headers">
-      <a class="nav-link" href="sommelier.html">Customize</a>
-      <a class="nav-link" href="products.html">Products</a>
-      <a class="nav-link" href="index.html#tab-about">About</a>
-      <a class="nav-link" href="index.html#tab-news">News</a>
-      <a class="cart-link" href="cart.html">
-        <img src="img/icons/cart.png" class="cart-icon"> </img>
-      </a>
-    </div>
-  </nav>
-
-  <!-- nav for mobile -->
-  <nav id="nav-toggle" class="hidden">
-      <div class="mobile-row" href="">
-        <div class="nav-title menu">BREWSTER</div>
-        <a class="cart-link" href="cart.html">
-          <img src="img/icons/cart.png" class="cart-icon"> </img>
-        </a>
-      </div>
-      <div class="" id="nav-items">
-        <a class="mobile-row" href="">
-          <div class="nav-link">Customize</div>
-        </a>
-        <a class="mobile-row" href="">
-          <div class="nav-link">Products</div>
-        </a>
-        <a class="mobile-row" href="">
-          <div class="nav-link">News</div>
-        </a>
-        <div class="mobile-row">
-          <a href=""><img src="img/icons/fb-blk.png" alt="black facebook icon" class="social-icon"></a>
-          <a href=""><img src="img/icons/insta-blk.png" alt="black instagram icon" class="social-icon"></a>
-         <a href=""><img src="img/icons/twitt-blk.png" alt="black twitter icon" class="social-icon"></a>
-        </div>
-        <div class="mobile-row">
-          <a class="nav-link lang-opt" href="">FR</a>
-          <span> | </span>
-          <a class="nav-link lang-opt" href="">EN</a>
-        </div>
-    </div>
-  </nav>
-
-</header>
 
 <body>
+  <header>
+    <nav class="nav-default" id="nav-default">
+      <a href="index.html" class="nav-logo-link">
+        <span class="nav-title">BREWSTER</span>
+      </a>
 
+      <div class="sub-headers">
+        <a class="nav-link" href="">Facebook</a>
+        <a class="nav-link" href="">Instagram</a>
+        <a class="nav-link" href="">Twitter</a>
+        <a class="nav-link lang-opt" href="">FR</a>
+        <span> | </span>
+        <!-- language selection feedback may require javascript -->
+        <a class="nav-link lang-opt" href="">EN</a>
+      </div>
+
+      <div class="main-headers">
+        <a class="nav-link" href="customize.html">Customize</a>
+        <a class="nav-link" href="products.html">Products</a>
+        <a class="nav-link" href="index.html#tab-about">About</a>
+        <a class="nav-link" href="index.html#tab-news">News</a>
+        <a class="cart-link" href="cart.html">
+          <img src="img/icons/cart.png" alt="A miniature cart icon" class="cart-icon"/>
+        </a>
+      </div>
+    </nav>
+
+    <!-- nav for mobile -->
+    <nav id="nav-toggle" class="hidden">
+        <div class="mobile-row">
+          <div class="nav-title menu">BREWSTER</div>
+          <a class="cart-link" href="cart.html">
+            <img src="img/icons/cart.png" alt="A miniature cart icon" class="cart-icon"/>
+          </a>
+        </div>
+        <div class="" id="nav-items">
+          <a class="mobile-row" href="">
+            <div class="nav-link">Customize</div>
+          </a>
+          <a class="mobile-row" href="">
+            <div class="nav-link">Products</div>
+          </a>
+          <a class="mobile-row" href="">
+            <div class="nav-link">News</div>
+          </a>
+          <div class="mobile-row">
+            <a href=""><img src="img/icons/fb-blk.png" alt="black facebook icon" class="social-icon"></a>
+            <a href=""><img src="img/icons/insta-blk.png" alt="black instagram icon" class="social-icon"></a>
+           <a href=""><img src="img/icons/twitt-blk.png" alt="black twitter icon" class="social-icon"></a>
+          </div>
+          <div class="mobile-row">
+            <a class="nav-link lang-opt" href="">FR</a>
+            <span> | </span>
+            <a class="nav-link lang-opt" href="">EN</a>
+          </div>
+      </div>
+    </nav>
+
+  </header>
   <div class="checkout-content">
   <h1 class="head-1">Check Out</h1>
   <h3 class="head-3">- A one step system</h3>
 
   <div class="container">
     <section class="checkout-group">
+
       <div class="container checkout-headerbox our-grey">
         <span class="circle-num our-black">1</span>
         <h2 class="checkout-step head-2"> Billing Address</h2>
       </div>
 
+      <form name="billing" action="#">
+
       <label class="field-label mandatory"> First Name *</label>
-      <input type="text" name="" class="field-input"></input>
+      <input type="text" name="billing" class="field-input">
 
       <label class="field-label mandatory"> Last Name *</label>
-      <input type="text" name="" class="field-input"></input>
+      <input type="text" name="billing" class="field-input">
 
       <label class="field-label mandatory"> Email Address *</label>
-      <input type="text" name="" class= "field-input"></input>
+      <input type="text" name="billing" class= "field-input">
 
       <label class="field-label mandatory"> Telephone *</label>
-      <input type="text" name="" class="field-input"></input>
+      <input type="text" name="billing" class="field-input">
 
       <label class="field-label mandatory"> Country *</label>
       <select class="dropdown">
-        <option value=" "></option>
+        <option label=" " value=" "></option>
         <option value="ca">Canada</option>
         <option value="us">US</option>
       </select>
-      <!-- testing validation -->
-      <!-- <div> Please select an option</div> -->
-      <!--  -->
+
       <label class="field-label mandatory"> Province/State *</label>
       <select class="dropdown">
-        <option value=" "></option>
+        <option label=" " value=" "></option>
         <option value="bc">British Columbia</option>
       </select>
 
       <label class="field-label mandatory"> Address *</label>
-      <input type="text" name="" class="field-input"></input>
+      <input type="text" name="billing" class="field-input">
 
       <label class="field-label mandatory"> City *</label>
-      <input type="text" name="" class="field-input"></input>
+      <input type="text" name="billing" class="field-input">
 
       <label class="field-label mandatory"> Postal/Zip Code *</label>
-      <input type="text" name="" class="field-input"></input>
+      <input type="text" name="billing" class="field-input">
 
       <label class="field-label mandatory"> Date of Birth *</label>
       <select class="dropdown-auto" >
@@ -133,38 +134,42 @@
         <option value="2000"> 2000</option>
       </select>
       <div>
-        <label class="field-label">
-          <input type="checkbox" name="" class=""></input>
+          <label class="field-label">
+          <input type="checkbox" name="billing" class="">
           Ship to the same address
         </label>
       </div>
 
       <div>
         <label class="field-label">
-          <input type="checkbox" name="" class=""></input>
+          <input type="checkbox" name="billing" class="">
           Use as my default billing address
         </label>
       </div>
+
+    </form>
+
   </section>
 
 
 <section class="checkout-group">
       <div class="checkout-subgroup">
-      <div class="container checkout-headerbox our-grey">
-        <span class="circle-num our-black">2</span>
-        <h2 class="checkout-step head-2"> Shipping Method</h2>
-      </div>
+        <div class="container checkout-headerbox our-grey">
+          <span class="circle-num our-black">2</span>
+          <h2 class="checkout-step head-2"> Shipping Method</h2>
+        </div>
 
-        <label class="field-label">
-          <input type="radio" name="" class=""></input>
-          Canada Standard: $11.00
-        </label>
+        <form name="shipping" action="#">
+          <label class="field-label">
+            <input type="radio" name="shipping" class="">
+            Canada Standard: $11.00
+          </label>
 
-        <label class="field-label">
-          <input type="radio" name="" class=""></input>
-          Canada Express: $30.00
-        </label>
-
+          <label class="field-label">
+            <input type="radio" name="shipping" class="">
+            Canada Express: $30.00
+          </label>
+        </form>
     </div>
 
 
@@ -175,16 +180,17 @@
         <h2 class="checkout-step head-2"> Payment Method</h2>
       </div>
 
+      <form name="payment" action="#">
         <label class="field-label">
-          <input type="radio" name="" class=""></input>
+          <input type="radio" name="payment" class="">
           Pay by Credit or Debit card
         </label>
 
         <label class="field-label">
-          <input type="radio" name="" class=""></input>
+          <input type="radio" name="payment" class="">
           Paypal
         </label>
-
+      </form>
     </div>
     </section>
       <!-- end of shipping & payment method -->
@@ -195,9 +201,12 @@
         <span class="circle-num our-black">4</span>
         <h2 class="checkout-step head-2"> Coupon Code</h2>
       </div>
+
       <strong>Coupon code (please enter your address details and select a shipping type before redeeming a code)</strong>
-      <input type="text" name="" class="field-input"></input>
-      <button class="button-reset-style"> Apply coupon</button>
+      <form name="coupon" action="#">
+        <input type="text" name="coupon" class="field-input">
+        <button class="button-reset-style"> Apply coupon</button>
+      </form>
 </div>
 
 <div class="checkout-subgroup">
@@ -209,8 +218,8 @@
       <table class="onestepcheckout-summary">
         <thead>
           <tr>
-            <th class="name"> Product</th>
-            <th class="total"> Subtotal</th>
+            <th class="name">Product</th>
+            <th class="total">Subtotal</th>
           </tr>
         </thead>
         <tbody>
@@ -218,7 +227,7 @@
             <td class="name">
               <span class="summary-info">Premium Vanilla Brew</span>
               <span class="summary-info">Quantity:1 </span>
-              <span class="summary-info">Size: 500ML <span>
+              <span class="summary-info">Size: 500ML </span>
               <span class="summary-info">Container: Bottle</span>
             </td>
             <td class="total">
@@ -238,8 +247,6 @@
             <td class="name">Shipping:</td>
             <td class="total">$11.00</td>
           </tr>
-          <tr>
-          </tr>
           <tr class="grand-total">
             <td class="name">Grand Total:</td>
             <td class="total">$41.00</td>
@@ -247,9 +254,9 @@
         </tbody>
       </table>
 
-<form action="purchased.html">
+      <form action="purchased.html">
       <button class="button-submit-style"> Place Order</button>
-    </form>
+      </form>
     </div>
     </section>
 
@@ -274,17 +281,16 @@
       <ul>
         <li>
           <h6 class="footer-linkheading"><a class="footer-linkheading" href="index.html">Brewster</a></h6></li>
-        <li><a class="footer-link" href="sommelier.html">Customize</a></li>
+        <li><a class="footer-link" href="customize.html">Customize</a></li>
         <li><a class="footer-link" href="curation.html">Products</a></li>
         <li><a class="footer-link" href="index.html#tab-about">About us</a></li>
         <li><a class="footer-link" href="index.html#tab-news">News</a></li>
-      </ul>
     </div>
 
     <div class="footer-listing">
       <ul>
         <li>
-          <h6 class="footer-linkheading">Reference</a></h6></li>
+          <h6 class="footer-linkheading">Reference</h6></li>
         <li><a class="footer-link" href="styleguide.html">Styleguide</a></li>
         <li><a class="footer-link" href="citations.html">Citation</a></li>
       </ul>

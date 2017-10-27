@@ -4,85 +4,86 @@
 <head>
   <meta charset="utf-8">
   <meta name=viewport content="width=device-width, initial-scale=1">
-  <title>Checkout</title>
+  <title>Cart</title>
   <link href="css/main.css" rel="stylesheet">
   <link href="css/cart.css" rel="stylesheet">
   <link href="css/grids.css" rel="stylesheet">
 </head>
 
-<header>
-  <nav class="nav-default" id="nav-default">
-    <a href="index.html" class="nav-logo-link">
-      <span class="nav-title">BREWSTER</span>
-    </a>
-
-    <div class="sub-headers">
-      <a class="nav-link" href="">Facebook</a>
-      <a class="nav-link" href="">Instagram</a>
-      <a class="nav-link" href="">Twitter</a>
-      <a class="nav-link lang-opt" href="">FR</a>
-      <span> | </span>
-      <!-- language selection feedback may require javascript -->
-      <a class="nav-link lang-opt" href="">EN</a>
-    </div>
-
-    <div class="main-headers">
-      <a class="nav-link" href="sommelier.html">Customize</a>
-      <a class="nav-link" href="products.html">Products</a>
-      <a class="nav-link" href="index.html#tab-about">About</a>
-      <a class="nav-link" href="index.html#tab-news">News</a>
-      <a class="cart-link" href="cart.html">
-        <img src="img/icons/cart.png" class="cart-icon"> </img>
+<body>
+  <header>
+    <nav class="nav-default" id="nav-default">
+      <a href="index.html" class="nav-logo-link">
+        <span class="nav-title">BREWSTER</span>
       </a>
-    </div>
-  </nav>
 
-  <!-- nav for mobile -->
-  <nav id="nav-toggle" class="hidden">
-      <div class="mobile-row" href="">
-        <div class="nav-title menu">BREWSTER</div>
+      <div class="sub-headers">
+        <a class="nav-link" href="">Facebook</a>
+        <a class="nav-link" href="">Instagram</a>
+        <a class="nav-link" href="">Twitter</a>
+        <a class="nav-link lang-opt" href="">FR</a>
+        <span> | </span>
+        <!-- language selection feedback may require javascript -->
+        <a class="nav-link lang-opt" href="">EN</a>
+      </div>
+
+      <div class="main-headers">
+        <a class="nav-link" href="customize.html">Customize</a>
+        <a class="nav-link" href="products.html">Products</a>
+        <a class="nav-link" href="index.html#tab-about">About</a>
+        <a class="nav-link" href="index.html#tab-news">News</a>
         <a class="cart-link" href="cart.html">
-          <img src="img/icons/cart.png" class="cart-icon"> </img>
+          <img src="img/icons/cart.png" alt="A miniature cart icon" class="cart-icon"/>
         </a>
       </div>
-      <div class="" id="nav-items">
-        <a class="mobile-row" href="">
-          <div class="nav-link">Customize</div>
-        </a>
-        <a class="mobile-row" href="">
-          <div class="nav-link">Products</div>
-        </a>
-        <a class="mobile-row" href="">
-          <div class="nav-link">News</div>
-        </a>
+    </nav>
+
+    <!-- nav for mobile -->
+    <nav id="nav-toggle" class="hidden">
         <div class="mobile-row">
-          <a href=""><img src="img/icons/fb-blk.png" alt="black facebook icon" class="social-icon"></a>
-          <a href=""><img src="img/icons/insta-blk.png" alt="black instagram icon" class="social-icon"></a>
-         <a href=""><img src="img/icons/twitt-blk.png" alt="black twitter icon" class="social-icon"></a>
+          <div class="nav-title menu">BREWSTER</div>
+          <a class="cart-link" href="cart.html">
+            <img src="img/icons/cart.png" alt="A miniature cart icon" class="cart-icon"/>
+          </a>
         </div>
-        <div class="mobile-row">
-          <a class="nav-link lang-opt" href="">FR</a>
-          <span> | </span>
-          <a class="nav-link lang-opt" href="">EN</a>
-        </div>
-    </div>
-  </nav>
+        <div class="" id="nav-items">
+          <a class="mobile-row" href="">
+            <div class="nav-link">Customize</div>
+          </a>
+          <a class="mobile-row" href="">
+            <div class="nav-link">Products</div>
+          </a>
+          <a class="mobile-row" href="">
+            <div class="nav-link">News</div>
+          </a>
+          <div class="mobile-row">
+            <a href=""><img src="img/icons/fb-blk.png" alt="black facebook icon" class="social-icon"></a>
+            <a href=""><img src="img/icons/insta-blk.png" alt="black instagram icon" class="social-icon"></a>
+           <a href=""><img src="img/icons/twitt-blk.png" alt="black twitter icon" class="social-icon"></a>
+          </div>
+          <div class="mobile-row">
+            <a class="nav-link lang-opt" href="">FR</a>
+            <span> | </span>
+            <a class="nav-link lang-opt" href="">EN</a>
+          </div>
+      </div>
+    </nav>
 
-</header>
+  </header>
+
+  <section class="cart-body">
+    <header>
+      <h2 class="head-2">
+        Coffee Cart
+      </h2>
+    </header>
+  <div class="container row-wrap cart-content">
 
 
-<body>
-  <div class="cart-body">
-      <h1 class="head-2">
-      Coffee Cart
-    </h1>
-
-  <section class="container row-wrap cart-content">
-
-    <div class="block">
+    <div id="cart-table-wrapper" class="block">
       <!-- Inspired by https://www.konared.com/cart -->
       <table class="cart-table">
-        <thread>
+        <thead>
           <tr>
             <th class="">Product</th>
             <th class="cart-table-prod-title">Description</th>
@@ -90,23 +91,23 @@
             <th class="cart-table-prod-total">Total</th>
             <th class="cart-table-prod-remove"></th>
           </tr>
-        </thread>
+        </thead>
         <tbody>
           <tr>
             <td class="cart-table-prod-image">
               <img src="img/png/coffee/dark-cream.png" alt="Your Product"/>
-            <a class="overlay-blk" href="sommelier.html">
-              <p class="p-style">Edit</p>
-            </a>
+              <a class="overlay-blk" href="customize.html">
+                <p class="p-style">Edit</p>
+              </a>
             </td>
             <td class="cart-table-prod-title">
-                <div>Dark Coffee with Cream Bottle<div>
-                  <div>Bottle: 250mL</div>
+                <p>Dark Coffee with Cream Bottle</p>
+                <p>Bottle: 250mL</p>
             </td>
             <td class="cart-table-prod-quantity">
               <input id="cart-prod-quantity" class="field-input" type="number" name="quantity" value="1"/>
             </td>
-            <td class="cart-table-prod-total"
+            <td class="cart-table-prod-total">
               <p id="price" class="p-style">
                 $6.99
               </p>
@@ -121,33 +122,35 @@
       <div id="interactions" class="container row-wrap">
 
         <div id="order-notes">
-          <label id="order-notes-label" class="field-label"for="order-notes">
+          <label id="order-notes-label" class="field-label">
             Order Notes:
           </label><br>
-          <textarea id="order-notes-input" class="field-input order-textarea" name="order-notes"/></textarea>
+          <textarea id="order-notes-input" class="field-input order-textarea" name="order-notes">
+          </textarea>
         </div>
 
         <div id="purchase-action">
 
           <div class="subtotal">
           <label class="subtotal-label">Subtotal:</label>
-          <span id="purchase-action-subtotal"><h2 class="head-2">$6.99</h2></span>
+          <span id="purchase-action-subtotal" class="head-2">$6.99</span>
         </div>
 
           <div class="warning">* Shipping and taxes calculated at checkout</div>
-          <span id="purchase-action-buttons">
+          <div id="purchase-action-buttons">
             <button class="button-reset-style left clear">Clear Cart</button>
             <form id="checkout" action="checkout.html">
               <button class="button-submit-style left">Checkout ></button>
             </form>
-          </span>
+          </div>
         </div>
 
       </div>
     </div>
 
+  </div>
   </section>
-</div>
+
 </body>
 
 <footer>
@@ -164,7 +167,7 @@
       <ul>
         <li>
           <h6 class="footer-linkheading"><a class="footer-linkheading" href="index.html">Brewster</a></h6></li>
-        <li><a class="footer-link" href="sommelier.html">Customize</a></li>
+        <li><a class="footer-link" href="customize.html">Customize</a></li>
         <li><a class="footer-link" href="curation.html">Products</a></li>
         <li><a class="footer-link" href="index.html#tab-about">About us</a></li>
         <li><a class="footer-link" href="index.html#tab-news">News</a></li>
@@ -173,8 +176,7 @@
 
     <div class="footer-listing">
       <ul>
-        <li>
-          <h6 class="footer-linkheading">Reference</a></h6></li>
+        <li><h6 class="footer-linkheading">Reference</h6></li>
         <li><a class="footer-link" href="styleguide.html">Styleguide</a></li>
         <li><a class="footer-link" href="citations.html">Citation</a></li>
       </ul>
@@ -191,7 +193,6 @@
       <a href=""><img src="img/icons/fb.png" alt="white facebook icon" class="social-icon"></a>
       <a href=""><img src="img/icons/insta.png" alt="white instagram icon" class="social-icon"></a>
       <a href=""><img src="img/icons/twitt.png" alt="white twitter icon" class="social-icon"></a>
-      </ul>
     </div>
     <a href="#" id="#top"><i></i></a>
   </div>

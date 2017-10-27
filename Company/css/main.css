@@ -940,7 +940,7 @@ footer .nav-title {
   height: -webkit-fill-available;
   min-height: 10px;
   min-width: 10px;
-  width: 10%;
+  width: 100%;
   background: url('../img/coffee-animated.gif');
   opacity: 0.75;
   background-attachment: fixed;

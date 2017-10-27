@@ -10,8 +10,9 @@ html {
 body {
   /*padding: 1em;*/
   margin: 0;
+  animation: body-fade-in 1s ease-in;
+  -webkit-animation: body-fade-in 1s ease-in;
 }
-
 
 /* some separators to enforce the gestalt */
 
@@ -86,11 +87,11 @@ textarea {
 
 /* ------------- styling of styleguide id section ------------- */
 
-#text, #atoms, #molecules,#organisms {
+#text, #atoms, #molecules, #organisms {
   margin: 5%;
 }
 
-#atoms{
+#atoms {
   margin-top: 9rem;
 }
 
@@ -143,7 +144,7 @@ textarea {
 
 [class*="centered"] {
   text-align: center;
-display: block;
+  display: block;
   vertical-align: middle;
   justify-content: center;
 }
@@ -190,14 +191,14 @@ figcaption {
 /* I adjust the font family to Arial for greater legibility of e.g. numbers */
 
 .field-input {
-    width: 100%;
-    padding: 0.8150em;
-    background: whitesmoke;
-    margin-bottom: 1.6rem;
-    height: 2.5rem;
-    border-radius: 2px;
-    border: none;
-    transition: all .3s ease-in-out;
+  width: 100%;
+  padding: 0.8150em;
+  background: whitesmoke;
+  margin-bottom: 1.6rem;
+  height: 2.5rem;
+  border-radius: 2px;
+  border: none;
+  transition: all .3s ease-in-out;
 }
 
 .field-input:focus {
@@ -238,10 +239,11 @@ figcaption {
 }
 
 /*nav*/
+
 .nav-default {
-    background-color: rgba(255, 255, 255, 0.86);
+  background-color: rgba(255, 255, 255, 0.86);
   box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.2);
-  padding: 2.5%;
+  padding: 1.5rem;
   text-align: right;
   font-family: 'Raleway', sans-serif;
   width: 100%;
@@ -250,7 +252,6 @@ figcaption {
 .nav-title {
   font-family: 'Playfair Display', serif;
   /*font-family: 'Times New Roman', sans-serif;*/
-
   position: relative;
   font-size: 1.2em;
   display: inline;
@@ -279,7 +280,7 @@ figcaption {
   margin-right: 1%;
 }
 
-.hidden{
+.hidden {
   display: none;
 }
 
@@ -289,19 +290,19 @@ figcaption {
   transition: all .3s ease-in-out;
 }
 
-#nav-toggle .cart-link{
+#nav-toggle .cart-link {
   float: right;
   margin-top: 5px;
   margin-right: 3%;
 }
 
-#nav-toggle .cart-icon{
-    max-width: 30px;
+#nav-toggle .cart-icon {
+  max-width: 30px;
 }
 
-.menu{
+.menu {
   color: black;
-      padding-left: 50px;
+  padding-left: 50px;
 }
 
 .arrow-down {
@@ -312,19 +313,18 @@ figcaption {
   border-top: 20px solid #f00;
 }
 
-#nav-toggle .menu:hover{
+#nav-toggle .menu:hover {
   border-bottom: none;
 }
 
 #nav-items {
-  position:relative;
-  top: 0px
-  animation: menu 1s;
-  -webkit-animation: menu 1s;
+  position: relative;
+  top: 0px;
+  animation: menu 1s ease-in;
+  -webkit-animation: menu 1s ease-in;
   background: #efefef;
   z-index: -1000;
 }
-
 
 @keyframes menu {
   from {
@@ -332,6 +332,15 @@ figcaption {
   }
   to {
     top: 0px;
+  }
+}
+
+@keyframes body-fade-in {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
   }
 }
 
@@ -344,7 +353,7 @@ figcaption {
   color: white;
   padding: 0.7rem 0;
   display: block;
-  text-decoration:none;
+  text-decoration: none;
 }
 
 /* maintains default style */
@@ -444,7 +453,7 @@ figcaption {
   margin: 0.5rem 0;
 }
 
-.button-submit-style, .button-submit-style:visited  {
+.button-submit-style, .button-submit-style:visited {
   background-color: #4a4a4a;
   color: white;
   padding: 14px 20px 13px;
@@ -457,11 +466,11 @@ figcaption {
   background-color: black;
 }
 
-.button-reset-style,.button-reset-style:visited {
+.button-reset-style, .button-reset-style:visited {
   border: 2px solid #e3e3e3;
   background-color: transparent;
   color: #c7c7c7;
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .button-reset-style:hover, .button-reset-style:focus {
@@ -472,6 +481,7 @@ figcaption {
 }
 
 /*additional button add on styling*/
+
 .button-drink-size {
   width: auto;
   min-width: 80px;
@@ -481,16 +491,16 @@ figcaption {
   height: auto;
 }
 
-.delete{
+.delete {
   background: transparent;
-    border: 1px solid lightgrey;
-    width: 30px;
-    height: 30px;
-    transition: all .3s ease-in-out;
-        border-radius: 5px;
+  border: 1px solid lightgrey;
+  width: 30px;
+  height: 30px;
+  transition: all .3s ease-in-out;
+  border-radius: 5px;
 }
 
-.delete:hover, .clear:hover{
+.delete:hover, .clear:hover {
   transition: all .3s ease-in-out;
   background: white;
   border: 2px solid indianred;
@@ -498,13 +508,14 @@ figcaption {
 
 /* ------------- styling of molecules ------------- */
 
-.wood-texture{
+.wood-texture {
   background-image: url(../img/wood.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 /* search bar */
 
 div.search-bar {
@@ -594,23 +605,23 @@ input:checked.mandatory {
   transition: all 0.5s ease-in-out;
   color: white;
   font-size: 0.9rem;
-font-family: 'Raleway', sans-serif;
-border-radius: 8px;
-padding: 1rem;
-    text-align: center;
+  font-family: 'Raleway', sans-serif;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
 }
 
-.square:hover, input[type="radio"]:checked + label span {
+.square:hover, input[type="radio"]:checked+label span {
   width: 20%;
   height: auto;
   transition: all 0.5s ease-in-out;
 }
 
- input[type="radio"]:checked + label span{
-   border: solid #343434 2px;
-   transition: all 0.5s ease-in-out;
-   border-radius: 20px;
- }
+input[type="radio"]:checked+label span {
+  border: solid #343434 2px;
+  transition: all 0.5s ease-in-out;
+  border-radius: 20px;
+}
 
 .square:before {
   content: "";
@@ -640,12 +651,12 @@ padding: 1rem;
 }
 
 /* color palette */
+
 /* standard colors */
 
 .our-black {
-background-color: #343434;
+  background-color: #343434;
   color: white;
-
 }
 
 .our-grey {
@@ -654,11 +665,9 @@ background-color: #343434;
   color: black;
 }
 
-
 .our-yellow {
   background: #a58b2f;
   color: white;
-
 }
 
 /*.our-green {
@@ -767,21 +776,22 @@ footer .nav-title {
   transition: 0.2s ease-in-out;
 }
 
-.top-link{
+.top-link {
   width: 3.25em;
-height: 3.25em;
-border-radius: 50%;
-background: #797979;;
-display: inline-block;
-text-align: center;
-position: relative;
-z-index: 4;
-bottom: 3.25em;
-    padding-top: 1.2rem;
-transition: 0.2s ease;
--webkit-transition: 0.2s ease;
-color:white;
-text-decoration: none;
+  height: 3.25em;
+  border-radius: 50%;
+  background: #797979;
+  ;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  z-index: 4;
+  bottom: 3.25em;
+  padding-top: 1.2rem;
+  transition: 0.2s ease;
+  -webkit-transition: 0.2s ease;
+  color: white;
+  text-decoration: none;
 }
 
 /*-------cart----------*/
@@ -876,7 +886,7 @@ text-decoration: none;
 .overlay-box {
   position: relative;
   align-items: center;
-    padding: 1rem 5% 3rem 5%;
+  padding: 1rem 5% 3rem 5%;
   width: 50%;
 }
 
@@ -903,4 +913,10 @@ text-decoration: none;
 .about-us:hover, .our-products:hover, .our-quality:hover {
   opacity: 1;
   transition: all 0.5s ease-in-out;
+}
+
+.citations {
+  padding: 0 4%;
+  height: -webkit-fill-available;
+  margin-top: 10rem;
 }

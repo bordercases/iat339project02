@@ -80,7 +80,7 @@ img {
   height: auto;
 }
 
-textarea{
+textarea {
   resize: vertical;
 }
 
@@ -279,19 +279,16 @@ figcaption {
   display: none;
 }
 
-#nav-toggle{
+#nav-toggle {
   text-align: center;
-  background: white;
   color: black;
   transition: all .3s ease-in-out;
-    box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.3);
-
 }
 
 #nav-toggle .cart-link{
   float: right;
   margin-top: 5px;
-margin-right: 3%;
+  margin-right: 3%;
 }
 
 #nav-toggle .cart-icon{
@@ -315,26 +312,31 @@ margin-right: 3%;
   border-bottom: none;
 }
 
-#nav-toggle:focus{
-  animation: example 4s infinite;
+#nav-items {
+  position:relative;
+  top: 0px
+  animation: menu 1s;
+  -webkit-animation: menu 1s;
+  background: #efefef;
+  z-index: -1000;
 }
 
 
-@keyframes example {
-  from{
-    /*0-nav height*/
+@keyframes menu {
+  from {
     top: -400px;
   }
-  to{
-    top:0;
+  to {
+    top: 0px;
   }
 }
 
-#nav-items{
-  background: #efefef;
+#brewster-row.mobile-row {
+  background: white;
+  box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.3);
 }
 
-.mobile-row{
+.mobile-row {
   color: white;
   padding: 0.7rem 0;
   display: block;

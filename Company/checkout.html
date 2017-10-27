@@ -92,9 +92,17 @@
 
                     <h2 class="checkout-step head-2">Billing Address</h2>
                 </div>
-                <label class="field-label mandatory">First Name *</label> <input class="field-input" name="" type="text"> <label class="field-label mandatory">Last Name *</label> <input class="field-input" name="" type="text"> <label class="field-label mandatory">Email Address *</label> <input class="field-input" name="" type="text"> <label class="field-label mandatory">Telephone *</label> <input class="field-input" name="" type="text"> <label class="field-label mandatory">Country *</label> <select class="dropdown">
-                    <option value=" ">
-                    </option>
+                <label class="field-label mandatory">First Name *</label>
+                  <input class="field-input" name="first-name" type="text">
+                <label class="field-label mandatory">Last Name *</label>
+                  <input class="field-input" name="last-name" type="text">
+                <label class="field-label mandatory">Email Address *</label>
+                  <input class="field-input" name="email" type="text">
+                 <label class="field-label mandatory">Telephone *</label>
+                  <input class="field-input" name="phone-num" type="text">
+                <label class="field-label mandatory">Country *</label>
+                <select class="dropdown">
+                    <option></option>
 
                     <option value="ca">
                         Canada
@@ -104,13 +112,22 @@
                         US
                     </option>
                 </select> <label class="field-label mandatory">Province/State *</label> <select class="dropdown">
-                    <option value=" ">
+                    <option>
                     </option>
 
                     <option value="bc">
                         British Columbia
                     </option>
-                </select> <label class="field-label mandatory">Address *</label> <input class="field-input" name="" type="text"> <label class="field-label mandatory">City *</label> <input class="field-input" name="" type="text"> <label class="field-label mandatory">Postal/Zip Code *</label> <input class="field-input" name="" type="text"> <label class="field-label mandatory">Date of Birth *</label> <select class="dropdown-auto">
+                </select>
+
+                <label class="field-label mandatory">Address *</label>
+                    <input class="field-input" name="address" type="text">
+                <label class="field-label mandatory">City *</label>
+                    <input class="field-input" name="city" type="text">
+                <label class="field-label mandatory">Postal/Zip Code *</label>
+                    <input class="field-input" name="postal code" type="text">
+                <label class="field-label mandatory">Date of Birth *</label>
+                  <select class="dropdown-auto">
                     <option value="Day">
                         Day
                     </option>
@@ -137,12 +154,16 @@
                 </select>
 
                 <div>
-                    <label class="field-label"><input class="" name="" type="checkbox"></label> Ship to the same address
+                    <label class="field-label">
+                      <input class="" name="ship-same-address" type="checkbox">
+                       Ship to the same address</label>
                 </div>
 
 
                 <div>
-                    <label class="field-label"><input class="" name="" type="checkbox"></label> Use as my default billing address
+                    <label class="field-label"><input class="" name="use-default-address" type="checkbox">
+                       Use as my default billing address
+                    </label>
                 </div>
             </section>
             <!-- end address billing info section -->
@@ -158,7 +179,10 @@
 
                         <h2 class="checkout-step head-2">Shipping Method</h2>
                     </div>
-                    <label class="field-label"><input class="" name="" type="radio"></label> Canada Standard: $11.00 <label class="field-label"><input class="" name="" type="radio"></label> Canada Express: $30.00
+                    <label class="field-label">
+                      <input class="" name="standard-shipping" type="radio"> Canada Standard: $11.00</label>
+                    <label class="field-label">
+                      <input class="" name="express-shipping" type="radio">Canada Express: $30.00</label>
                 </div>
                 <!-- end shipping method selection -->
                 <!-- payment method selection-->
@@ -170,7 +194,9 @@
 
                         <h2 class="checkout-step head-2">Payment Method</h2>
                     </div>
-                    <label class="field-label"><input class="" name="" type="radio"></label> Pay by Credit or Debit card <label class="field-label"><input class="" name="" type="radio"></label> Paypal <!-- When paypal is selected, paypal dialogue box
+                    <label class="field-label"><input class="" name="credit-debit" type="radio">Pay by Credit or Debit card</label>
+                    <label class="field-label"><input class="" name="paypal" type="radio">Paypal</label>
+                    <!-- When paypal is selected, paypal dialogue box
           would appear to redirect to paypal site. If it's credit
           or debit, another box would appear with card input fields -->
                 </div>
@@ -186,7 +212,7 @@
 
                         <h2 class="checkout-step head-2">Coupon Code</h2>
                     </div>
-                    <strong>Coupon code (please enter your address details and select a shipping type before redeeming a code)</strong> <input class="field-input" name="" type="text"> <button class="button-reset-style">Apply coupon</button>
+                    <strong>Coupon code (please enter your address details and select a shipping type before redeeming a code)</strong> <input class="field-input" name="coupon-code" type="text"> <button class="button-reset-style">Apply coupon</button>
                 </div>
                 <!-- end coupon code -->
                 <!-- final review section: ideally as information in previous section

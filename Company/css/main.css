@@ -10,6 +10,8 @@ html {
 body {
   /*padding: 1em;*/
   margin: 0;
+  animation: body-fade-in 1s ease-in;
+
 }
 
 
@@ -241,7 +243,7 @@ figcaption {
 .nav-default {
     background-color: rgba(255, 255, 255, 0.86);
   box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.2);
-  padding: 2.5%;
+  padding: 1.5rem;
   text-align: right;
   font-family: 'Raleway', sans-serif;
   width: 100%;
@@ -332,6 +334,15 @@ figcaption {
   }
   to {
     top: 0px;
+  }
+}
+
+@keyframes body-fade-in {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
   }
 }
 
@@ -903,4 +914,10 @@ text-decoration: none;
 .about-us:hover, .our-products:hover, .our-quality:hover {
   opacity: 1;
   transition: all 0.5s ease-in-out;
+}
+
+.citations{
+  padding: 0 4%;
+      height: -webkit-fill-available;
+      margin-top:10rem;
 }

@@ -11,22 +11,23 @@
   <link href="css/grids.css" rel="stylesheet">
 </head>
 
+<!-- Nav menu -->
 <header>
   <nav class="nav-default" id="nav-default">
     <a href="index.html" class="nav-logo-link">
       <span class="nav-title">BREWSTER</span>
     </a>
-
+    <!-- social media and language toggle -->
     <div class="sub-headers">
       <a class="nav-link" href="">Facebook</a>
       <a class="nav-link" href="">Instagram</a>
       <a class="nav-link" href="">Twitter</a>
       <a class="nav-link lang-opt" href="">FR</a>
       <span> | </span>
-      <!-- language selection feedback may require javascript -->
       <a class="nav-link lang-opt" href="">EN</a>
     </div>
 
+    <!-- webpage links +cart -->
     <div class="main-headers">
       <a class="nav-link" href="sommelier.html">Customize</a>
       <a class="nav-link" href="products.html">Products</a>
@@ -37,51 +38,57 @@
       </a>
     </div>
   </nav>
+  <!-- end normal nav menu -->
 
   <!-- nav for mobile -->
   <nav id="nav-toggle" class="hidden">
-      <div id="brewster-row" class="mobile-row" href="">
-        <div class="nav-title menu">BREWSTER</div>
-        <a class="cart-link" href="cart.html">
+    <div id="brewster-row" class="mobile-row" href="">
+      <div class="nav-title menu">BREWSTER</div>
+      <a class="cart-link" href="cart.html">
           <img src="img/icons/cart.png" class="cart-icon"> </img>
         </a>
+    </div>
+    <div class="" id="nav-items">
+      <a class="mobile-row" href="index.html">
+        <div class="nav-link">Home</div>
+      </a>
+      <a class="mobile-row" href="sommelier.html">
+        <div class="nav-link">Customize</div>
+      </a>
+      <a class="mobile-row" href="products.html">
+        <div class="nav-link">Products</div>
+      </a>
+      <a class="mobile-row" href="index.html#tab-news">
+        <div class="nav-link">News</div>
+      </a>
+      <a class="mobile-row" href="index.html#tab-about">
+        <div class="nav-link">About</div>
+      </a>
+      <div class="mobile-row">
+        <a href=""><img src="img/icons/fb-blk.png" alt="black facebook icon" class="social-icon"></a>
+        <a href=""><img src="img/icons/insta-blk.png" alt="black instagram icon" class="social-icon"></a>
+        <a href=""><img src="img/icons/twitt-blk.png" alt="black twitter icon" class="social-icon"></a>
       </div>
-      <div class="" id="nav-items">
-        <a class="mobile-row" href="index.html">
-          <div class="nav-link">Home</div>
-        </a>
-        <a class="mobile-row" href="sommelier.html">
-          <div class="nav-link">Customize</div>
-        </a>
-        <a class="mobile-row" href="products.html">
-          <div class="nav-link">Products</div>
-        </a>
-        <a class="mobile-row" href="index.html#tab-news">
-          <div class="nav-link">News</div>
-        </a>
-        <a class="mobile-row" href="index.html#tab-about">
-          <div class="nav-link">About</div>
-        </a>
-        <div class="mobile-row">
-          <a href=""><img src="img/icons/fb-blk.png" alt="black facebook icon" class="social-icon"></a>
-          <a href=""><img src="img/icons/insta-blk.png" alt="black instagram icon" class="social-icon"></a>
-         <a href=""><img src="img/icons/twitt-blk.png" alt="black twitter icon" class="social-icon"></a>
-        </div>
-        <div class="mobile-row">
-          <a class="nav-link lang-opt" href="">FR</a>
-          <span> | </span>
-          <a class="nav-link lang-opt" href="">EN</a>
-        </div>
+      <div class="mobile-row">
+        <a class="nav-link lang-opt" href="">FR</a>
+        <span> | </span>
+        <a class="nav-link lang-opt" href="">EN</a>
+      </div>
     </div>
   </nav>
-
+  <!-- end mobile nav -->
 </header>
+<!-- end nav menu -->
+
+
 
 <body>
 
+  <!-- text, buttons, and atoms -->
   <div id="atoms">
     <h1 class="head-1">Brewster Styleguide</h1>
 
+    <!-- brewster logotype -->
     <article>
       <header>
         <h2 class="">Brewster Logotype</h2>
@@ -97,7 +104,9 @@
         </div>
       </section>
     </article>
+    <!-- end brewster logotype -->
 
+    <!-- stylized headings -->
     <article>
       <header>
         <h2 class="">Stylized Headings</h2>
@@ -108,7 +117,7 @@
       	    &lt;h1 class="head-1"&gt;Heading 1&lt;/h1&gt;<br>
       	    &lt;h2 class="head-2"&gt;Heading 2&lt;/h2&gt;<br>
       	    &lt;h3 class="head-3"&gt;Heading 3&lt;/h3&gt;<br>
-      	                </code>
+      	   </code>
         </div>
         <div class="block">
           <p></p>
@@ -119,24 +128,22 @@
         </div>
       </section>
     </article>
+    <!-- end stylized headings -->
 
+    <!-- paragraph style -->
     <article>
-
       <header>
         <h2 class="">Paragraphs</h2>
       </header>
-
       <section class="container">
-
         <div class="block">
           <code>
-	    &lt;p class="p-style"&gt;<br>
-	    "Karma is experience, and experience creates memory, and memory creates imagination and desire, &lt;em&gt;and desire creates karma again&lt;em&gt;. If I buy a cup of coffee, that's karma. I now have that memory that might give me the potential desire for having cappuccino, and I walk into Starbucks, and there's karma all over again."&lt;br&gt;<br>
-	    &lt;strong&gt;Deepak Chopra&lt;/strong&gt;<br>
-	    &lt;/p&gt;
-	                      </code>
+        	    &lt;p class="p-style"&gt;<br>
+        	    "Karma is experience, and experience creates memory, and memory creates imagination and desire, &lt;em&gt;and desire creates karma again&lt;em&gt;. If I buy a cup of coffee, that's karma. I now have that memory that might give me the potential desire for having cappuccino, and I walk into Starbucks, and there's karma all over again."&lt;br&gt;<br>
+        	    &lt;strong&gt;Deepak Chopra&lt;/strong&gt;<br>
+        	    &lt;/p&gt;
+	        </code>
         </div>
-
         <div class="block">
           <p class="p-style">
             "Karma is experience, and experience creates memory, and memory creates imagination and desire, <em>and desire creates karma again</em>. If I buy a cup of coffee, that's karma. I now have that memory that might give me the potential desire
@@ -144,59 +151,51 @@
             <strong>Deepak Chopra</strong></p>
           <p></p>
         </div>
-
       </section>
-
     </article>
+    <!-- paragraph style end -->
 
+    <!-- bulleted list -->
     <article>
-
       <header>
         <h2 class="">Bulleted List</h2>
       </header>
-
       <section class="container">
-
         <div class="block">
           <code>
-	    &lt;ul class="bullet-list"&gt;<br>
-	    &nbsp;&nbsp;&lt;li&gt;Dark Roast &lt;/li&gt;<br>
-	    &nbsp;&nbsp;&lt;li&gt;Medium Roast&lt;/li&gt;<br>
-	    &nbsp;&nbsp;&lt;li&gt;Blonde Roast&lt;/li&gt;<br>
-	    &lt;/ul&gt;
-	                      </code>
+      	    &lt;ul class="bullet-list"&gt;<br>
+      	    &nbsp;&nbsp;&lt;li&gt;Dark Roast &lt;/li&gt;<br>
+      	    &nbsp;&nbsp;&lt;li&gt;Medium Roast&lt;/li&gt;<br>
+      	    &nbsp;&nbsp;&lt;li&gt;Blonde Roast&lt;/li&gt;<br>
+      	    &lt;/ul&gt;
+	        </code>
         </div>
-
         <div class="block">
           <ul class="bullet-list">
             <li>Dark Roast</li>
             <li>Medium Roast</li>
             <li>Blonde Roast</li>
           </ul>
-
         </div>
-
       </section>
-
     </article>
+    <!-- end bulletted list -->
 
+    <!-- numbered list -->
     <article>
       <header>
         <h2 class="">Numbered List</h2>
       </header>
-
       <section class="container">
-
         <div class="block">
           <code>
-	    &lt;ol class="numbered-list"&gt;<br>
-	    &nbsp;&nbsp;&lt;li&gt;Small&lt;/li&gt;<br>
-	    &nbsp;&nbsp;&lt;li&gt;Medium&lt;/li&gt;<br>
-	    &nbsp;&nbsp;&lt;li&gt;Large&lt;/li&gt;<br>
-	    &lt;/ol&gt;
-	                      </code>
+      	    &lt;ol class="numbered-list"&gt;<br>
+      	    &nbsp;&nbsp;&lt;li&gt;Small&lt;/li&gt;<br>
+      	    &nbsp;&nbsp;&lt;li&gt;Medium&lt;/li&gt;<br>
+      	    &nbsp;&nbsp;&lt;li&gt;Large&lt;/li&gt;<br>
+      	    &lt;/ol&gt;
+	        </code>
         </div>
-
         <div class="block">
           <ol class="numbered-list">
             <li>Small</li>
@@ -206,7 +205,9 @@
         </div>
       </section>
     </article>
+    <!-- end numbered list -->
 
+    <!-- in text link-->
     <article>
       <header>
         <h2 class=" ">An In-Text Link</h2>
@@ -214,10 +215,9 @@
       <section class="container">
         <div class="block">
           <code>
-	    Hello: &lt;a href="#" class="inline-link"&gt;This is our in-text link&lt;/a&gt;.
+	             This is our &lt;a class="inline-link" href="#"&gt;in-text&lt;/a&gt;link.
 	        </code>
         </div>
-
         <div class="block">
           <p>
             This is our <a class="inline-link" href="#">in-text</a> link.
@@ -225,114 +225,106 @@
         </div>
       </section>
     </article>
+    <!-- in text link end -->
 
+    <!-- nav header link -->
     <article>
       <header>
         <h2 class="">Navigation Links</h2>
       </header>
-
       <section class="container">
-
         <div class="block">
           <code>
-	    &lt;a href="#" class="nav-link"&gt;Sommelier&lt;/a&gt;.
-	                      </code>
+	           &lt;a class="nav-link" href="#"&gt;Sommelier&lt;/a&gt;.
+	         </code>
         </div>
-
         <div class="block">
           <div class="nav-default">
             <a class="nav-link" href="#">Sommelier</a>
           </div>
         </div>
-
       </section>
     </article>
+    <!-- end nav header links-->
 
+    <!-- button styles -->
     <article>
       <header>
         <h2 class=" ">Buttons</h2>
       </header>
-
       <section class="container">
-
         <div class="block">
           <code>
-	    &lt;button class="button-submit-style"&gt;Submit&lt;/button&gt;<br>
-	    &lt;button class="button-reset-style"&gt;Reset&lt;/button&gt;<br>
-      &lt;button class="button-reset-style button-drink-size"&gt;100ml&lt;/button&gt;<br>
-        </code>
+      	    &lt;button class="button-submit-style"&gt;Submit&lt;/button&gt;<br><br>
+      	    &lt;button class="button-reset-style"&gt;Reset&lt;/button&gt;<br><br>
+            &lt;button class="button-reset-style clear"&gt;Clear Cart&lt;/button&gt;<br><br>
+            &lt;button class="button-reset-style button-drink-size"&gt;100ml&lt;/button&gt;
+          </code>
         </div>
-
         <div class="block">
-          <p>
-            <button class="button-submit-style">Submit</button>
-            <button class="button-reset-style">Reset</button>
-            <button class="button-reset-style left clear">Clear Cart</button>
-            <button class="button-reset-style button-drink-size">100ml</button>
-          </p>
+          <button class="button-submit-style">Submit</button>
+          <button class="button-reset-style">Reset</button>
+          <button class="button-reset-style clear">Clear Cart</button>
+          <button class="button-reset-style button-drink-size">100ml</button>
         </div>
       </section>
     </article>
-
+    <!-- end button styles -->
   </div>
-
+  <!-- end atoms, buttons, text section -->
   <hr>
 
+  <!-- molecules-->
   <div id="molecules">
     <!-- <h1 class="head-1">STYLE GUIDE- Molecules</h1> -->
 
+    <!-- text inputs with label -->
     <article>
       <header>
         <h2 class=" ">Text Input & Comment Field with Label</h2>
       </header>
-
       <section class="container">
-
         <div class="block">
           <code>
-	    &lt;label for="field-ccn" class="field-label"&gt;Credit card number&lt;/label&gt; &lt;br&gt;
-	    &lt;class="field-input" id="ccn" name="creditCardNumber" type="text" placeholder="Enter here"&gt;
-	                      </code>
+      	    &lt;label for="field-ccn" class="field-label"&gt;Credit card number&lt;/label&gt; &lt;br&gt; <br><br>
+      	    &lt;class="field-input" id="ccn" name="creditCardNumber" type="text" placeholder="Enter here"&gt;<br><br>
+      	    &lt;textarea class="field-input feedback-message" placeholder="Your Message"&gt; &lt;/textarea&gt;
+	        </code>
         </div>
-
         <div class="block">
-          <p>
-            <label class="field-label" for="field-ccn">Credit card number: </label><br>
-            <input class="field-input" id="ccn" name="creditCardNumber" type="text" placeholder="Enter here">
-            <textarea class="field-input feedback-message" placeholder="Your Message"></textarea>
-          </p>
+          <label class="field-label" for="field-ccn">Credit card number: </label><br>
+          <input class="field-input" id="ccn" name="creditCardNumber" type="text" placeholder="Enter here">
+          <textarea class="field-input feedback-message" placeholder="Your Message"></textarea>
         </div>
-
       </section>
     </article>
+    <!-- end text inputs with labels -->
 
-
+    <!-- search bar -->
     <article>
       <header>
         <h2 class=" ">Search Bar</h2>
       </header>
-
       <section class="container">
-
         <div class="block">
           <code>
             &lt;div class="search-bar"&gt;<br>
             &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text"&gt;&lt;/input&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;button class="button-reset-style"&gt;&lt;/button&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;button class="button-reset-style"&gt;Find Product&lt;/button&gt;<br>
             &lt;/div&gt;<br>
-                        </code>
+          </code>
         </div>
-
         <div class="block">
           <div class="search-bar">
             <input type="text"></input>
             <button type="button" class="button-reset-style">Find Product</button>
           </div>
         </div>
-
       </section>
     </article>
+    <!-- end search bar -->
 
+    <!-- circle num with text -->
     <article>
       <header>
         <h2 class=" ">Circle Number with Text</h2>
@@ -345,12 +337,14 @@
           </code>
         </div>
         <div class="block">
-            <span class="circle-num our-black">1</span>
-              <span class="">First</span>
+          <span class="circle-num our-black">1</span>
+          <span class="">First</span>
         </div>
       </section>
     </article>
+    <!-- end circle num -->
 
+    <!-- news' date banners -->
     <article>
       <header>
         <h2 class=" ">News Date Banner</h2>
@@ -362,6 +356,7 @@
               &lt;span&gt;First&lt;/span&gt;
           </code>
         </div>
+        <!-- banner is fixed thus would require the parent block to be positioned relative= inling styled in this instance -->
         <div class="block" style="position:relative; height:8rem;">
           <div class="ribbon">
             <div class="news-date head-2 ">
@@ -370,15 +365,21 @@
             </div>
           </div>
         </div>
+        <!-- end banner example -->
       </section>
     </article>
+    <!--end news banner  -->
+
   </div>
+  <!-- end molecule section -->
 
   <hr>
 
+  <!-- organism section -->
   <div id="organisms">
     <!-- <h1 class="head-1">STYLE GUIDE- Organisms</h1> -->
 
+    <!-- main nav -->
     <article>
       <header>
         <h2 class=" ">Main Navigation</h2>
@@ -386,26 +387,41 @@
       <section class="container">
         <div class="block">
           <code>
-	    &lt;nav class="main-nav"&gt;<br>
-	    &nbsp;&nbsp;&lt;a href="#" class="nav-link"&gt;Home&lt;/a&gt;<br>
-	    &nbsp;&nbsp;&lt;a href="#" class="nav-link"&gt;Sommelier&lt;/a&gt;<br>
-	    &nbsp;&nbsp;&lt;a href="#" class="nav-link"&gt;News&lt;/a&gt;<br>
-	    &nbsp;&nbsp;&lt;a href="#" class="nav-link"&gt;About&lt;/a&gt;<br>
-	    &lt;/nav&gt;<br>
-	  </code>
+            &lt;div class="nav-default"&gt;<br>
+              &lt;a href="index.html" class="nav-logo-link"&gt;<br>
+                &lt;span class="nav-title"&gt;BREWSTER&lt;/span&gt;<br>
+              &lt;/a&gt;<br>
+              &lt;div class="sub-headers"&gt;<br>
+                &lt;a class="nav-link" href=""&gt;Facebook&lt;/a&gt;<br>
+                &lt;a class="nav-link" href=""&gt;Instagram&lt;/a&gt;<br>
+                &lt;a class="nav-link" href=""&gt;Twitter&lt;/a&gt;<br>
+                &lt;a class="nav-link lang-opt" href=""&gt;FR&lt;/a&gt;<br>
+                &lt;span&gt; | &lt;/span&gt;<br>
+                &lt;a class="nav-link lang-opt" href=""&gt;EN&lt;/a&gt;<br>
+              &lt;/div&gt;<br>
+              &lt;div class="main-headers"&gt;<br>
+                &lt;a class="nav-link" href="sommelier.html"&gt;Sommelier&lt;/a&gt;<br>
+                &lt;a class="nav-link" href="products.html"&gt;Starter Kit&lt;/a&gt;<br>
+                &lt;a class="nav-link" href="index.html#tab-about"&gt;About&lt;/a&gt;<br>
+                &lt;a class="nav-link" href="index.html#tab-news"&gt;News&lt;/a&gt;<br>
+                &lt;a class="cart-link" href="cart.html"&gt;<br>
+                  &lt;img src="img/icons/cart.png" class="cart-icon"&gt; &lt;/img&gt;<br>
+                &lt;/a&gt;<br>
+              &lt;/div&gt;<br>
+            &lt;/div&gt;<br>
+      	  </code>
         </div>
+        <!-- normal desktop nav exmaple:mobile not shown here -->
         <div class="nav-default">
           <a href="index.html" class="nav-logo-link">
             <span class="nav-title">BREWSTER</span>
           </a>
-
           <div class="sub-headers">
             <a class="nav-link" href="">Facebook</a>
             <a class="nav-link" href="">Instagram</a>
             <a class="nav-link" href="">Twitter</a>
             <a class="nav-link lang-opt" href="">FR</a>
             <span> | </span>
-            <!-- language selection feedback may require javascript -->
             <a class="nav-link lang-opt" href="">EN</a>
           </div>
           <div class="main-headers">
@@ -418,22 +434,41 @@
             </a>
           </div>
         </div>
+        <!-- end example -->
       </section>
     </article>
+    <!-- end nav menu-->
 
+    <!-- news post example -->
     <article>
       <header>
-        <h2 class=" ">News Date Banner</h2>
+        <h2 class=" ">News Post/h2>
       </header>
       <section class="container">
         <div class="block">
           <code>
-            &lt;span class="circle-num our-black"&gt;1&lt;/span&gt;<br>
-              &lt;span&gt;First&lt;/span&gt;
+
+            &lt;div class="news-article"&gt;<br>
+              &lt;div class="news-picture"&gt;<br>
+                &lt;div class="ribbon"&gt;<br>
+                  &lt;div class="news-date head-2 "&gt;<br>
+                    &lt;span class="month"&gt;MAY&lt;/span&gt;&lt;br&gt;<br>
+                    &lt;span class="date"&gt;18&lt;/span&gt;<br>
+                  &lt;/div&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;img src="img/may18.jpg" class="img"&gt;<br>
+              &lt;/div&gt;<br>
+              &lt;div class="news-content"&gt;<br>
+                &lt;h2&gt;At The Other Side of the Bar, On the Other Side of the Rockies&lt;/h2&gt;<br>
+                &lt;p class="p-style"&gt;In our recent travels to Alberta, we’ve not failed to pay visits to our extended family in the Canadian specialty coffee scene. One particular coffeeshop comes to mind; a sleek, yet warmly rustic coffeeshop whose&lt;/p&gt;<br>
+                &lt;a href="" class="inline-link"&gt; Read More &gt;&lt;/a&gt;<br>
+              &lt;/div&gt;<br>
+            &lt;/div&gt;<br>
+
           </code>
         </div>
         <div class="block">
-
+          <!-- example -->
           <div class="news-article">
             <div class="news-picture">
               <div class="ribbon">
@@ -446,168 +481,162 @@
             </div>
             <div class="news-content">
               <h2>At The Other Side of the Bar, On the Other Side of the Rockies</h2>
-              <p class="p-style">In our recent travels to Alberta, we’ve not failed to pay visits to our extended family in the Canadian specialty coffee scene. One particular coffeeshop comes to mind; a sleek, yet warmly rustic coffeeshop whose</p>
-              <a href="" class="inline-link"> Read More ></a>
-            </div>
+        <p class="p-style">In our recent travels to Alberta, we’ve not failed to pay visits to our extended family in the Canadian specialty coffee scene. One particular coffeeshop comes to mind; a sleek, yet warmly rustic coffeeshop whose</p>
+        <a href="" class="inline-link"> Read More ></a>
+  </div>
+  </div>
+  <!-- end example -->
+  </div>
+  </section>
+  </article>
+  <!-- ends news post -->
+
+  <!-- product listing -->
+  <article>
+    <header>
+      <h2 class=" ">Product Listing</h2>
+    </header>
+    <section class="container">
+      <div class="block">
+        <code>
+            &lt;div class="product-listing"&gt;<br>
+              &lt;div class=""&gt;<br>
+                &lt;img class="product-image" src="img/kona-mocha.png" alt="Cold coffee in a stylish bottle"&gt;&lt;/img&gt;<br>
+              &lt;/div&gt;<br>
+              &lt;div class="container"&gt;<br>
+                &lt;button class="button-reset-style button-drink-size"&gt;250mL&lt;/button&gt;<br>
+                &lt;button class="button-reset-style button-drink-size"&gt;500mL&lt;/button&gt;<br>
+                &lt;button class="button-reset-style button-drink-size"&gt;1L&lt;/button&gt;<br>
+              &lt;/div&gt;<br>
+              &lt;div class="product-content"&gt;<br>
+                &lt;div class="product-name"&gt;Vanilla Cold Brew Coffee&lt;/div&gt;<br>
+                &lt;div class="product-price"&gt;C $24- C $300&lt;/div&gt;<br>
+                &lt;div class="product-descrip"&gt;Antioxidant, gluten free, vegan, no GMOs.&lt;/div&gt;<br>
+              &lt;/div&gt;<br>
+              &lt;form action=""&gt;<br>
+                &lt;button class="button-submit-style"&gt;See Details&lt;/button&gt;<br>
+              &lt;/form&gt;<br>
+            &lt;/div&gt;<br>
+	        </code>
+      </div>
+      <div class="block">
+        <!-- example -->
+        <div class="product-listing">
+          <div class="">
+            <img class="product-image" src="img/kona-mocha.png" alt="Cold coffee in a stylish bottle"></img>
           </div>
-
-        </div>
-      </section>
-    </article>
-
-    <article>
-      <header>
-        <h2 class=" ">Product Listing</h2>
-      </header>
-
-      <section class="container">
-
-        <div class="block">
-          <code>
-	    &lt;div class="product-listing"&gt;<br>
-	    &nbsp;&nbsp;&lt;img class="product-image" src="img/coffee-example.jpg"<br>
-	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alt="Cold coffee in a stylish bottle"&gt;&lt;/img&gt;<br>
-	    &nbsp;&nbsp;&lt;span class="product-content"&gt;<br>
-	    &nbsp;&nbsp;&nbsp;&nbsp;&lt;h3 class="head-3"> Bitter Black &lt;/h3&gt;<br>
-	    &nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="p-style"&gt;<br>
-	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Medium Size&lt;br&gt;<br>
-	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vegan&lt;br&gt;<br>
-	    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;<br>
-	    &nbsp;&nbsp;&lt;/span&gt;<br>
-	    &nbsp;&nbsp;&lt;button class="product-listing-button"&gt;Order Now&lt;/button&gt;<br>
-	    &lt;/div&gt;<br>
-	                      </code>
-        </div>
-
-        <div class="block">
-          <div class="product-listing">
-            <div class="">
-              <img class="product-image" src="img/kona-mocha.png" alt="Cold coffee in a stylish bottle"></img>
-            </div>
-
-            <div class="container">
-              <button class="button-reset-style button-drink-size">250mL</button>
-              <button class="button-reset-style button-drink-size">500mL</button>
-              <button class="button-reset-style button-drink-size">1L</button>
-            </div>
-            <div class="product-content">
-              <div class="product-name">Vanilla Cold Brew Coffee</div>
-              <div class="product-price">C $24- C $300</div>
-              <div class="product-descrip">Antioxidant, gluten free, vegan, no GMOs.</div>
-            </div>
-            <form action="">
-              <button class="button-submit-style">See Details</button>
-            </form>
+          <div class="container">
+            <button class="button-reset-style button-drink-size">250mL</button>
+            <button class="button-reset-style button-drink-size">500mL</button>
+            <button class="button-reset-style button-drink-size">1L</button>
           </div>
-        </div>
-
-      </section>
-
-    </article>
-
-        <hr>
-    <article>
-      <header>
-        <h2 class="">Grid</h2>
-      </header>
-
-      <section class="container">
-
-        <div class="block">
-          <code>
-	    &lt;div class="container"&gt;<br>
-	    &nbsp;&nbsp;&lt;div class="block"&gt;<br>
-	    &nbsp;&nbsp;&nbsp;&nbsp;First Box<br>
-	    &nbsp;&nbsp;&lt;/div&gt;<br>
-	    &nbsp;&nbsp;&lt;div class="block"&gt;<br>
-	    &nbsp;&nbsp;&nbsp;&nbsp;Second Box<br>
-	    &nbsp;&nbsp;&lt;/div&gt;<br>
-	    &lt;/div&gt;<br>
-	                      </code>
-        </div>
-
-        <div class="block">
-          <p class="p-style">Our grid system uses <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes" class="inline-link">Flexbox</a>, with elements growing to fill the space alloted to them via orderings as well as
-            wrapping around the size of their content.</p>
-        </div>
-
-      </section>
-
-    </article>
-
-    <article>
-
-      <header>
-        <h2 class="">Color Swatches</h2>
-      </header>
-
-      <section class="container">
-
-        <div class="block">
-          <code>
-	    &lt;div class="square our-green"&gt;<br>
-	    &lt;span class="square-content"&gt;<br>
-	    #36453b
-	    &lt;/span&gt;<br>
-	    &lt;/div&gt;<br>
-	    &lt;div class="square our-red"&gt;<br>
-	    &lt;span class="square-content"&gt;<br>
-	    #515751
-	    &lt;/span&gt;<br>
-	    &lt;/div&gt;<br>
-	    &lt;div class="square our-yellow normalize-color"&gt;<br>
-	    &lt;span class="square-content"&gt;<br>
-	    #8a6552
-      &lt;/span&gt;<br>
-	    &lt;/div&gt;<br>
-	    &lt;div class="square our-orange"&gt;<br>
-	    &lt;span class="square-content"&gt;<br>
-	    #90a959
-	    &lt;/span&gt;<br>
-	    &lt;/div&gt;<br>
-	    &lt;div class="square our-grey"&gt;<br>
-	    &lt;span class="square-content"&gt;<br>
-	    #f5f9e9
-	    &lt;/span&gt;<br>
-	    &lt;/div&gt;<br>
-	                      </code>
-        </div>
-
-        <div class="block">
-          <p class="p-style">
-            Coffee Confessions combines hipness with formality. These colours are imbued in our brand.
-          </p>
-
-          <div class="square our-black">
-            <span class="square-content">
-                                #36453b
-                            </span>
+          <div class="product-content">
+            <div class="product-name">Vanilla Cold Brew Coffee</div>
+            <div class="product-price">C $24- C $300</div>
+            <div class="product-descrip">Antioxidant, gluten free, vegan, no GMOs.</div>
           </div>
-          <div class="square our-grey">
-            <span class="square-content">
-                                #515751
-                            </span>
-          </div>
-          <div class="square our-yellow normalize-color">
-            <span class="square-content">
-                                #a58b2f
-                            </span>
+          <form action="">
+            <button class="button-submit-style">See Details</button>
+          </form>
         </div>
-      </section>
+        <!-- end example -->
+      </div>
+    </section>
+  </article>
 
-    </article>
+  <!-- end organisms + complex molecules -->
+  <hr>
+  <!-- grids and color swatchs -->
+
+  <!-- grids -->
+  <article>
+    <header>
+      <h2 class="">Grid</h2>
+    </header>
+    <section class="container">
+      <div class="block">
+        <code>
+      	    &lt;div class="container"&gt;<br>
+      	    &nbsp;&nbsp;&lt;div class="block"&gt;<br>
+      	    &nbsp;&nbsp;&nbsp;&nbsp;First Box<br>
+      	    &nbsp;&nbsp;&lt;/div&gt;<br>
+      	    &nbsp;&nbsp;&lt;div class="block"&gt;<br>
+      	    &nbsp;&nbsp;&nbsp;&nbsp;Second Box<br>
+      	    &nbsp;&nbsp;&lt;/div&gt;<br>
+      	    &lt;/div&gt;<br>
+	         </code>
+      </div>
+      <div class="block">
+        <p class="p-style">Our grid system uses <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes" class="inline-link">Flexbox</a>, with elements growing to fill the space alloted to them via orderings as well as
+          wrapping around the size of their content.</p>
+      </div>
+    </section>
+  </article>
+  <!-- end grid -->
+
+  <!-- color swatches -->
+  <article>
+    <header>
+      <h2 class="">Color Swatches</h2>
+    </header>
+    <section class="container">
+      <div class="block">
+        <code>
+        	    &lt;div class="square our-black"&gt;<br>
+        	    &lt;span class="square-content"&gt;<br>
+        	    #343434
+        	    &lt;/span&gt;<br>
+        	    &lt;/div&gt;<br>
+        	    &lt;div class="square our-grey"&gt;<br>
+        	    &lt;span class="square-content"&gt;<br>
+        	    #f5f5f5
+        	    &lt;/span&gt;<br>
+        	    &lt;/div&gt;<br>
+        	    &lt;div class="square our-yellow"&gt;<br>
+        	    &lt;span class="square-content"&gt;<br>
+        	    #a58b2f
+              &lt;/span&gt;<br>
+        	    &lt;/div&gt;<br>
+	       </code>
+      </div>
+      <div class="block">
+        <p class="p-style">
+          Coffee Confessions combines hipness with formality. These colours are imbued in our brand.
+        </p>
+        <!-- color boxes -->
+        <div class="square our-black">
+          <span class="square-content">
+                #343434
+            </span>
+        </div>
+        <div class="square our-grey">
+          <span class="square-content">
+                #f5f5f5
+              </span>
+        </div>
+        <div class="square our-yellow">
+          <span class="square-content">
+                #a58b2f
+              </span>
+        </div>
+        <!-- color boxes -->
+    </section>
+  </article>
+  <!-- end color boxes -->
 
   </div>
-
-<script src="javascript/hamburger.js" type="text/javascript"></script>
+  <!--end styleguide
+javascript  -->
+  <script src="javascript/hamburger.js" type="text/javascript"></script>
 
 </body>
 
 
+<!-- footer section starts-->
 <footer>
-  <div class="container footer-top">
+  <!-- top half of footer: contains company contact info and page links -->
+  <div class="container wood-texture footer-top">
     <div class="footer-companyInfo">
-      <!-- <img alt="logo"> -->
       <div class="nav-title">BREWSTER</div>
       <div class="location">123-4567 east 123rd street</div>
       <div class="location"> Vancouver, BC 123 567 Canada</div>
@@ -619,7 +648,7 @@
         <li>
           <h6 class="footer-linkheading"><a class="footer-linkheading" href="index.html">Brewster</a></h6></li>
         <li><a class="footer-link" href="sommelier.html">Customize</a></li>
-        <li><a class="footer-link" href="curation.html">Products</a></li>
+        <li><a class="footer-link" href="products.html">Products</a></li>
         <li><a class="footer-link" href="index.html#tab-about">About us</a></li>
         <li><a class="footer-link" href="index.html#tab-news">News</a></li>
       </ul>
@@ -634,11 +663,14 @@
       </ul>
     </div>
 
+    <!-- go back up -->
     <a class="top-link" href="#">
       <div>^</div>
     </a>
   </div>
 
+  <!-- footer top ends
+ footer bottom starts: social media and project disclosure-->
   <div class="footer-bottom">
     <span class="fine-print"> iat334 assignment 1 project copyright kenneth bruskiewicz, ying chen</span>
     <div class="social-list">
@@ -650,5 +682,6 @@
     <a href="#" id="#top"><i></i></a>
   </div>
 </footer>
+<!-- end footer -->
 
 </html>

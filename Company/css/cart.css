@@ -10,21 +10,6 @@
   margin: 1rem 0;
 }
 
-.delete{
-  background: transparent;
-    border: 1px solid lightgrey;
-    width: 30px;
-    height: 30px;
-    transition: all .3s ease-in-out;
-        border-radius: 5px;
-}
-
-.delete:hover, .clear:hover{
-  transition: all .3s ease-in-out;
-  background: white;
-  border: 2px solid indianred;
-}
-
 #order-notes{
   width: 50%;
 }

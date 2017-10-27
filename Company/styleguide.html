@@ -7,6 +7,7 @@
   <title>Style Guide</title>
   <link href="css/main.css" rel="stylesheet">
   <link href="css/products.css" rel="stylesheet">
+  <link href="css/news.css" rel="stylesheet">
   <link href="css/grids.css" rel="stylesheet">
 </head>
 
@@ -39,21 +40,27 @@
 
   <!-- nav for mobile -->
   <nav id="nav-toggle" class="hidden">
-      <div class="mobile-row" href="">
+      <div id="brewster-row" class="mobile-row" href="">
         <div class="nav-title menu">BREWSTER</div>
         <a class="cart-link" href="cart.html">
           <img src="img/icons/cart.png" class="cart-icon"> </img>
         </a>
       </div>
       <div class="" id="nav-items">
-        <a class="mobile-row" href="">
+        <a class="mobile-row" href="index.html">
+          <div class="nav-link">Home</div>
+        </a>
+        <a class="mobile-row" href="sommelier.html">
           <div class="nav-link">Customize</div>
         </a>
-        <a class="mobile-row" href="">
+        <a class="mobile-row" href="products.html">
           <div class="nav-link">Products</div>
         </a>
-        <a class="mobile-row" href="">
+        <a class="mobile-row" href="index.html#tab-news">
           <div class="nav-link">News</div>
+        </a>
+        <a class="mobile-row" href="index.html#tab-about">
+          <div class="nav-link">About</div>
         </a>
         <div class="mobile-row">
           <a href=""><img src="img/icons/fb-blk.png" alt="black facebook icon" class="social-icon"></a>
@@ -72,17 +79,30 @@
 
 <body>
 
-  <div id="text">
-    <h1 class="">Brewster Style Guide</h1>
+  <div id="atoms">
+    <h1 class="head-1">Brewster Styleguide</h1>
 
     <article>
+      <header>
+        <h2 class="">Brewster Logotype</h2>
+      </header>
+      <section class="container">
+        <div class="block">
+          <code>
+            &lt;span class="nav-title"&gt;BREWSTER&lt;/span&gt;
+          </code>
+        </div>
+        <div class="block">
+          <span class="nav-title">BREWSTER</span>
+        </div>
+      </section>
+    </article>
 
+    <article>
       <header>
         <h2 class="">Stylized Headings</h2>
       </header>
-
       <section class="container">
-
         <div class="block">
           <code>
       	    &lt;h1 class="head-1"&gt;Heading 1&lt;/h1&gt;<br>
@@ -90,7 +110,6 @@
       	    &lt;h3 class="head-3"&gt;Heading 3&lt;/h3&gt;<br>
       	                </code>
         </div>
-
         <div class="block">
           <p></p>
           <h1 class="head-1">Heading 1</h1><br>
@@ -98,9 +117,7 @@
           <h3 class="head-3">Heading 3</h3>
           <p></p>
         </div>
-
       </section>
-
     </article>
 
     <article>
@@ -135,7 +152,7 @@
     <article>
 
       <header>
-        <h2 class="">Bulleted list</h2>
+        <h2 class="">Bulleted List</h2>
       </header>
 
       <section class="container">
@@ -164,9 +181,8 @@
     </article>
 
     <article>
-
       <header>
-        <h2 class="">Numbered list</h2>
+        <h2 class="">Numbered List</h2>
       </header>
 
       <section class="container">
@@ -188,29 +204,18 @@
             <li>Large</li>
           </ol>
         </div>
-
       </section>
-
     </article>
 
-  </div>
-
-  <hr>
-
-  <div id="atoms">
-
     <article>
-
       <header>
-        <h2 class=" ">An in-text link</h2>
+        <h2 class=" ">An In-Text Link</h2>
       </header>
-
       <section class="container">
-
         <div class="block">
           <code>
 	    Hello: &lt;a href="#" class="inline-link"&gt;This is our in-text link&lt;/a&gt;.
-	                      </code>
+	        </code>
         </div>
 
         <div class="block">
@@ -218,15 +223,12 @@
             This is our <a class="inline-link" href="#">in-text</a> link.
           </p>
         </div>
-
       </section>
-
     </article>
 
     <article>
-
       <header>
-        <h2 class="">Navigation button</h2>
+        <h2 class="">Navigation Links</h2>
       </header>
 
       <section class="container">
@@ -248,7 +250,7 @@
 
     <article>
       <header>
-        <h2 class=" ">Submit and reset button</h2>
+        <h2 class=" ">Buttons</h2>
       </header>
 
       <section class="container">
@@ -257,23 +259,31 @@
           <code>
 	    &lt;button class="button-submit-style"&gt;Submit&lt;/button&gt;<br>
 	    &lt;button class="button-reset-style"&gt;Reset&lt;/button&gt;<br>
-	                      </code>
+      &lt;button class="button-reset-style button-drink-size"&gt;100ml&lt;/button&gt;<br>
+        </code>
         </div>
 
         <div class="block">
           <p>
             <button class="button-submit-style">Submit</button>
             <button class="button-reset-style">Reset</button>
+            <button class="button-reset-style left clear">Clear Cart</button>
+            <button class="button-reset-style button-drink-size">100ml</button>
           </p>
         </div>
       </section>
-
     </article>
 
-    <article>
+  </div>
 
+  <hr>
+
+  <div id="molecules">
+    <!-- <h1 class="head-1">STYLE GUIDE- Molecules</h1> -->
+
+    <article>
       <header>
-        <h2 class=" ">Text input field with label</h2>
+        <h2 class=" ">Text Input & Comment Field with Label</h2>
       </header>
 
       <section class="container">
@@ -289,95 +299,15 @@
           <p>
             <label class="field-label" for="field-ccn">Credit card number: </label><br>
             <input class="field-input" id="ccn" name="creditCardNumber" type="text" placeholder="Enter here">
+            <textarea class="field-input feedback-message" placeholder="Your Message"></textarea>
           </p>
         </div>
 
       </section>
-
     </article>
 
-    <article>
-      <header>
-        <h2 class=" ">Comment Field</h2>
-      </header>
-
-      <section class="container">
-
-        <div class="block">
-          <code>
-	    &lt;label for="field-ccn" class="field-label"&gt;Credit card number&lt;/label&gt; &lt;br&gt;
-	    &lt;class="field-input" id="ccn" name="creditCardNumber" type="text" placeholder="Enter here"&gt;
-	                      </code>
-        </div>
-
-        <div class="block">
-          <div>
-            <textarea class="field-input feedback-message" placeholder="Your Message"></textarea>
-          </div>
-        </div>
-
-      </section>
-
-    </article>
-
-  </div>
-
-  <hr>
-
-  <div id="molecules">
 
     <article>
-
-      <header>
-        <h2 class=" ">Main Navigation</h2>
-      </header>
-
-      <section class="container">
-
-        <div class="block">
-          <code>
-	    &lt;nav class="main-nav"&gt;<br>
-	    &nbsp;&nbsp;&lt;a href="#" class="nav-link"&gt;Home&lt;/a&gt;<br>
-	    &nbsp;&nbsp;&lt;a href="#" class="nav-link"&gt;Sommelier&lt;/a&gt;<br>
-	    &nbsp;&nbsp;&lt;a href="#" class="nav-link"&gt;News&lt;/a&gt;<br>
-	    &nbsp;&nbsp;&lt;a href="#" class="nav-link"&gt;About&lt;/a&gt;<br>
-	    &lt;/nav&gt;<br>
-	  </code>
-        </div>
-
-
-        <div class="nav-default">
-          <a href="index.html" class="nav-logo-link">
-            <span class="nav-title">BREWSTER</span>
-          </a>
-
-          <div class="sub-headers">
-            <a class="nav-link" href="">Facebook</a>
-            <a class="nav-link" href="">Instagram</a>
-            <a class="nav-link" href="">Twitter</a>
-            <a class="nav-link lang-opt" href="">FR</a>
-            <span> | </span>
-            <!-- language selection feedback may require javascript -->
-            <a class="nav-link lang-opt" href="">EN</a>
-          </div>
-
-          <div class="main-headers">
-            <a class="nav-link" href="sommelier.html">Sommelier</a>
-            <a class="nav-link" href="products.html">Starter Kit</a>
-            <a class="nav-link" href="index.html#tab-about">About</a>
-            <a class="nav-link" href="index.html#tab-news">News</a>
-            <a class="cart-link" href="cart.html">
-              <img src="img/icons/cart.png" class="cart-icon"> </img>
-            </a>
-          </div>
-        </div>
-
-      </section>
-
-    </article>
-
-    <article>
-
       <header>
         <h2 class=" ">Search Bar</h2>
       </header>
@@ -401,12 +331,131 @@
         </div>
 
       </section>
-
     </article>
 
+    <article>
+      <header>
+        <h2 class=" ">Circle Number with Text</h2>
+      </header>
+      <section class="container">
+        <div class="block">
+          <code>
+            &lt;span class="circle-num our-black"&gt;1&lt;/span&gt;<br>
+              &lt;span&gt;First&lt;/span&gt;
+          </code>
+        </div>
+        <div class="block">
+            <span class="circle-num our-black">1</span>
+              <span class="">First</span>
+        </div>
+      </section>
+    </article>
 
     <article>
+      <header>
+        <h2 class=" ">News Date Banner</h2>
+      </header>
+      <section class="container">
+        <div class="block">
+          <code>
+            &lt;span class="circle-num our-black"&gt;1&lt;/span&gt;<br>
+              &lt;span&gt;First&lt;/span&gt;
+          </code>
+        </div>
+        <div class="block" style="position:relative; height:8rem;">
+          <div class="ribbon">
+            <div class="news-date head-2 ">
+              <span class="month">MAY</span><br>
+              <span class="date">18</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+  </div>
 
+  <hr>
+
+  <div id="organisms">
+    <!-- <h1 class="head-1">STYLE GUIDE- Organisms</h1> -->
+
+    <article>
+      <header>
+        <h2 class=" ">Main Navigation</h2>
+      </header>
+      <section class="container">
+        <div class="block">
+          <code>
+	    &lt;nav class="main-nav"&gt;<br>
+	    &nbsp;&nbsp;&lt;a href="#" class="nav-link"&gt;Home&lt;/a&gt;<br>
+	    &nbsp;&nbsp;&lt;a href="#" class="nav-link"&gt;Sommelier&lt;/a&gt;<br>
+	    &nbsp;&nbsp;&lt;a href="#" class="nav-link"&gt;News&lt;/a&gt;<br>
+	    &nbsp;&nbsp;&lt;a href="#" class="nav-link"&gt;About&lt;/a&gt;<br>
+	    &lt;/nav&gt;<br>
+	  </code>
+        </div>
+        <div class="nav-default">
+          <a href="index.html" class="nav-logo-link">
+            <span class="nav-title">BREWSTER</span>
+          </a>
+
+          <div class="sub-headers">
+            <a class="nav-link" href="">Facebook</a>
+            <a class="nav-link" href="">Instagram</a>
+            <a class="nav-link" href="">Twitter</a>
+            <a class="nav-link lang-opt" href="">FR</a>
+            <span> | </span>
+            <!-- language selection feedback may require javascript -->
+            <a class="nav-link lang-opt" href="">EN</a>
+          </div>
+          <div class="main-headers">
+            <a class="nav-link" href="sommelier.html">Sommelier</a>
+            <a class="nav-link" href="products.html">Starter Kit</a>
+            <a class="nav-link" href="index.html#tab-about">About</a>
+            <a class="nav-link" href="index.html#tab-news">News</a>
+            <a class="cart-link" href="cart.html">
+              <img src="img/icons/cart.png" class="cart-icon"> </img>
+            </a>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <article>
+      <header>
+        <h2 class=" ">News Date Banner</h2>
+      </header>
+      <section class="container">
+        <div class="block">
+          <code>
+            &lt;span class="circle-num our-black"&gt;1&lt;/span&gt;<br>
+              &lt;span&gt;First&lt;/span&gt;
+          </code>
+        </div>
+        <div class="block">
+
+          <div class="news-article">
+            <div class="news-picture">
+              <div class="ribbon">
+                <div class="news-date head-2 ">
+                  <span class="month">MAY</span><br>
+                  <span class="date">18</span>
+                </div>
+              </div>
+              <img src="img/may18.jpg" class="img">
+            </div>
+            <div class="news-content">
+              <h2>At The Other Side of the Bar, On the Other Side of the Rockies</h2>
+              <p class="p-style">In our recent travels to Alberta, we’ve not failed to pay visits to our extended family in the Canadian specialty coffee scene. One particular coffeeshop comes to mind; a sleek, yet warmly rustic coffeeshop whose</p>
+              <a href="" class="inline-link"> Read More ></a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </article>
+
+    <article>
       <header>
         <h2 class=" ">Product Listing</h2>
       </header>
@@ -456,108 +505,8 @@
 
     </article>
 
-
-    <!-- <article>
-
-      <header>
-        <h2 class=" ">Optional Selectable Product</h2>
-      </header>
-
-      <section class="container">
-
-        <div class="block">
-          <code>
-	    &lt;label for="production-choice-1"&gt;<br>
-	    &nbsp;&nbsp;&lt;input type="checkbox" id="product-choice-1" class="optional"/&gt;<br>
-	    &nbsp;&nbsp;&lt;div class="product-choice"&gt;<br>
-	    &nbsp;&nbsp;&nbsp;&nbsp;&lt;img class="product-image" src="img/coffee-example.jpg"<br>
-	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; alt="Cold coffee in a stylish bottle"&gt;&lt;/img&gt;<br>
-	    &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="product-content"&gt;<br>
-	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2 class="head-2">Cold Bitter Black Vanilla&lt;/h2&gt;<br>
-	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="p-style"&gt;<br>
-	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Medium Size&lt;br&gt;<br>
-	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vegan&lt;br&gt;<br>
-	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;<br>
-	    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/span&gt;<br>
-	    &nbsp;&nbsp;&lt;/div&gt;<br>
-	    &lt;/label&gt;<br>
-	                      </code>
-        </div>
-
-        <div class="block">
-          <h4 class="head-4">Click Me</h4>
-          <label for="product-choice-1">
-	                          <input type="checkbox" id="product-choice-1" class="optional"/>
-	                          <div class="product-choice">
-	                              <img class="product-image" src="img/coffee-example.jpg"
-		                                 alt="Cold coffee in a stylish bottle"></img>
-	                              <span class="product-content">
-		                                <h2 class=""> Cold Bitter Black Vanilla </h2>
-		                                <p class="p-style">
-		                                    Medium Size<br>
-		                                    Vegan<br>
-		                                </p>
-	                              </span>
-	                          </div>
-	                      </label>
-
-        </div>
-
-      </section>
-
-    </article>
-
+        <hr>
     <article>
-
-      <header>
-        <h2 class=" ">Mandatory Selectable Product</h2>
-      </header>
-
-      <section class="container">
-
-        <div class="block">
-          <code>
-	    &lt;label for="production-choice-2"&gt;<br>
-	    &nbsp;&nbsp;&lt;input type="radio" id="product-choice-2" class="mandatory"/&gt;<br>
-	    &nbsp;&nbsp;&lt;div class="product-choice"&gt;<br>
-	    &nbsp;&nbsp;&nbsp;&nbsp;&lt;img class="product-image" src="img/coffee-example.jpg"<br>
-	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; alt="Cold coffee in a stylish bottle"&gt;&lt;/img&gt;<br>
-	    &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="product-content"&gt;<br>
-	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2 class="">Cold Bitter Black Vanilla &lt;/h2&gt;<br>
-	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="p-style"&gt;<br>
-	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Medium Size&lt;br&gt;<br>
-	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vegan&lt;br&gt;<br>
-	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;<br>
-	    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/span&gt;<br>
-	    &nbsp;&nbsp;&lt;/div&gt;<br>
-	    &lt;/label&gt;<br>
-	                      </code>
-        </div>
-
-        <div class="block">
-          <h4 class="head-4">Click Me</h4>
-          <label for="product-choice-2">
-	                          <input type="radio" id="product-choice-2" class="mandatory"/>
-	                          <div class="product-choice">
-	                              <img class="product-image" src="img/coffee-example.jpg"
-		                                 alt="Cold coffee in a stylish bottle"></img>
-	                              <span class="product-content">
-		                                <h2 class=" "> Cold Bitter Black Vanilla </h2>
-		                                <p class="p-style">
-		                                    Medium Size<br>
-		                                    Vegan<br>
-		                                </p>
-	                              </span>
-	                          </div>
-	                      </label>
-        </div>
-
-      </section>
-
-    </article> -->
-
-    <article>
-
       <header>
         <h2 class="">Grid</h2>
       </header>

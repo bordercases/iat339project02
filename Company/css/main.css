@@ -84,10 +84,14 @@ textarea {
   resize: vertical;
 }
 
-/* ------------- styling of id section ------------- */
+/* ------------- styling of styleguide id section ------------- */
 
-#text, #atoms, #molecules {
+#text, #atoms, #molecules,#organisms {
   margin: 5%;
+}
+
+#atoms{
+  margin-top: 9rem;
 }
 
 /* ------------- styling of atoms ------------- */
@@ -475,6 +479,21 @@ figcaption {
   font-size: 1rem;
   margin: 0.5rem 0.5rem 0 0;
   height: auto;
+}
+
+.delete{
+  background: transparent;
+    border: 1px solid lightgrey;
+    width: 30px;
+    height: 30px;
+    transition: all .3s ease-in-out;
+        border-radius: 5px;
+}
+
+.delete:hover, .clear:hover{
+  transition: all .3s ease-in-out;
+  background: white;
+  border: 2px solid indianred;
 }
 
 /* ------------- styling of molecules ------------- */

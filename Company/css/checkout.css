@@ -67,11 +67,14 @@ input[type=radio]+label::after {
 }
 
 input[type=checkbox]:checked+label::after {
-  transform: rotate(315deg);
+  -webkit-transform: rotate(315deg);
+      -ms-transform: rotate(315deg);
+          transform: rotate(315deg);
 }
 
 input[type=radio]:checked+label::after {
-  transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
 }
 
 /*-------------checkout--------*/

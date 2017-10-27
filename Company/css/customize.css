@@ -1,5 +1,6 @@
 .block {
-  flex-basis: min-content;
+  -ms-flex-preferred-size: min-content;
+      flex-basis: min-content;
 }
 
 input[type="radio"] {

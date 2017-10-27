@@ -7,7 +7,9 @@
 
 .news-content {
   vertical-align: middle;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 2rem 2rem;
 }
 
@@ -22,15 +24,24 @@
   max-width: 30rem;
   min-width: 15rem;
   height: auto;
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   background-color: white;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
   transition: 0.2s linear;
 }
 
 .news-article:hover {
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+      -ms-transform: scale(1.03);
+          transform: scale(1.03);
 }
 
 .news-picture {}
@@ -49,7 +60,6 @@
 .ribbon {
   display: block;
   -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
   width: 0;
   height: 100px;

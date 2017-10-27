@@ -496,6 +496,7 @@ figcaption {
   -o-transition: background-color 0.5s ease-in-out;
   transition: background-color 0.5s ease-in-out;
   margin: 0.5rem 0;
+  cursor: pointer;
 }
 
 .button-submit-style,

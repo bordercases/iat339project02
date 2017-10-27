@@ -1,48 +1,48 @@
 /*news section*/
 
-.news-section{
-/*background: whitesmoke;*/
-padding: 3rem 0;
-
+.news-section {
+  /*background: whitesmoke;*/
+  padding: 3rem 0;
 }
-.news-content{
-  vertical-align:middle;
+
+.news-content {
+  vertical-align: middle;
   justify-content: center;
   padding: 2rem 2rem;
 }
 
-.news-content a{
+.news-content a {
   text-decoration: none;
   color: black;
 }
 
-.news-article{
-    position: relative;
-        margin: 2rem 1rem;
-        max-width: 30rem;
-        min-width: 15rem;
-        height: auto;
-        flex:1;
-        background-color: white;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
-        transition: 0.2s linear;
-
+.news-article {
+  position: relative;
+  margin: 2rem 1rem;
+  max-width: 30rem;
+  min-width: 15rem;
+  height: auto;
+  flex: 1;
+  background-color: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+  transition: 0.2s linear;
 }
 
-.news-article:hover{
+.news-article:hover {
   transition: all 0.2s ease-in-out;
-
   transform: scale(1.03);
 }
-.news-picture{}
 
-.news-header{
+.news-picture {}
+
+.news-header {
   text-align: center;
   color: white;
 }
 
 /*overrides main style*/
-.news-header .head-1{
+
+.news-header .head-1 {
   border-top: white solid 1px;
 }
 
@@ -58,29 +58,29 @@ padding: 3rem 0;
   overflow: visible;
   outline: none;
   border: 33px solid #a58b2f;
-  border-top: 0 solid rgba(0,0,0,1);
-  border-bottom: 8px solid rgba(0,0,0,0);
+  border-top: 0 solid rgba(0, 0, 0, 1);
+  border-bottom: 8px solid rgba(0, 0, 0, 0);
   -webkit-border-radius: 0;
-  color: rgba(0,0,0,1);
-  }
+  color: rgba(0, 0, 0, 1);
+}
 
-
-  .news-date{
-    position: absolute;
-    color: white;
-    text-align: center;
-    top: 1.5rem;
+.news-date {
+  position: absolute;
+  color: white;
+  text-align: center;
+  top: 1.5rem;
   left: -15px;
   font-size: 1.5em;
   line-height: 1.3rem;
-    font-family: 'Raleway', sans-serif;
-  }
-.month{
-  /*font-weight: bold;*/
-      font-size: 0.9rem;
-      letter-spacing: 0.1em;
+  font-family: 'Raleway', sans-serif;
 }
 
-.date{
+.month {
+  /*font-weight: bold;*/
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+}
+
+.date {
   font-weight: 100;
 }

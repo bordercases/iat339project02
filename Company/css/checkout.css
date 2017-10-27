@@ -1,4 +1,5 @@
 /* Acordeon styles */
+
 .tab {
   position: relative;
   margin-bottom: 1px;
@@ -6,6 +7,7 @@
   color: #fff;
   overflow: hidden;
 }
+
 /*input {
   position: absolute;
   opacity: 0;
@@ -33,11 +35,15 @@ label {
 .tab-content p {
   margin: 1em;
 }
+
 /* :checked */
-input:checked ~ .tab-content {
+
+input:checked~.tab-content {
   max-height: 10em;
 }
+
 /* Icon */
+
 label::after {
   position: absolute;
   right: 0;
@@ -51,16 +57,20 @@ label::after {
   -o-transition: all .35s;
   transition: all .35s;
 }
-input[type=checkbox] + label::after {
+
+input[type=checkbox]+label::after {
   content: "+";
 }
-input[type=radio] + label::after {
+
+input[type=radio]+label::after {
   content: "\25BC";
 }
-input[type=checkbox]:checked + label::after {
+
+input[type=checkbox]:checked+label::after {
   transform: rotate(315deg);
 }
-input[type=radio]:checked + label::after {
+
+input[type=radio]:checked+label::after {
   transform: rotateX(180deg);
 }
 
@@ -99,12 +109,14 @@ font-family: 'Raleway', sans-serif;*/
   font-weight: 400;
 }
 
-.onestepcheckout-summary .name, .onestepcheckout-totals .name {
+.onestepcheckout-summary .name,
+.onestepcheckout-totals .name {
   width: 65%;
   text-align: left;
 }
 
-.onestepcheckout-summary .total, .onestepcheckout-totals .total {
+.onestepcheckout-summary .total,
+.onestepcheckout-totals .total {
   text-align: right;
 }
 
@@ -120,15 +132,16 @@ font-family: 'Raleway', sans-serif;*/
   border-bottom: 1px solid rgba(0, 0, 0, .25);
 }
 
-.mandatory{
+.mandatory {
   font-weight: bold;
   /*color: red;
   font-size: 2rem;`*/
 }
 
 /*ovveride main style*/
-.head-2{
-/*emulating head-3 style*/
+
+.head-2 {
+  /*emulating head-3 style*/
   font-size: 1.1rem;
   font-weight: 100;
   letter-spacing: 0.2rem;
@@ -137,13 +150,13 @@ font-family: 'Raleway', sans-serif;*/
   text-transform: none;
 }
 
-.head-3{
+.head-3 {
   display: inline-block;
 }
 
 @media (max-width: 50em) {
   #check-left {
-    visibility:hidden;
-    position:absolute;
+    visibility: hidden;
+    position: absolute;
   }
 }

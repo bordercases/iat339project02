@@ -87,7 +87,10 @@ textarea {
 
 /* ------------- styling of styleguide id section ------------- */
 
-#text, #atoms, #molecules, #organisms {
+#text,
+#atoms,
+#molecules,
+#organisms {
   margin: 5%;
 }
 
@@ -147,14 +150,6 @@ textarea {
   display: block;
   vertical-align: middle;
   justify-content: center;
-}
-
-/* https://stackoverflow.com/questions/26290849/why-is-size-of-h1-different-inside-a-section-element */
-
-.parallax-img h1 {
-  letter-spacing: 5px;
-  font-size: 2em;
-  margin-bottom: 0;
 }
 
 /* fonting some elements */
@@ -222,7 +217,8 @@ figcaption {
 
 /* anchor and button styles */
 
-.inline-link, .inline-link:visited {
+.inline-link,
+.inline-link:visited {
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
   color: grey;
@@ -261,12 +257,14 @@ figcaption {
   text-decoration: none;
 }
 
-.nav-logo-link, .nav-logo-link:visited {
+.nav-logo-link,
+.nav-logo-link:visited {
   text-decoration: none;
   color: #333333;
 }
 
-.nav-link, .nav-link:visited {
+.nav-link,
+.nav-link:visited {
   font-family: 'Raleway', sans-serif;
   /*margin-bottom: 1rem;*/
   font-size: 1.2em;
@@ -427,7 +425,8 @@ figcaption {
 /* nav should stack in mobile */
 
 @media (max-width: 50em) {
-  .nav-link, .nav-title {
+  .nav-link,
+  .nav-title {
     float: none;
     display: inline-block;
   }
@@ -453,7 +452,8 @@ figcaption {
   margin: 0.5rem 0;
 }
 
-.button-submit-style, .button-submit-style:visited {
+.button-submit-style,
+.button-submit-style:visited {
   background-color: #4a4a4a;
   color: white;
   padding: 14px 20px 13px;
@@ -466,14 +466,16 @@ figcaption {
   background-color: black;
 }
 
-.button-reset-style, .button-reset-style:visited {
+.button-reset-style,
+.button-reset-style:visited {
   border: 2px solid #e3e3e3;
   background-color: transparent;
   color: #c7c7c7;
   font-size: 14px;
 }
 
-.button-reset-style:hover, .button-reset-style:focus {
+.button-reset-style:hover,
+.button-reset-style:focus {
   transition: all 0.5s ease-in-out;
   color: #515751;
   background-color: #e3e3e3;
@@ -500,7 +502,8 @@ figcaption {
   border-radius: 5px;
 }
 
-.delete:hover, .clear:hover {
+.delete:hover,
+.clear:hover {
   transition: all .3s ease-in-out;
   background: white;
   border: 2px solid indianred;
@@ -538,7 +541,8 @@ div.search-bar>button[type="button"] {
   font-size: 1rem;
 }
 
-input.optional, input.mandatory {
+input.optional,
+input.mandatory {
   visibility: hidden;
   /* taking out of document flow to prevent the hidden element from moving blocks already there */
   position: absolute;
@@ -611,7 +615,8 @@ input:checked.mandatory {
   text-align: center;
 }
 
-.square:hover, input[type="radio"]:checked+label span {
+.square:hover,
+input[type="radio"]:checked+label span {
   width: 20%;
   height: auto;
   transition: all 0.5s ease-in-out;
@@ -698,7 +703,8 @@ footer .nav-title {
   width: 100%;
 }
 
-.location, .email {
+.location,
+.email {
   font-style: italic;
   color: #f5f5f5;
   font-size: 0.9rem;
@@ -824,7 +830,13 @@ footer .nav-title {
   align-self: center;
 }
 
-/*styling index*/
+/* https://stackoverflow.com/questions/26290849/why-is-size-of-h1-different-inside-a-section-element */
+
+.parallax-img h1 {
+  letter-spacing: 5px;
+  font-size: 2em;
+  margin-bottom: 0;
+}
 
 .parallax-img {
   position: relative;
@@ -860,7 +872,9 @@ footer .nav-title {
   padding: 2% 0 2% 5%;
 }
 
-.tab-start, .parallax-text h1, .parallax-text h3 {
+.tab-start,
+.parallax-text h1,
+.parallax-text h3 {
   transition: all 0.5s ease-in-out;
 }
 
@@ -905,12 +919,16 @@ footer .nav-title {
   /*background-color: rgba(0, 0, 0, 0.47);*/
 }
 
-.about-us, .our-products, .our-quality {
+.about-us,
+.our-products,
+.our-quality {
   opacity: 0.75;
   transition: all 0.5s ease-in-out;
 }
 
-.about-us:hover, .our-products:hover, .our-quality:hover {
+.about-us:hover,
+.our-products:hover,
+.our-quality:hover {
   opacity: 1;
   transition: all 0.5s ease-in-out;
 }

@@ -7,7 +7,10 @@ input[type="radio"] {
 }
 
 /*clearing all borders*/
-#somm-left, #somm-right .somm-control, #somm-right .block{
+
+#somm-left,
+#somm-right .somm-control,
+#somm-right .block {
   border: none;
 }
 
@@ -15,17 +18,17 @@ input[type="radio"] {
   display: none;
 }
 
-#somm-all{
+#somm-all {
   margin: 9rem 1rem;
 }
 
 #somm-left {
   padding: 5%;
-  opacity:0.8;
+  opacity: 0.8;
 }
 
 .img-block {
-  position:relative;
+  position: relative;
   width: auto;
   height: auto;
   margin: auto;
@@ -33,31 +36,33 @@ input[type="radio"] {
 }
 
 /* hide the src in the case where we select a "none" flavor */
+
 #somm-img-flavor[src=""] {
-   display: none;
+  display: none;
 }
 
 #somm-img-flavor {
   position: absolute;
   top: 70%;
   left: 45%;
-  width:50%;
-  height:auto;
+  width: 50%;
+  height: auto;
   /*max-height: 10rem;*/
 }
 
-#somm-right .somm-control{
+#somm-right .somm-control {
   padding: 1rem;
   border-bottom: solid whitesmoke;
 }
 
-.somm-control header{
+.somm-control header {
   margin: 1rem 0;
 }
 
 /* coffee colors */
+
 .our-blond {
-  background: rgb(234,194,154);
+  background: rgb(234, 194, 154);
 }
 
 .our-blond-medium {
@@ -77,26 +82,25 @@ input[type="radio"] {
 }
 
 /*toppings*/
-.toppings .square{
+
+.toppings .square {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-    color: black;
-    font-weight: 400;
+  color: black;
+  font-weight: 400;
 }
 
 .coffee-cream {
-    background-image: url(../img/coffeeCream.jpeg);
-
+  background-image: url(../img/coffeeCream.jpeg);
 }
 
 .ice-cream {
-    background-image: url(../img/ice-cream.png);
-
+  background-image: url(../img/ice-cream.png);
 }
+
 .milk-2percent {
   background-image: url(../img/milk.jpg);
-
 }
 
 .milk-skim {
@@ -105,29 +109,29 @@ input[type="radio"] {
 
 /* flavorant colors */
 
-.flavor .square{
+.flavor .square {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-    font-weight: 400;
+  font-weight: 400;
 }
 
-.vanilla{
+.vanilla {
   background-image: url(../img/vanilla.jpg);
   color: white;
-
 }
-.hazelnut{
+
+.hazelnut {
   background-image: url(../img/hazelnuts.jpg);
   color: white;
-
 }
-.sw-potato{
+
+.sw-potato {
   background-image: url(../img/sw-potato.JPG);
   color: white;
-
 }
-.cinnamon{
+
+.cinnamon {
   color: white;
   background-image: url(../img/cinnamon.jpg);
 }
@@ -138,29 +142,30 @@ label .our-none {
   text-shadow: none;
 }
 
-.button-next{
+.button-next {
   border: lightgrey solid;
-background-color: whitesmoke;
-color: black;
-height: 5rem;
-}
-.button-next:hover{
-background-color: #cccccc;
-color: black;
+  background-color: whitesmoke;
+  color: black;
+  height: 5rem;
 }
 
-.button-bottom{
+.button-next:hover {
+  background-color: #cccccc;
+  color: black;
+}
+
+.button-bottom {
   margin-top: 0.5rem;
 }
 
-
 /*overrides the one in main*/
-.p-style{
+
+.p-style {
   line-height: 1rem;
-padding: 0;
-font-size: 0.9rem;
+  padding: 0;
+  font-size: 0.9rem;
 }
 
-.square{
-      text-shadow:5px 5px 10px #753109;
+.square {
+  text-shadow: 5px 5px 10px #753109;
 }

@@ -931,13 +931,16 @@ footer .nav-title {
 }
 
 .parallax-img {
+  display:table;
   position: relative;
   z-index: 12;
   top: 0;
   left: 0;
   height: -webkit-fill-available;
-  width: 100%;
-  background-image: url(../img/coffee-animated.gif);
+  min-height: 10px;
+  min-width: 10px;
+  width: 10%;
+  background: url('../img/coffee-animated.gif');
   opacity: 0.75;
   background-attachment: fixed;
   background-position: center;

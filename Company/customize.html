@@ -1,282 +1,252 @@
 <!DOCTYPE html>
-<html lang="en">
 
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name=viewport content="width=device-width, initial-scale=1">
-  <title>Customize</title>
-  <link href="css/main.css" rel="stylesheet">
-  <link href="css/grids.css" rel="stylesheet">
-  <link href="css/customize.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <title>Customize</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/grids.css" rel="stylesheet">
+    <link href="css/customize.css" rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <nav class="nav-default" id="nav-default">
-      <a href="index.html" class="nav-logo-link">
-        <span class="nav-title">BREWSTER</span>
-      </a>
+    <header>
+        <nav class="nav-default" id="nav-default">
+            <a class="nav-logo-link" href="index.html"><span class="nav-title">BREWSTER</span></a>
 
-      <div class="sub-headers">
-        <a class="nav-link" href="">Facebook</a>
-        <a class="nav-link" href="">Instagram</a>
-        <a class="nav-link" href="">Twitter</a>
-        <a class="nav-link lang-opt" href="">FR</a>
-        <span> | </span>
-        <!-- language selection feedback may require javascript -->
-        <a class="nav-link lang-opt" href="">EN</a>
-      </div>
+            <div class="sub-headers">
+                <a class="nav-link" href="">Facebook</a> <a class="nav-link" href="">Instagram</a> <a class="nav-link" href="">Twitter</a> <a class="nav-link lang-opt" href="">FR</a> <span>|</span> <!-- language selection feedback may require javascript -->
+                 <a class="nav-link lang-opt" href="">EN</a>
+            </div>
 
-      <div class="main-headers">
-        <a class="nav-link" href="customize.html">Customize</a>
-        <a class="nav-link" href="products.html">Products</a>
-        <a class="nav-link" href="index.html#tab-about">About</a>
-        <a class="nav-link" href="index.html#tab-news">News</a>
-        <a class="cart-link" href="cart.html">
-          <img src="img/icons/cart.png" alt="A miniature cart icon" class="cart-icon"/>
-        </a>
-      </div>
-    </nav>
 
-    <!-- nav for mobile -->
-    <nav id="nav-toggle" class="hidden">
-      <div class="mobile-row">
-        <div class="nav-title menu">BREWSTER</div>
-        <a class="cart-link" href="cart.html">
-            <img src="img/icons/cart.png" alt="A miniature cart icon" class="cart-icon"/>
-          </a>
-      </div>
-      <div class="" id="nav-items">
-        <a class="mobile-row" href="">
-          <div class="nav-link">Customize</div>
-        </a>
-        <a class="mobile-row" href="">
-          <div class="nav-link">Products</div>
-        </a>
-        <a class="mobile-row" href="">
-          <div class="nav-link">News</div>
-        </a>
-        <div class="mobile-row">
-          <a href=""><img src="img/icons/fb-blk.png" alt="black facebook icon" class="social-icon"></a>
-          <a href=""><img src="img/icons/insta-blk.png" alt="black instagram icon" class="social-icon"></a>
-          <a href=""><img src="img/icons/twitt-blk.png" alt="black twitter icon" class="social-icon"></a>
+            <div class="main-headers">
+                <a class="nav-link" href="customize.html">Customize</a> <a class="nav-link" href="products.html">Products</a> <a class="nav-link" href="index.html#tab-about">About</a> <a class="nav-link" href="index.html#tab-news">News</a> <a class="cart-link" href="cart.html"><img alt="A miniature cart icon" class="cart-icon" src="img/icons/cart.png"></a>
+            </div>
+        </nav>
+        <!-- nav for mobile -->
+
+
+        <nav class="hidden" id="nav-toggle">
+            <div class="mobile-row">
+                <div class="nav-title menu">
+                    BREWSTER
+                </div>
+                <a class="cart-link" href="cart.html"><img alt="A miniature cart icon" class="cart-icon" src="img/icons/cart.png"></a>
+            </div>
+
+
+            <div class="" id="nav-items">
+                <a class="mobile-row" href="">
+                <div class="nav-link">
+                    Customize
+                </div></a> <a class="mobile-row" href="">
+                <div class="nav-link">
+                    Products
+                </div></a> <a class="mobile-row" href="">
+                <div class="nav-link">
+                    News
+                </div></a>
+
+                <div class="mobile-row">
+                    <a href=""><img alt="black facebook icon" class="social-icon" src="img/icons/fb-blk.png"></a> <a href=""><img alt="black instagram icon" class="social-icon" src="img/icons/insta-blk.png"></a> <a href=""><img alt="black twitter icon" class="social-icon" src="img/icons/twitt-blk.png"></a>
+                </div>
+
+
+                <div class="mobile-row">
+                    <a class="nav-link lang-opt" href="">FR</a> <span>|</span> <a class="nav-link lang-opt" href="">EN</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="container" id="somm-all">
+        <section class="block container" id="somm-left">
+            <div class="img-block"><img alt="A cartoon icon of the flavor you have selected" id="somm-img-flavor" src=""> <img alt="A cartoon picture of coffee based on what you've selected" id="somm-img-coffee" src=""></div>
+        </section>
+
+
+        <section class="container block" id="somm-right">
+            <div class="block somm-control">
+                <header>
+                    <span class="circle-num our-black">1</span>
+
+                    <h2 class="head-2">Richness</h2>
+
+
+                    <p class="p-style">Caffeine richness level decreases as the roast gets darker but becomes more caramelized.</p>
+
+
+                    <p>
+                    </p>
+                </header>
+
+
+                <form id="richness" name="richness">
+                    <input checked id="richness-1" name="richness" type="radio" value="dark"> <label for="richness-1"><span class="square our-dark">Dark</span></label> <input id="richness-2" name="richness" type="radio" value="medium-dark"> <label for="richness-2"><span class="square our-medium-dark">Medium-Dark</span></label> <input id="richness-3" name="richness" type="radio" value="medium"> <label for="richness-3"><span class="square our-medium">Medium</span></label> <input id="richness-4" name="richness" type="radio" value="light-medium"> <label for="richness-4"><span class="square our-blond-medium">Blond-Medium</span></label> <input id="richness-5" name="richness" type="radio" value="light"> <label for="richness-5"><span class="square our-blond">Blond</span></label>
+                </form>
+            </div>
+
+
+            <div class="block somm-control toppings">
+                <header>
+                    <span class="circle-num our-black">2</span>
+
+                    <h2 class="head-2">Topping</h2>
+
+
+                    <p class="p-style">Spice up the routine by adding toppings!</p>
+
+
+                    <p>
+                    </p>
+                </header>
+
+
+                <form id="topping" name="topping">
+                    <input checked id="topping-1" name="topping" type="radio" value="cream"> <label for="topping-1"><span class="square coffee-cream">Coffee Cream</span></label> <input id="topping-2" name="topping" type="radio" value="ice"> <label for="topping-2"><span class="square ice-cream">Ice Cream</span></label> <input id="topping-3" name="topping" type="radio" value="milk"> <label for="topping-3"><span class="square milk-2percent">2% Milk</span></label> <input id="topping-4" name="topping" type="radio" value="skim"> <label for="topping-4"><span class="square milk-skim">Skim Milk</span></label> <input id="topping-5" name="topping" type="radio" value="none"> <label for="topping-5"><span class="square our-none">None</span></label>
+                </form>
+            </div>
+
+
+            <div class="block somm-control flavor">
+                <header>
+                    <span class="circle-num our-black">3</span>
+
+                    <h2 class="head-2">Roast Flavor</h2>
+
+
+                    <p class="p-style">Add some spices to the coffee as it brews!</p>
+                </header>
+
+
+                <form id="flavor" name="flavor">
+                    <input id="flavor-1" name="flavor" type="radio" value="vanilla"> <label for="flavor-1"><span class="square vanilla">Vanilla</span></label> <input id="flavor-2" name="flavor" type="radio" value="hazelnut"> <label for="flavor-2"><span class="square hazelnut">Hazelnut</span></label> <input id="flavor-4" name="flavor" type="radio" value="cinnamon"> <label for="flavor-4"><span class="square cinnamon">Cinnamon</span></label> <input checked id="flavor-5" name="flavor" type="radio" value="none"> <label for="flavor-5"><span class="square our-none">No Flavor</span></label>
+                </form>
+            </div>
+
+
+            <div class="block">
+                <button class="button-bottom button-submit-style button-next" id="switchOptions">Next</button>
+            </div>
+
+
+            <div class="block">
+                <form action="cart.html" id="checkout" name="checkout">
+                    <button class="button-submit-style button-bottom">Confirm</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+
+    <footer>
+        <div class="container footer-top">
+            <div class="footer-companyInfo">
+                <!-- <img alt="logo"> -->
+
+
+                <div class="nav-title">
+                    BREWSTER
+                </div>
+
+
+                <div class="location">
+                    123-4567 east 123rd street
+                </div>
+
+
+                <div class="location">
+                    Vancouver, BC 123 567 Canada
+                </div>
+
+
+                <div class="email">
+                    support@brewster.ca
+                </div>
+            </div>
+
+
+            <div class="footer-listing">
+                <ul>
+                    <li>
+                        <h6 class="footer-linkheading"><a class="footer-linkheading" href="index.html">Brewster</a>
+                        </h6>
+                    </li>
+
+
+                    <li>
+                        <a class="footer-link" href="customize.html">Customize</a>
+                    </li>
+
+
+                    <li>
+                        <a class="footer-link" href="curation.html">Products</a>
+                    </li>
+
+
+                    <li>
+                        <a class="footer-link" href="index.html#tab-about">About us</a>
+                    </li>
+
+
+                    <li>
+                        <a class="footer-link" href="index.html#tab-news">News</a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="footer-listing">
+                <ul>
+                    <li>
+                        <h6 class="footer-linkheading">Reference</h6>
+                    </li>
+
+
+                    <li>
+                        <a class="footer-link" href="styleguide.html">Styleguide</a>
+                    </li>
+
+
+                    <li>
+                        <a class="footer-link" href="citations.html">Citation</a>
+                    </li>
+
+
+                    <li>
+                        <a class="footer-link" href="https://github.com/bordercases/iat339project02">Git Repo</a>
+                    </li>
+                </ul>
+            </div>
+            <a class="top-link" href="#">
+            <div>
+                ^
+            </div></a>
         </div>
-        <div class="mobile-row">
-          <a class="nav-link lang-opt" href="">FR</a>
-          <span> | </span>
-          <a class="nav-link lang-opt" href="">EN</a>
+
+
+        <div class="footer-bottom">
+            <span class="fine-print">iat334 assignment 1 project copyright kenneth bruskiewicz, ying chen</span>
+
+            <div class="social-list">
+                <a href=""><img alt="white facebook icon" class="social-icon" src="img/icons/fb.png"></a> <a href=""><img alt="white instagram icon" class="social-icon" src="img/icons/insta.png"></a> <a href=""><img alt="white twitter icon" class="social-icon" src="img/icons/twitt.png"></a>
+            </div>
+            <a href="#" id="#top"><i></i></a>
         </div>
-      </div>
-    </nav>
-
-  </header>
-
-  <div id="somm-all" class="container ">
-
-    <section id="somm-left" class="block container">
-
-      <div class="img-block">
-        <img id="somm-img-flavor" src="" alt="A cartoon icon of the flavor you have selected"/>
-        <img id="somm-img-coffee" src="" alt="A cartoon picture of coffee based on what you've selected" />
-      </div>
-
-    </section>
-
-    <section id="somm-right" class="container block">
-
-      <div class="block somm-control">
-
-        <header>
-          <span class="circle-num our-black">1</span>
-
-          <h2 class="head-2">
-              Richness
-            </h2>
-            <p class="p-style">
-               Caffeine richness level decreases as the roast gets darker but becomes more caramelized.
-              <p>
-        </header>
-
-        <form name="richness">
-
-          <input type="radio" id="richness-1" name="richness" value="dark" checked>
-          <label for="richness-1">
-              <span class="square our-dark">Dark</span>
-            </label>
-
-          <input type="radio" id="richness-2" name="richness" value="medium-dark">
-          <label for="richness-2">
-              <span class="square our-medium-dark">Medium-Dark</span>
-            </label>
-
-          <input type="radio" id="richness-3" name="richness" value="medium">
-          <label for="richness-3">
-              <span class="square our-medium">Medium</span>
-            </label>
-
-          <input type="radio" id="richness-4" name="richness" value="light-medium">
-          <label for="richness-4">
-              <span class="square our-blond-medium">Blond-Medium</span>
-            </label>
-
-          <input type="radio" id="richness-5" name="richness" value="light">
-          <label for="richness-5">
-              <span class="square our-blond">Blond</span>
-            </label>
-        </form>
-      </div>
-
-      <div class="block somm-control toppings">
-
-        <header>
-          <span class="circle-num our-black">2</span>
-          <h2 class="head-2">
-              Topping
-            </h2>
-            <p class="p-style">
-               Spice up the routine by adding toppings!
-              <p>
-        </header>
-
-        <form name="topping">
-
-          <input type="radio" id="topping-1" name="topping" value="cream" checked>
-          <label for="topping-1">
-              <span class="square coffee-cream">Coffee Cream</span>
-            </label>
-
-          <input type="radio" id="topping-2" name="topping" value="ice">
-          <label for="topping-2">
-              <span class="square ice-cream">Ice Cream</span>
-            </label>
-
-          <input type="radio" id="topping-3" name="topping" value="milk">
-          <label for="topping-3">
-              <span class="square milk-2percent">2% Milk</span>
-            </label>
-
-          <input type="radio" id="topping-4" name="topping" value="skim">
-          <label for="topping-4">
-              <span class="square milk-skim">Skim Milk</span>
-            </label>
-
-          <input type="radio" id="topping-5" name="topping" value="none">
-          <label for="topping-5">
-              <span class="square our-none">None</span>
-            </label>
-
-        </form>
-      </div>
-
-      <div class="block somm-control flavor">
-
-        <header>
-          <span class="circle-num our-black">3</span>
-
-          <h2 class="head-2">
-              Roast Flavor
-            </h2>
-            <p class="p-style">
-            Add some spices to the coffee as it brews!
-          </p>
-        </header>
-
-        <form name="flavor">
-
-          <input type="radio" id="flavor-1" name="flavor" value="vanilla">
-          <label for="flavor-1">
-              <span class="square vanilla">Vanilla</span>
-            </label>
-
-          <input type="radio" id="flavor-2" name="flavor" value="hazelnut">
-          <label for="flavor-2">
-              <span class="square hazelnut">Hazelnut</span>
-            </label>
-
-            <input type="radio" id="flavor-4" name="flavor" value="cinnamon">
-            <label for="flavor-4">
-                <span class="square cinnamon">Cinnamon</span>
-              </label>
-
-          <input type="radio" id="flavor-5" name="flavor" value="none" checked>
-          <label for="flavor-5">
-              <span class="square our-none">No Flavor</span>
-            </label>
-
-        </form>
-      </div>
-
-      <div class="block">
-        <button id="switchOptions" class="button-bottom button-submit-style button-next">Next</button>
-      </div>
-
-      <div class="block">
-        <form id="checkout" action="cart.html">
-          <button class="button-submit-style button-bottom">Confirm</button>
-        </form>
-      </div>
-
-    </section>
-
-  </div>
-</body>
-
-<footer>
-  <div class="container footer-top">
-    <div class="footer-companyInfo">
-      <!-- <img alt="logo"> -->
-      <div class="nav-title">BREWSTER</div>
-      <div class="location">123-4567 east 123rd street</div>
-      <div class="location"> Vancouver, BC 123 567 Canada</div>
-      <div class="email">support@brewster.ca</div>
-    </div>
-
-    <div class="footer-listing">
-      <ul>
-        <li>
-          <h6 class="footer-linkheading"><a class="footer-linkheading" href="index.html">Brewster</a></h6></li>
-        <li><a class="footer-link" href="customize.html">Customize</a></li>
-        <li><a class="footer-link" href="curation.html">Products</a></li>
-        <li><a class="footer-link" href="index.html#tab-about">About us</a></li>
-        <li><a class="footer-link" href="index.html#tab-news">News</a></li>
-      </ul>
-    </div>
-
-    <div class="footer-listing">
-      <ul>
-        <li>
-          <h6 class="footer-linkheading">Reference</h6></li>
-        <li><a class="footer-link" href="styleguide.html">Styleguide</a></li>
-        <li><a class="footer-link" href="citations.html">Citation</a></li>
-        <li><a class="footer-link" href="https://github.com/bordercases/iat339project02">Git Repo</a></li>
-      </ul>
-    </div>
-
-
-    <a class="top-link" href="#">
-      <div>^</div>
-    </a>
-  </div>
-
-  <div class="footer-bottom">
-    <span class="fine-print"> iat334 assignment 1 project copyright kenneth bruskiewicz, ying chen</span>
-    <div class="social-list">
-      <a href=""><img src="img/icons/fb.png" alt="white facebook icon" class="social-icon"></a>
-      <a href=""><img src="img/icons/insta.png" alt="white instagram icon" class="social-icon"></a>
-      <a href=""><img src="img/icons/twitt.png" alt="white twitter icon" class="social-icon"></a>
-      </ul>
-    </div>
-    <a href="#" id="#top"><i></i></a>
-  </div>
-
-</footer>
-
-<!-- end of footer
+    </footer>
+    <!-- end of footer
      javascript -->
-
-<script src="javascript/wrap.js"></script>
-<script src="javascript/sommelier.js"></script>
-<script src="javascript/fullScreenSlider.js" type="text/javascript"></script>
-<script src="javascript/hamburger.js" type="text/javascript"></script>
-
+    <script src="javascript/wrap.js">
+    </script>
+    <script src="javascript/sommelier.js">
+    </script>
+    <script src="javascript/fullScreenSlider.js" type="text/javascript">
+    </script>
+    <script src="javascript/hamburger.js" type="text/javascript">
+    </script>
+</body>
 </html>

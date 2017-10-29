@@ -1,3 +1,7 @@
+// this javascript controls nav menu at the top:
+//like changing height and toggling look on mobile
+
+
 'use strict';
 // var nameofVariable= object.property
 window.innerWidth;
@@ -8,6 +12,9 @@ var navDefault = document.querySelector( "#nav-default" );
 var navToggle = document.querySelector( "#nav-toggle" );
 var navItems = document.querySelector( "#nav-items" );
 var navFirstItem = document.querySelector( "#nav-items a" );
+
+
+// showing nav toggle
 if ( windowWidth < 500 ) {
     console.log( "Window width is less than 500px, collapsing menu" );
     // classList expllicitly specify it s aast
@@ -36,6 +43,8 @@ navToggle.addEventListener( "click", function() {
         navToggle.setAttribute( "aria-expanded", "false " );
     }
 } );
+
+
 //when window is resized, show mobile nav
 window.addEventListener( "resize", function() {
     var width = document.documentElement.clientWidth;
@@ -54,3 +63,17 @@ window.addEventListener( "resize", function() {
         navDefault.classList.remove( "hidden" );
     }
 } );
+
+
+
+// when window is at the top, nav is thick
+window.addEventListener('scroll', function() {
+  var lastYPos = window.scrollY;
+  // console.log( lastYPos );
+
+  if(lastYPos> 50){
+    navDefault.classList.remove("thick");
+  }else{
+    navDefault.classList.add("thick");
+  }
+});

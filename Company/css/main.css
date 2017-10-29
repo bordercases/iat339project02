@@ -100,6 +100,17 @@ textarea {
 
 /* ------------- styling of atoms ------------- */
 
+
+/*blocks*/
+
+
+.container>.block:nth-of-type(odd) {
+  border: 2px solid #f7f7f7;
+  min-height: 5rem;
+  margin-bottom: 0.5rem;
+}
+
+
 /* stylized headers */
 
 [class*="head-"] {
@@ -152,6 +163,13 @@ textarea {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.warning {
+  font-weight: 100;
+  font-style: italic;
+  color: indianred;
+  margin: 0.5rem 0;
 }
 
 /* fonting some elements */
@@ -250,10 +268,20 @@ figcaption {
   background-color: rgba(255, 255, 255, 0.86);
   -webkit-box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.2);
-  padding: 1.5rem;
+  padding: 0.5rem 2.2rem;
   text-align: right;
   font-family: 'Raleway', sans-serif;
   width: 100%;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.thick{
+  padding: 2rem;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .nav-title {
@@ -311,6 +339,7 @@ figcaption {
 
 #nav-toggle .cart-icon {
   max-width: 30px;
+  padding-top: 8px;
 }
 
 .menu {
@@ -888,6 +917,13 @@ footer .nav-title {
   text-decoration: none;
 }
 
+.top-link:hover{
+  transform: scale(1.2);
+  -webkit-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
 /*-------cart----------*/
 
 .cart-link {
@@ -1058,5 +1094,5 @@ footer .nav-title {
 .citations {
   padding: 0 4%;
   height: -webkit-fill-available;
-  margin-top: 10rem;
+  margin-top: 12rem;
 }

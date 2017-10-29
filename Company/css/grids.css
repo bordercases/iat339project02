@@ -88,18 +88,16 @@
 
 /*1024px*/
 
-@media (min-width:31.25em) {
+@media (min-width: 58em) {
   .checkout-group {
-    max-width: 30%;
+    max-width: 33%;
+    border-right: dotted lightgrey;
+
   }
 }
 
-footer {
-  background-color: #343434;
-}
 
-/*others*/
-
+/*text media queries*/
 @media (min-width: 775px) {
   .centered-h1 {
     font-size: 3rem;
@@ -163,6 +161,10 @@ footer {
     transition: all 0.5s ease-in-out;
     font-size: 1.2rem;
   }
+
+  .menu{
+    padding-left:0;
+  }
 }
 
 /* some separators to enforce the gestalt */
@@ -171,11 +173,7 @@ footer {
     border-left: 1px solid lightgrey;
 }*/
 
-.container>.block:nth-of-type(odd) {
-  border: 2px solid #f7f7f7;
-  min-height: 5rem;
-  margin-bottom: 0.5rem;
-}
+
 
 /*only allowed in styleguide page where block is nested in article*/
 

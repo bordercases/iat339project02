@@ -34,7 +34,7 @@ input[type="radio"] {
 }
 
 /* start somm-left initial css w/out js */
-/* currently customize uses a lot of js to handle the conneciton between the
+/* currently customize uses a lot of js to handle the connection between the
  * options and images. these defaults are what occur until js script is executed.
  * in effect hide the images until js, for progressive enhancement.
  */
@@ -49,6 +49,7 @@ input[type="radio"] {
   width: auto;
   height: auto;
   margin: auto;
+  padding-bottom: 2em;
   max-height: 30rem;
 }
 

@@ -1,4 +1,12 @@
 'use strict';
+
+// boot up the elements
+document.querySelector(".img-block").style.display = "block";
+var containerBlocks = document.querySelectorAll(".container > .block");
+for (var i = 0; i < containerBlocks.length; i++) {
+  containerBlocks[i].style.flexBasis = "30em";
+}
+
 // Keeps track of Sommelier state and sets it between pages
 function initSommelierImageData() {
     if ( sessionStorage.getItem( "topping" ) === null ) {

@@ -26,20 +26,30 @@ input[type="radio"] {
 #somm-left {
   padding: 5%;
   opacity: 0.8;
+  flex-grow: 0;
+}
+
+#somm-img-flavor[src=""] {
+  display:none;
+}
+
+/* start somm-left initial css w/out js */
+/* currently customize uses a lot of js to handle the conneciton between the
+ * options and images. these defaults are what occur until js script is executed.
+ * in effect hide the images until js, for progressive enhancement.
+ */
+
+.container > .block {
+  flex-basis: 100em;
 }
 
 .img-block {
+  display: none;
   position: relative;
   width: auto;
   height: auto;
   margin: auto;
   max-height: 30rem;
-}
-
-/* hide the src in the case where we select a "none" flavor */
-
-#somm-img-flavor[src=""] {
-  display: none;
 }
 
 #somm-img-flavor {
@@ -50,6 +60,8 @@ input[type="radio"] {
   height: auto;
   /*max-height: 10rem;*/
 }
+
+/* end somm-left initial css w/out js */
 
 #somm-right .somm-control {
   padding: 1rem;

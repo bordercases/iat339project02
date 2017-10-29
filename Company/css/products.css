@@ -3,7 +3,7 @@
 /*debugging merge conflict*/
 
 .products-page {
-  margin: 3rem 0;
+  margin: 11rem 0;
 }
 
 .products-header {
@@ -27,7 +27,7 @@
 .product-listing {
   height: auto;
   min-width: 20em;
-  max-width: 25em;
+  max-width: 30em;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -107,7 +107,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 7.5rem 0 2rem 0;
+  padding: 10rem 0 2rem 0;
 }
 
 .product-detail .product-content {

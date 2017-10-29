@@ -58,45 +58,30 @@ label::after {
   transition: all .35s;
 }
 
-input[type=checkbox]+label::after {
-  content: "+";
-}
-
-input[type=radio]+label::after {
-  content: "\25BC";
-}
-
-input[type=checkbox]:checked+label::after {
-  -webkit-transform: rotate(315deg);
-      -ms-transform: rotate(315deg);
-          transform: rotate(315deg);
-}
-
-input[type=radio]:checked+label::after {
-  -webkit-transform: rotateX(180deg);
-          transform: rotateX(180deg);
-}
+input[type="radio" i] {
+    margin-right: 0.5rem;}
 
 /*-------------checkout--------*/
 
 .checkout-content {
-  margin: 7rem 3%;
+  margin: 9rem 3%;
   /*padding-top: 120px;*/
+  max-width: 90rem;
 }
 
 .checkout-group {
-  margin: 1rem;
-  /*max-width: 20rem;*/
-  width: 100%;
-}
+      padding: 1rem 2rem;
+      /* max-width: 20rem; */
+      width: 100%;
+  }
 
 .checkout-subgroup {
-  margin-bottom: 1rem;
+  padding-bottom: 3rem;
 }
 
 .checkout-headerbox {
   /*margin: 1rem;*/
-  padding: 0.5rem;
+  /*padding: 0.5rem;*/
   /*text-transform: uppercase;
 font-family: 'Raleway', sans-serif;*/
 }
@@ -129,6 +114,7 @@ font-family: 'Raleway', sans-serif;*/
 
 .grand-total {
   font-weight: 600;
+  font-size: 1.3rem;
 }
 
 .onestepcheckout-totals tr:first-of-type {
@@ -137,20 +123,23 @@ font-family: 'Raleway', sans-serif;*/
 
 .mandatory {
   font-weight: bold;
-  /*color: red;
-  font-size: 2rem;`*/
+}
+
+.card-inputs{
+    margin-left: 1.5rem;
 }
 
 /*ovveride main style*/
 
 .head-2 {
   /*emulating head-3 style*/
-  font-size: 1.1rem;
-  font-weight: 100;
-  letter-spacing: 0.2rem;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
   margin: 0.5rem;
   display: inline-block;
-  text-transform: none;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+      font-weight: 700;
 }
 
 .head-3 {

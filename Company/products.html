@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -9,84 +10,88 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/products.css" rel="stylesheet">
     <link href="css/grids.css" rel="stylesheet">
-</head><!-- Nav menu -->
-
+</head>
+<!-- Nav menu -->
 
 <body>
-  <header>
-      <nav class="nav-default thick" id="nav-default">
-          <a class="nav-logo-link" href="index.html"><span class="nav-title">BREWSTER</span></a> <!-- social media and language toggle -->
+    <header>
+        <nav class="nav-default thick" id="nav-default">
+            <a class="nav-logo-link" href="index.html"><span class="nav-title">BREWSTER</span></a>
+            <!-- social media and language toggle -->
 
+            <div class="sub-headers">
+                <a class="nav-link" href="">Facebook</a> <a class="nav-link" href="">Instagram</a> <a class="nav-link" href="">Twitter</a> <a class="nav-link lang-opt" href="">FR</a> <span>|</span> <a class="nav-link lang-opt" href="">EN</a>
+            </div>
+            <!-- webpage links +cart -->
 
-          <div class="sub-headers">
-              <a class="nav-link" href="">Facebook</a> <a class="nav-link" href="">Instagram</a> <a class="nav-link" href="">Twitter</a> <a class="nav-link lang-opt" href="">FR</a> <span>|</span> <a class="nav-link lang-opt" href="">EN</a>
-          </div>
-          <!-- webpage links +cart -->
+            <div class="main-headers">
+                <a class="nav-link" href="customize.html">Customize</a> <a class="nav-link" href="products.html">Products</a> <a class="nav-link" href="index.html#tab-about">About</a> <a class="nav-link" href="index.html#tab-news">News</a>
+                <a class="cart-link" href="cart.html">
+                    <img alt="black cart icon" class="cart-icon" src="img/icons/cart.png"></a>
+            </div>
+        </nav>
+        <!-- end normal nav menu -->
+        <!-- nav for mobile -->
 
+        <nav class="hidden" id="nav-toggle">
+            <div class="mobile-row" id="brewster-row">
+                <div class="nav-title menu">
+                    BREWSTER
+                </div>
+                <a class="cart-link" href="cart.html"><img alt="black cart icon" class="cart-icon" src="img/icons/cart.png"></a>
+            </div>
 
-          <div class="main-headers">
-              <a class="nav-link" href="customize.html">Customize</a> <a class="nav-link" href="products.html">Products</a> <a class="nav-link" href="index.html#tab-about">About</a> <a class="nav-link" href="index.html#tab-news">News</a> <a class="cart-link" href="cart.html">
-                <img alt="black cart icon" class="cart-icon" src="img/icons/cart.png"></a>
-          </div>
-      </nav>
-      <!-- end normal nav menu -->
-      <!-- nav for mobile -->
+            <div class="" id="nav-items">
+                <a class="mobile-row" href="index.html">
+                    <div class="nav-link">
+                        Home
+                    </div>
+                </a>
+                <a class="mobile-row" href="customize.html">
+                    <div class="nav-link">
+                        Customize
+                    </div>
+                </a>
+                <a class="mobile-row" href="products.html">
+                    <div class="nav-link">
+                        Products
+                    </div>
+                </a>
+                <a class="mobile-row" href="index.html#tab-news">
+                    <div class="nav-link">
+                        News
+                    </div>
+                </a>
+                <a class="mobile-row" href="index.html#tab-about">
+                    <div class="nav-link">
+                        About
+                    </div>
+                </a>
 
+                <div class="mobile-row">
+                    <a href=""><img alt="black facebook icon" class="social-icon" src="img/icons/fb-blk.png"></a>
+                    <a href=""><img alt="black instagram icon" class="social-icon" src="img/icons/insta-blk.png"></a>
+                    <a href=""><img alt="black twitter icon" class="social-icon" src="img/icons/twitt-blk.png"></a>
+                </div>
 
-      <nav class="hidden" id="nav-toggle">
-          <div class="mobile-row" id="brewster-row">
-              <div class="nav-title menu">
-                  BREWSTER
-              </div>
-              <a class="cart-link" href="cart.html"><img alt="black cart icon" class="cart-icon" src="img/icons/cart.png"></a>
-          </div>
-
-
-          <div class="" id="nav-items">
-              <a class="mobile-row" href="index.html">
-              <div class="nav-link">
-                  Home
-              </div></a> <a class="mobile-row" href="customize.html">
-              <div class="nav-link">
-                  Customize
-              </div></a> <a class="mobile-row" href="products.html">
-              <div class="nav-link">
-                  Products
-              </div></a> <a class="mobile-row" href="index.html#tab-news">
-              <div class="nav-link">
-                  News
-              </div></a> <a class="mobile-row" href="index.html#tab-about">
-              <div class="nav-link">
-                  About
-              </div></a>
-
-              <div class="mobile-row">
-                  <a href=""><img alt="black facebook icon" class="social-icon" src="img/icons/fb-blk.png"></a> <a href=""><img alt="black instagram icon" class="social-icon" src="img/icons/insta-blk.png"></a> <a href=""><img alt="black twitter icon" class="social-icon" src="img/icons/twitt-blk.png"></a>
-              </div>
-
-
-              <div class="mobile-row">
-                  <a class="nav-link lang-opt" href="">FR</a> <span>|</span> <a class="nav-link lang-opt" href="">EN</a>
-              </div>
-          </div>
-      </nav>
-      <!-- end mobile nav -->
-  </header>
-
+                <div class="mobile-row">
+                    <a class="nav-link lang-opt" href="">FR</a> <span>|</span> <a class="nav-link lang-opt" href="">EN</a>
+                </div>
+            </div>
+        </nav>
+        <!-- end mobile nav -->
+    </header>
 
     <div class="products-page" id="#content">
         <header class="products-header">
             <h1 class="head-1">Premade</h1>
 
-
             <h3 class="head-3">Cold brewed coffee.</h3>
         </header>
         <!-- coffee products listings start -->
 
-
         <div class="container row center">
             <!--  original cold brew coffee-->
-
 
             <div class="product-listing">
                 <a class="" href="coldbrew.html"><img alt="Original Cold coffee in a stylish bottle" class="product-image" src="img/kona-example.png"></a>
@@ -95,23 +100,19 @@
                     <button class="button-reset-style button-drink-size">250mL</button> <button class="button-reset-style button-drink-size">500mL</button> <button class="button-reset-style button-drink-size">1L</button>
                 </div>
 
-
                 <div class="product-content">
                     <div class="product-name">
                         Original Cold Brew Coffee
                     </div>
 
-
                     <div class="product-price">
                         C $24- C $300
                     </div>
-
 
                     <div class="product-descrip">
                         Antioxidant, gluten free, vegan, no GMOs.
                     </div>
                 </div>
-
 
                 <form action="coldbrew.html">
                     <button class="button-submit-style">See Details</button>
@@ -124,28 +125,23 @@
                 <a href="espresso.html"><img alt="Espresso cold coffee in a stylish bottle" class="product-image" src="img/kona-espresso.png">
                 </a>
 
-
                 <div class="container">
                     <button class="button-reset-style button-drink-size">250mL</button> <button class="button-reset-style button-drink-size">500mL</button> <button class="button-reset-style button-drink-size">1L</button>
                 </div>
-
 
                 <div class="product-content">
                     <div class="product-name">
                         Espresso Cold Brew Coffee
                     </div>
 
-
                     <div class="product-price">
                         C $24- C $300
                     </div>
-
 
                     <div class="product-descrip">
                         Antioxidant, gluten free, vegan, no GMOs.
                     </div>
                 </div>
-
 
                 <form action="espresso.html">
                     <button class="button-submit-style">See Details</button>
@@ -153,33 +149,27 @@
             </div>
             <!-- mocha coffee bottle -->
 
-
             <div class="product-listing">
                 <div class=""><img alt="Mocha cold coffee in a stylish bottle" class="product-image" src="img/kona-mocha.png">
                 </div>
 
-
                 <div class="container">
                     <button class="button-reset-style button-drink-size">250mL</button> <button class="button-reset-style button-drink-size">500mL</button> <button class="button-reset-style button-drink-size">1L</button>
                 </div>
-
 
                 <div class="product-content">
                     <div class="product-name">
                         Mocha Cold Brew Coffee
                     </div>
 
-
                     <div class="product-price">
                         C $24- C $300
                     </div>
-
 
                     <div class="product-descrip">
                         Antioxidant, gluten free, vegan, no GMOs.
                     </div>
                 </div>
-
 
                 <form action="#">
                     <button class="button-submit-style">See Details</button>
@@ -187,33 +177,27 @@
             </div>
             <!-- caramel coffee bottle -->
 
-
             <div class="product-listing">
                 <div class=""><img alt="caramel cold coffee in a stylish bottle" class="product-image" src="img/kona-caramel.png">
                 </div>
 
-
                 <div class="container">
                     <button class="button-reset-style button-drink-size">250mL</button> <button class="button-reset-style button-drink-size">500mL</button> <button class="button-reset-style button-drink-size">1L</button>
                 </div>
-
 
                 <div class="product-content">
                     <div class="product-name">
                         Caramel Cold Brew Coffee
                     </div>
 
-
                     <div class="product-price">
                         C $24- C $300
                     </div>
-
 
                     <div class="product-descrip">
                         Antioxidant, gluten free, vegan, no GMOs.
                     </div>
                 </div>
-
 
                 <form action="#">
                     <button class="button-submit-style">See Details</button>
@@ -221,40 +205,33 @@
             </div>
             <!-- vanilla coffee bottle -->
 
-
             <div class="product-listing">
                 <div class=""><img alt="vanilla cold brew coffee in a stylish bottle" class="product-image" src="img/kona-vanilla.png">
                 </div>
 
-
                 <div class="container">
                     <button class="button-reset-style button-drink-size">250mL</button> <button class="button-reset-style button-drink-size">500mL</button> <button class="button-reset-style button-drink-size">1L</button>
                 </div>
-
 
                 <div class="product-content">
                     <div class="product-name">
                         Vanilla Cold Brew Coffee
                     </div>
 
-
                     <div class="product-price">
                         C $24- C $300
                     </div>
-
 
                     <div class="product-descrip">
                         Antioxidant, gluten free, vegan, no GMOs.
                     </div>
                 </div>
 
-
                 <form action="#">
                     <button class="button-submit-style">See Details</button>
                 </form>
             </div>
             <!-- empty block to even flex out -->
-
 
             <div class="blank">
             </div>
@@ -263,12 +240,11 @@
     <!-- products listing page ends -->
     <!-- javascript -->
     <script src="javascript/hamburger.js" type="text/javascript">
-    </script><!-- footer section starts-->
-
+    </script>
+    <!-- footer section starts-->
 
     <footer>
         <!-- top half of footer: contains company contact info and page links -->
-
 
         <div class="container wood-texture footer-top">
             <div class="footer-companyInfo">
@@ -276,22 +252,18 @@
                     BREWSTER
                 </div>
 
-
                 <div class="location">
                     123-4567 east 123rd street
                 </div>
-
 
                 <div class="location">
                     Vancouver, BC 123 567 Canada
                 </div>
 
-
                 <div class="email">
                     support@brewster.ca
                 </div>
             </div>
-
 
             <div class="footer-listing">
                 <ul>
@@ -300,21 +272,17 @@
                         </h6>
                     </li>
 
-
                     <li>
                         <a class="footer-link" href="customize.html">Customize</a>
                     </li>
-
 
                     <li>
                         <a class="footer-link" href="products.html">Products</a>
                     </li>
 
-
                     <li>
                         <a class="footer-link" href="index.html#tab-about">About us</a>
                     </li>
-
 
                     <li>
                         <a class="footer-link" href="index.html#tab-news">News</a>
@@ -322,23 +290,19 @@
                 </ul>
             </div>
 
-
             <div class="footer-listing">
                 <ul>
                     <li>
                         <h6 class="footer-linkheading">Reference</h6>
                     </li>
 
-
                     <li>
                         <a class="footer-link" href="styleguide.html">Styleguide</a>
                     </li>
 
-
                     <li>
                         <a class="footer-link" href="citations.html">Citation</a>
                     </li>
-
 
                     <li>
                         <a class="footer-link" href="https://github.com/bordercases/iat339project02">Git Repo</a>
@@ -346,24 +310,27 @@
                 </ul>
             </div>
             <!-- go back up -->
-             <a class="top-link" href="#">
-            <div>
-                ^
-            </div></a>
+            <a class="top-link" href="#">
+                <div>
+                    ^
+                </div>
+            </a>
         </div>
         <!-- footer top ends
    footer bottom starts: social media and project disclosure-->
-
 
         <div class="footer-bottom">
             <span class="fine-print">iat334 assignment 1 project copyright kenneth bruskiewicz, ying chen</span>
 
             <div class="social-list">
-                <a href=""><img alt="white facebook icon" class="social-icon" src="img/icons/fb.png"></a> <a href=""><img alt="white instagram icon" class="social-icon" src="img/icons/insta.png"></a> <a href=""><img alt="white twitter icon" class="social-icon" src="img/icons/twitt.png"></a>
+                <a href=""><img alt="white facebook icon" class="social-icon" src="img/icons/fb.png"></a>
+                <a href=""><img alt="white instagram icon" class="social-icon" src="img/icons/insta.png"></a>
+                <a href=""><img alt="white twitter icon" class="social-icon" src="img/icons/twitt.png"></a>
             </div>
             <a href="#" id="#top"><i></i></a>
         </div>
     </footer>
     <!-- end footer -->
 </body>
+
 </html>

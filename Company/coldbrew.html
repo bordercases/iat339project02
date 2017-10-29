@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -9,72 +10,79 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/grids.css" rel="stylesheet">
     <link href="css/products.css" rel="stylesheet">
-</head><!-- Nav menu -->
-
+</head>
+<!-- Nav menu -->
 
 <body>
-  <header>
-      <nav class="nav-default thick" id="nav-default">
-          <a class="nav-logo-link" href="index.html"><span class="nav-title">BREWSTER</span></a> <!-- social media and language toggle -->
+    <header>
+        <nav class="nav-default thick" id="nav-default">
+            <a class="nav-logo-link" href="index.html"><span class="nav-title">BREWSTER</span></a>
+            <!-- social media and language toggle -->
 
+            <div class="sub-headers">
+                <a class="nav-link" href="">Facebook</a> <a class="nav-link" href="">Instagram</a> <a class="nav-link" href="">Twitter</a> <a class="nav-link lang-opt" href="">FR</a> <span>|</span> <a class="nav-link lang-opt" href="">EN</a>
+            </div>
+            <!-- webpage links +cart -->
 
-          <div class="sub-headers">
-              <a class="nav-link" href="">Facebook</a> <a class="nav-link" href="">Instagram</a> <a class="nav-link" href="">Twitter</a> <a class="nav-link lang-opt" href="">FR</a> <span>|</span> <a class="nav-link lang-opt" href="">EN</a>
-          </div>
-          <!-- webpage links +cart -->
+            <div class="main-headers">
+                <a class="nav-link" href="customize.html">Customize</a> <a class="nav-link" href="products.html">Products</a> <a class="nav-link" href="index.html#tab-about">About</a> <a class="nav-link" href="index.html#tab-news">News</a>
+                <a class="cart-link" href="cart.html">
+                    <img alt="black cart icon" class="cart-icon" src="img/icons/cart.png"></a>
+            </div>
+        </nav>
+        <!-- end normal nav menu -->
+        <!-- nav for mobile -->
 
+        <nav class="hidden" id="nav-toggle">
+            <div class="mobile-row" id="brewster-row">
+                <div class="nav-title menu">
+                    BREWSTER
+                </div>
+                <a class="cart-link" href="cart.html"><img alt="black cart icon" class="cart-icon" src="img/icons/cart.png"></a>
+            </div>
 
-          <div class="main-headers">
-              <a class="nav-link" href="customize.html">Customize</a> <a class="nav-link" href="products.html">Products</a> <a class="nav-link" href="index.html#tab-about">About</a> <a class="nav-link" href="index.html#tab-news">News</a> <a class="cart-link" href="cart.html">
-                <img alt="black cart icon" class="cart-icon" src="img/icons/cart.png"></a>
-          </div>
-      </nav>
-      <!-- end normal nav menu -->
-      <!-- nav for mobile -->
+            <div class="" id="nav-items">
+                <a class="mobile-row" href="index.html">
+                    <div class="nav-link">
+                        Home
+                    </div>
+                </a>
+                <a class="mobile-row" href="customize.html">
+                    <div class="nav-link">
+                        Customize
+                    </div>
+                </a>
+                <a class="mobile-row" href="products.html">
+                    <div class="nav-link">
+                        Products
+                    </div>
+                </a>
+                <a class="mobile-row" href="index.html#tab-news">
+                    <div class="nav-link">
+                        News
+                    </div>
+                </a>
+                <a class="mobile-row" href="index.html#tab-about">
+                    <div class="nav-link">
+                        About
+                    </div>
+                </a>
 
+                <div class="mobile-row">
+                    <a href=""><img alt="black facebook icon" class="social-icon" src="img/icons/fb-blk.png"></a>
+                    <a href=""><img alt="black instagram icon" class="social-icon" src="img/icons/insta-blk.png"></a>
+                    <a href=""><img alt="black twitter icon" class="social-icon" src="img/icons/twitt-blk.png"></a>
+                </div>
 
-      <nav class="hidden" id="nav-toggle">
-          <div class="mobile-row" id="brewster-row">
-              <div class="nav-title menu">
-                  BREWSTER
-              </div>
-              <a class="cart-link" href="cart.html"><img alt="black cart icon" class="cart-icon" src="img/icons/cart.png"></a>
-          </div>
-
-
-          <div class="" id="nav-items">
-              <a class="mobile-row" href="index.html">
-              <div class="nav-link">
-                  Home
-              </div></a> <a class="mobile-row" href="customize.html">
-              <div class="nav-link">
-                  Customize
-              </div></a> <a class="mobile-row" href="products.html">
-              <div class="nav-link">
-                  Products
-              </div></a> <a class="mobile-row" href="index.html#tab-news">
-              <div class="nav-link">
-                  News
-              </div></a> <a class="mobile-row" href="index.html#tab-about">
-              <div class="nav-link">
-                  About
-              </div></a>
-
-              <div class="mobile-row">
-                  <a href=""><img alt="black facebook icon" class="social-icon" src="img/icons/fb-blk.png"></a> <a href=""><img alt="black instagram icon" class="social-icon" src="img/icons/insta-blk.png"></a> <a href=""><img alt="black twitter icon" class="social-icon" src="img/icons/twitt-blk.png"></a>
-              </div>
-
-
-              <div class="mobile-row">
-                  <a class="nav-link lang-opt" href="">FR</a> <span>|</span> <a class="nav-link lang-opt" href="">EN</a>
-              </div>
-          </div>
-      </nav>
-      <!-- end mobile nav -->
-  </header>
+                <div class="mobile-row">
+                    <a class="nav-link lang-opt" href="">FR</a> <span>|</span> <a class="nav-link lang-opt" href="">EN</a>
+                </div>
+            </div>
+        </nav>
+        <!-- end mobile nav -->
+    </header>
     <!-- end nav menu -->
     <!-- product details: image, descriptions, size etc. -->
-
 
     <div class="container product-detail">
         <!-- image -->
@@ -83,11 +91,9 @@
         <div class="product-content">
             <!-- name + price -->
 
-
             <div class="product-name">
                 ORIGINAL COLD BREW COFFEE
             </div>
-
 
             <div class="product-price">
                 C $24- C $300
@@ -95,7 +101,6 @@
 
             <hr>
             <!-- sizes available -->
-
 
             <div class="container">
                 <button class="button-reset-style button-drink-size">250mL</button> <button class="button-reset-style button-drink-size">500mL</button> <button class="button-reset-style button-drink-size">1L</button>
@@ -113,8 +118,8 @@
                 <option value="">
                     12 pack
                 </option>
-            </select> <!-- quantity -->
-
+            </select>
+            <!-- quantity -->
 
             <div class="quantity">
                 <div class="">
@@ -124,32 +129,25 @@
             </div>
             <!-- text context -->
 
-
             <div class="product-descrip">
                 Estate grown premium Kona and Colombian coffee beans infused with nutritional benefits of 100% Hawaiian Coffee Fruit are roasted to perfection, then slowly steeped in cold water for over 12 hours. Creating the smoothest, best tasting craft cold brew coffee on the planet!
             </div>
             <!-- order button -->
-
 
             <form action="cart.html">
                 <button class="button-submit-style">Order Now</button>
             </form>
             <!-- features -->
 
-
             <div class="features-list">
                 <h3 class="">Benefits</h3>
-
 
                 <ul>
                     <li>Antioxidants</li>
 
-
                     <li>Gluten Free</li>
 
-
                     <li>Vegan</li>
-
 
                     <li>No GMO</li>
                 </ul>
@@ -159,72 +157,71 @@
     <!-- end product description content -->
     <!-- similar products -->
 
-
     <div class="similar-products center">
         <h1 class="centered head-2">Similar Products</h1>
-
 
         <h3 class="centered head-3">Take a look at other mixes we have!</h3>
         <!-- other similar products shows here -->
 
-
         <div class="container product-suggestion">
             <a class="suggestion-block" href="espresso.html"><img alt="Cold espresso coffee in a stylish bottle" class="product-image" src="img/kona-espresso.png">
 
-            <div class="product-content">
-                <div class="product-name">
-                    ESPRESSO COLD BREW COFFEE
+                <div class="product-content">
+                    <div class="product-name">
+                        ESPRESSO COLD BREW COFFEE
+                    </div>
+
+                    <div class="product-price">
+                        C $24- C $300
+                    </div>
                 </div>
+            </a>
+            <a class="suggestion-block" href=""><img alt="Cold mocha coffee in a stylish bottle" class="product-image" src="img/kona-mocha.png">
 
+                <div class="product-content">
+                    <div class="product-name">
+                        MOCHA COLD BREW COFFEE
+                    </div>
 
-                <div class="product-price">
-                    C $24- C $300
+                    <div class="product-price">
+                        C $24- C $300
+                    </div>
                 </div>
-            </div></a> <a class="suggestion-block" href=""><img alt="Cold mocha coffee in a stylish bottle" class="product-image" src="img/kona-mocha.png">
+            </a>
+            <a class="suggestion-block" href=""><img alt="Cold vanilla coffee in a stylish bottle" class="product-image" src="img/kona-vanilla.png">
 
-            <div class="product-content">
-                <div class="product-name">
-                    MOCHA COLD BREW COFFEE
+                <div class="product-content">
+                    <div class="product-name">
+                        VANILLA COLD BREW COFFEE
+                    </div>
+
+                    <div class="product-price">
+                        C $24- C $300
+                    </div>
                 </div>
+            </a>
+            <a class="suggestion-block" href=""><img alt="Cold caramel coffee in a stylish bottle" class="product-image" src="img/kona-caramel.png">
 
+                <div class="product-content">
+                    <div class="product-name">
+                        CARAMEL COLD BREW COFFEE
+                    </div>
 
-                <div class="product-price">
-                    C $24- C $300
+                    <div class="product-price">
+                        C $24- C $300
+                    </div>
                 </div>
-            </div></a> <a class="suggestion-block" href=""><img alt="Cold vanilla coffee in a stylish bottle" class="product-image" src="img/kona-vanilla.png">
-
-            <div class="product-content">
-                <div class="product-name">
-                    VANILLA COLD BREW COFFEE
-                </div>
-
-
-                <div class="product-price">
-                    C $24- C $300
-                </div>
-            </div></a> <a class="suggestion-block" href=""><img alt="Cold caramel coffee in a stylish bottle" class="product-image" src="img/kona-caramel.png">
-
-            <div class="product-content">
-                <div class="product-name">
-                    CARAMEL COLD BREW COFFEE
-                </div>
-
-
-                <div class="product-price">
-                    C $24- C $300
-                </div>
-            </div></a>
+            </a>
         </div>
     </div>
     <!-- end similar products content -->
     <!-- javascript -->
     <script src="javascript/hamburger.js" type="text/javascript">
-    </script><!-- footer section starts-->
-
+    </script>
+    <!-- footer section starts-->
 
     <footer>
         <!-- top half of footer: contains company contact info and page links -->
-
 
         <div class="container wood-texture footer-top">
             <div class="footer-companyInfo">
@@ -232,22 +229,18 @@
                     BREWSTER
                 </div>
 
-
                 <div class="location">
                     123-4567 east 123rd street
                 </div>
-
 
                 <div class="location">
                     Vancouver, BC 123 567 Canada
                 </div>
 
-
                 <div class="email">
                     support@brewster.ca
                 </div>
             </div>
-
 
             <div class="footer-listing">
                 <ul>
@@ -256,21 +249,17 @@
                         </h6>
                     </li>
 
-
                     <li>
                         <a class="footer-link" href="customize.html">Customize</a>
                     </li>
-
 
                     <li>
                         <a class="footer-link" href="products.html">Products</a>
                     </li>
 
-
                     <li>
                         <a class="footer-link" href="index.html#tab-about">About us</a>
                     </li>
-
 
                     <li>
                         <a class="footer-link" href="index.html#tab-news">News</a>
@@ -278,23 +267,19 @@
                 </ul>
             </div>
 
-
             <div class="footer-listing">
                 <ul>
                     <li>
                         <h6 class="footer-linkheading">Reference</h6>
                     </li>
 
-
                     <li>
                         <a class="footer-link" href="styleguide.html">Styleguide</a>
                     </li>
 
-
                     <li>
                         <a class="footer-link" href="citations.html">Citation</a>
                     </li>
-
 
                     <li>
                         <a class="footer-link" href="https://github.com/bordercases/iat339project02">Git Repo</a>
@@ -302,24 +287,27 @@
                 </ul>
             </div>
             <!-- go back up -->
-             <a class="top-link" href="#">
-            <div>
-                ^
-            </div></a>
+            <a class="top-link" href="#">
+                <div>
+                    ^
+                </div>
+            </a>
         </div>
         <!-- footer top ends
    footer bottom starts: social media and project disclosure-->
-
 
         <div class="footer-bottom">
             <span class="fine-print">iat334 assignment 1 project copyright kenneth bruskiewicz, ying chen</span>
 
             <div class="social-list">
-                <a href=""><img alt="white facebook icon" class="social-icon" src="img/icons/fb.png"></a> <a href=""><img alt="white instagram icon" class="social-icon" src="img/icons/insta.png"></a> <a href=""><img alt="white twitter icon" class="social-icon" src="img/icons/twitt.png"></a>
+                <a href=""><img alt="white facebook icon" class="social-icon" src="img/icons/fb.png"></a>
+                <a href=""><img alt="white instagram icon" class="social-icon" src="img/icons/insta.png"></a>
+                <a href=""><img alt="white twitter icon" class="social-icon" src="img/icons/twitt.png"></a>
             </div>
             <a href="#" id="#top"><i></i></a>
         </div>
     </footer>
     <!-- end footer -->
 </body>
+
 </html>

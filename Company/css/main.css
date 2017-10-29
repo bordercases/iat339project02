@@ -497,7 +497,7 @@ figcaption {
 
 /* nav should stack in mobile */
 
-@media (max-width:40em) {
+@media (max-width:31.25em) {
   .nav-link,
   .nav-title {
     float: none;

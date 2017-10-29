@@ -197,7 +197,7 @@ div .cart-table-prod-remove{
   width: 100%;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 31.25em) {
   .Table-row {
     display: -webkit-box;
     display: -webkit-flex;
@@ -237,7 +237,7 @@ div .cart-table-prod-remove{
   font-size: 0.7rem;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 31.25em) {
   .Table-row-item {
     padding: 0.5em;
     justify-content: center;

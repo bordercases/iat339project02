@@ -490,7 +490,7 @@ figcaption {
 
 /* nav should stack in mobile */
 
-@media (max-width: 50em) {
+@media (max-width:31.25em) {
   .nav-link,
   .nav-title {
     float: none;
@@ -961,14 +961,12 @@ footer .nav-title {
 }
 
 .parallax-img {
-  display:table;
   position: relative;
   z-index: 12;
   top: 0;
   left: 0;
+  height: 100vh;
   height: -webkit-fill-available;
-  min-height: 10px;
-  min-width: 10px;
   width: 100%;
   background: url('../img/coffee-animated.gif');
   opacity: 0.75;
@@ -976,6 +974,12 @@ footer .nav-title {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media (max-width: 31.25em) {
+  .parallax-img {
+    display: none;
+  }
 }
 
 .line {

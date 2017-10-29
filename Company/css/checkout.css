@@ -146,7 +146,7 @@ font-family: 'Raleway', sans-serif;*/
   display: inline-block;
 }
 
-@media (max-width: 50em) {
+@media (max-width:31.25em) {
   #check-left {
     visibility: hidden;
     position: absolute;

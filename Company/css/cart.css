@@ -78,14 +78,6 @@
   float: right;
 }
 
-.warning {
-  font-weight: 100;
-  font-style: italic;
-  color: indianred;
-  margin: 0.5rem 0;
-}
-
-
 .Table-row {
   font-family: 'Raleway', sans-serif;
   text-align: center;

@@ -88,7 +88,7 @@
 
 /*1024px*/
 
-@media (min-width: 31.25em) {
+@media (min-width: 40em) {
   .checkout-group {
     max-width: 33%;
     border-right: dotted lightgrey;

@@ -4,7 +4,7 @@
 document.querySelector(".img-block").style.display = "block";
 var containerBlocks = document.querySelectorAll(".container > .block");
 for (var i = 0; i < containerBlocks.length; i++) {
-  containerBlocks[i].style.flexBasis = "30em";
+  containerBlocks[i].style.flexBasis = "36em";
 }
 
 // Keeps track of Sommelier state and sets it between pages
